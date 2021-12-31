@@ -1,0 +1,25 @@
+name: Deploy
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  # https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: pip install -r docs/requirements.txt
+
+      - name: Deploy MkDocs application
+        run: mkdocs gh-deploy --force
