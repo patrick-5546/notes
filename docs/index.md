@@ -8,7 +8,7 @@ hide:
 
 Welcome to my personal notes, where I am free to rant about whatever I want :smile:.
 I have big plans for this website, though I'm not sure if I have the time to match :sweat_smile:;
-for a sneak peak, check out the `Projects` tab of the corresponding repository.
+for a sneak peak, check out the open issues of the corresponding repository.
 
 I created this website to:
 
