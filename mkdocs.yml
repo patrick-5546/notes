@@ -1,6 +1,12 @@
 # Project information
 site_name: Patrick's Notes
+site_url: https://patrick-5546.github.io/notes/
 site_author: Patrick Creighton
+
+# Repository
+repo_name: patrick-5546/notes
+repo_url: https://github.com/patrick-5546/notes
+edit_uri: ""
 
 # Configuration
 theme:
@@ -12,7 +18,6 @@ theme:
     - navigation.instant
     - navigation.tabs
     - navigation.top
-    # - navigation.tracking
   palette:
     - media: "(prefers-color-scheme: dark)" 
       scheme: slate
@@ -28,6 +33,11 @@ theme:
       toggle:
         icon: material/lightbulb-outline
         name: Switch to dark mode
+
+# Plugins
+plugins:
+  - search
+  - git-revision-date-localized:
 
 # Customization
 extra:
