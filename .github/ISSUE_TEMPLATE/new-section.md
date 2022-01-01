@@ -7,10 +7,10 @@ assignees: patrick-5546
 
 ---
 
-**Describe the topic**
+**Describe the section**
 
 
-**Why write about this topic?**
+**Why write about this section?**
 
 
 **Relevant resources**
