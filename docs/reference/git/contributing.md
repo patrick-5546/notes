@@ -2,6 +2,8 @@
 
 ## Read [First Contributions](https://github.com/firstcontributions/first-contributions/blob/master/README.md)
 
+- Note: if you have access to the repository, there is no need to fork it; clone and work on the repository itself
+
 ## Additonal Notes
 
 ### Goals
@@ -18,8 +20,8 @@
 
 ### Commits
 
-- Make a commit for each unit change, giving it a descripting name
-    - For example: "added <function_name> function", "updated tests to match"
+- Make a commit for each unit change, giving it a descriptive name
+    - For example: "added `<function_name>` function", "updated tests to match"
 - At the end of a session `git push`, to update the remote repository with your changes
 
 ### Pull requests
