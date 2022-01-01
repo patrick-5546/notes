@@ -13,7 +13,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
         with:
-          fetch-depth: '0'
+          fetch-depth: '0'  # checkout all commits to get the actual page revision time
 
       - name: Setup Python
         uses: actions/setup-python@v2
