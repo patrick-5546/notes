@@ -91,4 +91,15 @@ nav:
       - Zsh: setup/terminal/zsh.md
     - IDE: setup/ide.md
     - Other Software: setup/software.md
+  - Reference:
+    - Docker: reference/docker.md
+    - Git:
+      - Contributing: reference/git/contributing.md
+      - Features: reference/git/git_features.md
+    - Windows Keyboard Shortcuts: reference/shortcuts.md
+    - Linux Commands: reference/linux.md # pipe, chmod, du, export, ls, less (reference aliases)
+    - Mkdocs: reference/mkdocs.md  # why use mkdocs (can focus on writing, but not as customizable)
+    - Python: reference/python.md
+    - SSH: reference/ssh.md
+    - WSL: reference/wsl.md
   - About Me: https://www.linkedin.com/in/patrick-5546/
