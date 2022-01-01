@@ -43,7 +43,7 @@ PowerShell with file icons, autocomplete, and a custom theme. Followed the setup
 
 5. To get rid of the startup messages before prompt, you can uncomment the `Clear-Host` command at the end of the Powershell profile
 
-??? question "Why symbolic link?"
+!!! question "Why symbolic link?"
     See my reasoning in the [IDE](../ide.md#why-symbolic-link) page.
 
 ## Relevant Files in My [Setup Repository](https://github.com/patrick-5546/setup)

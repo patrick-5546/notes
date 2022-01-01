@@ -2,22 +2,24 @@
 
 Zsh is a shell for Linux (and thus WSL). My setup repository contains scripts that installs my packages, plugins, and configuration files.
 
-??? info "Packages, plugins, and configuration files installed by my scripts"
-    | Package/Plugin/File | Description |
-    | -------------- | ----------- |
-    | [Oh My Posh](https://ohmyposh.dev/docs/) | Theme engine |
-    | [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) | Zsh framework for plugins and themes |
-    | [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) | Human readable \[git\] diffs |
-    | [enhancd](https://github.com/b4b4r07/enhancd) | Make `cd` interfactive |
-    | [fzf](https://github.com/junegunn/fzf) | Interactive list filter: files, command history, processes, etc. |
-    | [ripgrep](https://github.com/BurntSushi/ripgrep) | Faster recursive search by ignoring files that are hidden (name starts with `.`) or in a `.gitignore` file |
-    | `.vimrc` | Configuration file for Vim |
-    | `.zshrc` | Configuration file for Zsh |
-    | `~/.zshrc.local` | `.zshrc` sources this, for machine-specific Zsh setup (untracked by setup repository) |
+## My Packages, Plugins, and Configuration Files
+
+| Package/Plugin/File | Description |
+| -------------- | ----------- |
+| [Oh My Posh](https://ohmyposh.dev/docs/) | Theme engine |
+| [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) | Zsh framework for plugins and themes |
+| [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) | Human readable \[git\] diffs |
+| [enhancd](https://github.com/b4b4r07/enhancd) | Make `cd` interfactive |
+| [fzf](https://github.com/junegunn/fzf) | Interactive list filter: files, command history, processes, etc. |
+| [ripgrep](https://github.com/BurntSushi/ripgrep) | Faster recursive search by ignoring files that are hidden (name starts with `.`) or in a `.gitignore` file |
+| `.vimrc` | Configuration file for Vim |
+| `.zshrc` | Configuration file for Zsh |
+| `~/.zshrc.local` | `.zshrc` sources this, for machine-specific Zsh setup (untracked by setup repository) |
 
 ## Setup
 
-> Run commands from the home directory (`cd ~`)
+!!! tip ""
+    Run commands from the home directory (`cd ~`)
 
 1. Clone my setup repository
 
