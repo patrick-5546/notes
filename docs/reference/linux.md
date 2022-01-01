@@ -19,12 +19,7 @@ Aliases are custom commands that map to a longer command.
 
     ``` console
     $ alias
-    g=git
-    ga='git add'
-    gcl='git clone --recurse-submodules'
-    gl='git pull'
-    gsi='git submodule init'
-    gsu='git submodule update'
+    ...
     l='ls -lah'
     ll='ls -lh'
     md='mkdir -p'
