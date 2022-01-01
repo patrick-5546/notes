@@ -96,6 +96,7 @@ I have listed the ones I use the most below:
 ga='git add'
 gb='git branch'
 gbD='git branch -D'
+gco='git checkout'
 gcb='git checkout -b'
 gcl='git clone --recurse-submodules'
 gcmsg='git commit -m'
