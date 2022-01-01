@@ -99,7 +99,7 @@ nav:
       - Features: reference/git/git_features.md
     - Windows Keyboard Shortcuts: reference/shortcuts.md
     - Linux Commands: reference/linux.md # pipe, chmod, du, export, ls, less (reference aliases)
-    - Mkdocs: reference/mkdocs.md  # why use mkdocs (can focus on writing, but not as customizable)
+    - Material for MkDocs: reference/mkdocs.md
     - Python: reference/python.md
     - SSH: reference/ssh.md
     - WSL: reference/wsl.md
