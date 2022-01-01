@@ -1,4 +1,4 @@
-# IDE
+# IDE Setup
 
 ## Demo
 

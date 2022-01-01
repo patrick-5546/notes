@@ -70,6 +70,11 @@ Zsh is a shell for Linux (and thus WSL). My setup repository contains scripts th
             1. Check with `echo $PATH | grep ~/.local/bin`
             2. Add to path by adding `export PATH=$PATH:~/.local/bin` to your `~/.zshrc.local` file
 
+    ??? tip "Installing ripgrep in Ubuntu 18.04"
+        ripgrep isn't in Ubuntu 18.04, so `sudo apt-get install ripgrep` in `install.sh` won't work
+
+        - Workaround: [install ripgrep manually](https://github.com/BurntSushi/ripgrep/issues/1232#issuecomment-762898478)
+
 5. Make Zsh the default shell
 
     ``` sh
