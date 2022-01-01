@@ -11,8 +11,6 @@ Zsh is a shell for Linux (and thus WSL). My setup repository contains scripts th
     | [enhancd](https://github.com/b4b4r07/enhancd) | Make `cd` interfactive |
     | [fzf](https://github.com/junegunn/fzf) | Interactive list filter: files, command history, processes, etc. |
     | [ripgrep](https://github.com/BurntSushi/ripgrep) | Faster recursive search by ignoring files that are hidden (name starts with `.`) or in a `.gitignore` file |
-    | `.gitconfig` | Configuration file for GitHub |
-    | `.gitconfig.wsl` | `.gitconfig` that uses your Windows Git login information for WSl distributions |
     | `.vimrc` | Configuration file for Vim |
     | `.zshrc` | Configuration file for Zsh |
     | `~/.zshrc.local` | `.zshrc` sources this, for machine-specific Zsh setup (untracked by setup repository) |
@@ -27,7 +25,7 @@ Zsh is a shell for Linux (and thus WSL). My setup repository contains scripts th
     git clone --depth=1 https://github.com/patrick-5546/setup.git ~/.setup
     ```
 
-2. Check for existing `.zshrc`, `.vimrc`, `.gitconfig` configuration files
+2. Check for existing `.zshrc` and `.vimrc` configuration files
 
     ``` sh
     ls -A
