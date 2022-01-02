@@ -1,14 +1,16 @@
-# :material-git: Exploring Git Features
+# :material-git: Git Commands
 
-## File specifiers
+Quick reference for the Git commands that I regularly use.
 
-| Specifier | Description |
-| --------- | ----------- |
-| `.` | Everything new/modified in current directory |
-| `-u` | Files in the remote repository that were modified in the current directory |
-| `<path/to/file_name>` | Specific file |
+!!! info "File specifiers"
 
-- Use `git status` to check if the command had the desired outcome
+    | Specifier | Description |
+    | --------- | ----------- |
+    | `.` | Everything new/modified in current directory |
+    | `-u` | Files in the remote repository that were modified in the current directory |
+    | `<path/to/file_name>` | Specific file |
+
+    - Use `git status` to check if the command had the desired outcome
 
 ## Restore
 
@@ -29,7 +31,7 @@ Undo committed (but not pushed) changes.
 | `git reset HEAD~1` | Unstages the changes made in last commit, but does not modify the files |
 | `git reset --hard HEAD~5` | Undoes the changes made in the last 5 commits |
 
-## Stashing changes
+## Stash
 
 Stash uncommitted changes so that you can pull or switch branches.
 
@@ -55,7 +57,7 @@ Resources:
 
 - [Tagging chapter in the Git book](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
 
-## Managing remote repositories
+## Manage remote repositories
 
 There may be cases where you want to keep mirrors of your repository.
 
@@ -84,18 +86,18 @@ Resources:
 
 - [Submodule chapter in the Git book](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 - [Create a submodule that tracks a specific branch](https://stackoverflow.com/questions/9189575/git-submodule-tracking-latest/9189815#9189815)
+- [Properly remove a submodule](https://stackoverflow.com/a/1260982)
 
-## Third Party
+## Oh My Zsh Git plugin aliases
 
-### Oh My Zsh Git plugin
-
-The [Zsh Git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git) provides many aliases.
-I have listed the ones I use the most below:
+The [Zsh Git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git) provides many aliases;
+I have listed the ones I regularly use below.
 
 ``` sh
 ga='git add'
 gb='git branch'
 gbD='git branch -D'
+gco='git checkout'
 gcb='git checkout -b'
 gcl='git clone --recurse-submodules'
 gcmsg='git commit -m'
@@ -114,7 +116,3 @@ grst='git restore --staged'
 gst='git status'
 gsu='git submodule update'
 ```
-
-### GitHub Actions
-
-See the [Material MkDocs page](../mkdocs.md#ci-cd-using-github-actions) for an explanation of this project's workflows.
