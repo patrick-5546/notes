@@ -21,17 +21,10 @@ Oh My Posh is a theme engine for any shell. Since it is compatible with all the 
 I can use the same custom theme (based on [atomic](https://ohmyposh.dev/docs/themes#atomic))
 for all my Windows Terminal shells.
 
-??? tip "Customizing Oh My Posh themes to use in Windows Terminal"
-    I would recommend not right aligning segments, as their formatting gets messed up when resizing panes.
-
-??? tip "Opening a tab/pane in the same directory in Windows Terminal"
-    Add `#!json "osc99": true,` to your Oh My Posh theme.
-
-    Resources:
-
-    - [Oh My Posh fixed OSC 9;9 support for Zsh in v6.42.3](https://github.com/JanDeDobbeleer/oh-my-posh/discussions/1508)
-    - If not using Oh My Posh, refer to the [related Windows Terminal documentation page](https://docs.microsoft.com/en-us/windows/terminal/tutorials/new-tab-same-directory)
-        - [Solution for Zsh](https://github.com/microsoft/terminal/issues/3158#issuecomment-986826132)
+!!! tip "Customizing Oh My Posh themes to use in Windows Terminal"
+    - I would recommend against right-aligning segments, as their formatting gets messed up when resizing panes.
+    - To open tabs/panes in the current directory, add `#!json "osc99": true,` to your Oh My Posh theme.
+        - If not using Oh My Posh, refer to the [related Windows Terminal documentation page](https://docs.microsoft.com/en-us/windows/terminal/tutorials/new-tab-same-directory)
 
 ## Setup
 
@@ -66,7 +59,7 @@ All the available shortcuts are listed in the `Actions` tab of the settings page
 | ++ctrl++ + ++h++/++j++/++k++/++l++ | *Move between panes (from my IDE configuration)* |
 | ++ctrl+q++ | *Close pane* |
 
-??? info "What are panes?"
+!!! info "What are panes?"
 
     A tab can be split into multiple panes, enabling you to run commands right next to each other.
     Check out the [documentation page on panes](https://docs.microsoft.com/en-us/windows/terminal/panes) to learn more.
