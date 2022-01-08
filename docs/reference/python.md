@@ -1,19 +1,44 @@
 # :material-language-python: Python
 
-pyenv, relative/absolute imports (checkout local pathfinding test directory), updating packages, modules, pip
+## Imports
+
+- [Recap on imports, absolute vs relative imports](https://realpython.com/absolute-vs-relative-python-imports/)
+- [Python 2 vs 3 imports](https://stackoverflow.com/a/12173406)
+
+## Pip
+
+Package installer.
+
+| Command | Description |
+| ------- | ----------- |
+| `pip install <package>` | Install the latest version of a package |
+| `pip install <package>==<version>` | Install the specified version of a package |
+| `pip install -r requirements.txt` | Install the packages from a `requirements.txt` file |
+| `pip list --outdated` | View outdated packages |
+| `pip install --upgrade <package>` | Upgrade the desired packages |
+| `pip uninstall <package>` | Uninstall a package |
+
+!!! tip ""
+    If pip has not been added to the path, replace `pip` with `python -m pip` in the commands above.
+
+## Pyenv
+
+Easily switch between multiple versions of Python.
+
+- [Installation](https://github.com/pyenv/pyenv#installation)
+- [Commands reference](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md)
+
+## Scripting
+
+- Library for powerful, user-friendly command-line parsing: [argparse tutorial](https://docs.python.org/3/howto/argparse.html)
 
 ## Virtual Environments
 
-### Motivation
-
-Bundle all the packages [at the versions] necessary to run an application in the project's root directory so that they do not interfere with the globally installed python packages.
-For more information, see the [Python Docs](https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments).
-
-### Commands reference
+Bundle all the packages and their versions to run an application so that they do not conflict with the globally installed python packages.
 
 1. Create virtual environment directory (suggested name: `.venv`).
 
-    === ":material-windows: Windows"
+    === ":material-microsoft-windows: Windows"
 
         ```
         py -m venv .venv
@@ -33,45 +58,13 @@ For more information, see the [Python Docs](https://docs.python.org/3/tutorial/v
         .venv\Scripts\Activate.ps1
         ```
 
-    === ":octicons-terminal-16: Windows Command Prompt"
-
-        ```
-        .venv\Scripts\activate.bat
-        ```
-
     === ":material-linux: Linux"
 
         ```
         source .venv/bin/activate
         ```
 
-3. Install the required packages
-
-    ??? info "Installation methods"
-
-        1. Installing the packages listed in a `requirements.txt` file
-
-            ```
-            pip install -r requirements.txt
-            ```
-
-        2. Installing a new package
-
-            ```
-            pip install <package_name>
-            ```
-
-        3. View outdated packages
-
-            ```
-            pip list --outdated
-            ```
-
-        4. Upgrading a package
-
-            ```
-            pip install <package_name> --upgrade
-            ```
+3. Install the required packages: [pip section](#pip)
 
 4. Create/update the `requirements.txt` file (to record the versions of packages used in the project)
 
@@ -85,7 +78,10 @@ For more information, see the [Python Docs](https://docs.python.org/3/tutorial/v
     deactivate
     ```
 
-### VS Code integration
+!!! tip "VS Code integration"
+    After selecting `.venv/bin/python` to be the Python interpreter, terminals and debuggers will run
+    in the virtual environment by default.
 
-After selecting `.venv/bin/python` to be the Python interpreter, terminals and debuggers will run
-in the virtual environment.
+### Resources
+
+- [Virtual Environments and Packages](https://docs.python.org/3/tutorial/venv.html)
