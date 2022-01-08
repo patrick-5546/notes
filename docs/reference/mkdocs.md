@@ -89,6 +89,29 @@ WSL is a term in the glossary.
 
 ## CI / CD Using GitHub Actions
 
+### Check Links
+
+I check for broken links using markdown-link-check. This action checks links to pages on the internet
+(`https://www.google.com`) and files in the repository (`./index.md`).
+However, it does not check whether a section exists in the file (`./index.md#overview`).
+
+??? quote "Link-checking workflow for this project"
+
+    ``` yaml title=".github/workflows/check_links.yml" linenums="1"
+    --8<-- ".github/workflows/check_links.yml"
+    ```
+
+### Deploy
+
+The Materials for MkDocs documentation gives an example deploy workflow. I modified it slightly
+to properly support page revision times using [mkdocs-git-revision-date-localized-plugin](#plugins).
+
+??? quote "Deploy workflow for this project"
+
+    ``` yaml title=".github/workflows/deploy.yml" linenums="1"
+    --8<-- ".github/workflows/deploy.yml"
+    ```
+
 ### Lint
 
 I use markdownlint to check for programmatic and stylistic errors in the application's Markdown files.
@@ -113,15 +136,8 @@ markdownlint resources:
 - [markdownlint rules reference](https://github.com/DavidAnson/markdownlint/blob/v0.24.0/doc/Rules.md)
 - [markdownlint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
-### Deploy
+### Resources
 
-The Materials for MkDocs documentation gives an example deploy workflow. I modified it slightly
-to properly support page revision times using [mkdocs-git-revision-date-localized-plugin](./mkdocs.md#plugins).
-
-??? quote "Deploy workflow for this project"
-
-    ``` yaml title=".github/workflows/deploy.yml" linenums="1"
-    --8<-- ".github/workflows/deploy.yml"
-    ```
+- [Schedule workflow runs](https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#scheduled-events)
 
 --8<-- "includes/abbreviations.md"
