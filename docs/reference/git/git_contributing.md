@@ -1,6 +1,6 @@
 # :material-rocket-launch: Contributing to a Git Repository
 
-For a walkthrough of the contribution process, read [First Contributions](https://github.com/firstcontributions/first-contributions/blob/master/README.md)
+For a walkthrough of the contribution process, read [First Contributions](https://github.com/firstcontributions/first-contributions/blob/master/README.md).
 
 !!! note "Comments on the First Contributions walkthrough"
     - If you have access to the repository, there is no need to fork it; clone and work on the repository itself
