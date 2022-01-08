@@ -21,7 +21,9 @@ retention and serves as a resource that I can use to refresh my memory.
 
 3. Build skills related to software development, including Git, CI/CD, iterative development, and documentation.
 
+4. Inspire and guide others to take advantage of the powerful capabilities of popular coding-related software.
+
 ## Contents
 
 - Setup: My Windows and Linux configurations
-- About Me: Links to my LinkedIn profile
+- Reference: Quick reference on how to use popular coding-related software

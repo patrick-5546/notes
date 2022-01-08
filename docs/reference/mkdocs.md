@@ -36,7 +36,8 @@ nav:
     MkDocs enables it by default if there is no plugins entry set.
 
 - Automatic documentation generation using [mkdocstrings](https://mkdocstrings.github.io/)
-- Page revision time using [mkdocs-git-revision-date-localized-plugin](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin)
+- Page revision time using [mkdocs-git-revision-date-localized-plugin](https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#revision-date-localized)
+    - Note: times are in UTC
 
 ## Reference
 
