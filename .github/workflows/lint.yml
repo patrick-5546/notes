@@ -16,7 +16,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
 
-    - name: Lint website markdown pages
+    - name: Lint markdown pages
       uses: nosborn/github-action-markdown-cli@v3.0.1
       with:
         files: 'docs/* includes/*'
