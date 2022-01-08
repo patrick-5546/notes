@@ -8,7 +8,7 @@
 
 > Vim :material-arrow-right: Neovim :material-arrow-right: VS Code
 
-Followed the setup guide in the [Resources](./ide.md#resources) section.
+Followed the setup guide in the [Resources](./ide.md#resource) section.
 
 My IDE of choice starts with Vim. Its main advantages are that it can be run in a terminal and used
 without every having to touch the mouse. Once the steep learning curve is overcome, coding becomes
@@ -25,10 +25,10 @@ file directly in the CLI, and is noticeably faster for large files.
 
 ## Learn about Vim and My IDE Setup
 
-1. Recommended Vim video tutorials: [Vim Tutorial](https://www.youtube.com/watch?v=IiwGbcd8S7I&t=1s), [Mastering the Vim Language](https://www.youtube.com/watch?v=wlR5gYd6um0),
+1. Recommended Vim video tutorials: [Vim Tutorial](https://www.youtube.com/watch?v=IiwGbcd8S7I&t=1s), [Mastering the Vim Language](https://www.youtube.com/watchv=wlR5gYd6um0),
 [How to Do 90% of What Plugins Do (With Just Vim)](https://www.youtube.com/watch?v=XA2WjJbmmoM&t=734s)
 2. The setup guide in the [Resources](./ide.md#resources) section also demonstrates its capabilities
-3. Read the [relevant files in my setup repository](./ide.md#relevant-files-in-my-setup-repository)
+3. Read the [relevant files in my setup repository](./id.md#relevant-files-in-my-setup-repository)
 
 ### Quirks
 

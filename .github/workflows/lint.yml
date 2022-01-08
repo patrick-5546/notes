@@ -29,7 +29,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Lint markdown pages using markdownlint
-      uses: nosborn/github-action-markdown-cli@v3
+      uses: nosborn/github-action-markdown-cli@v3.0.1
       with:
         files: 'docs/* includes/*'
         config_file: '.markdownlint.json'
