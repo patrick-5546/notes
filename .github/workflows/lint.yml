@@ -9,16 +9,27 @@ on:
       - main
 
 jobs:
-  # https://github.com/avto-dev/markdown-lint
+  # https://github.com/gaurav-nelson/github-action-markdown-link-check
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Check markdown pages for broken links
+      uses: gaurav-nelson/github-action-markdown-link-check@v1
+      with:
+        folder-path: 'docs, includes'
+
+# https://github.com/nosborn/github-action-markdown-cli
   markdownlint:
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
       uses: actions/checkout@v2
 
-    - name: Lint website markdown pages
-      uses: avto-dev/markdown-lint@v1.5.0
+    - name: Lint markdown pages using markdownlint
+      uses: nosborn/github-action-markdown-cli@v3
       with:
-        config: '.markdownlint.json'
-        args: '.'
-        ignore: 'github/* vscode/*'
+        files: 'docs/* includes/*'
+        config_file: '.markdownlint.json'
