@@ -93,10 +93,11 @@ nav:
     - IDE: setup/ide.md
     - Other Software: setup/software.md
   - Reference:
+    - Bookmarks: reference/bookmarks.md
     - Git:
       - Git Contribution Process: reference/git/git_contributing.md
       - Git Commands: reference/git/git_commands.md
-    - Linux Commands: reference/linux.md # pipe, chmod, du, export, ls, less (reference aliases)
+    - Linux Commands: reference/linux.md
     - Material for MkDocs: reference/mkdocs.md
     - Python: reference/python.md
     - SSH: reference/ssh.md

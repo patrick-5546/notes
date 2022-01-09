@@ -1,6 +1,5 @@
 # :material-linux: Linux Commands
 
-Linux commands that I regularly use.
 [Linuxize.com](https://linuxize.com/) has some amazing guides for common linux commands and tasks.
 If their site does not have cover the desired content, `man <command>` to view the full documentation of a command.
 
@@ -41,6 +40,8 @@ Aliases are custom commands that map to a longer command.
     alias llt='ls -lhrt'
     ```
 
+Resources:
+
 - [Linuxize alias guide](https://linuxize.com/post/how-to-create-bash-aliases/)
 
 ## du
@@ -53,6 +54,8 @@ Estimates disk usage of the given files or directories.
 | `du -h --max-depth=1 <directory>` | Get size of directories up to the first level |
 | `du -hs` | Get only the size of the current working directory |
 
+Resources:
+
 - [Linuxize du guide](https://linuxize.com/post/du-command-in-linux/)
 
 ## find
@@ -63,6 +66,8 @@ Recursively searches for files and directories.
 | ------- | ----------- |
 | `find -type f -iname <filename>` | Search for files by name, ignoring case |
 | `find -type f -name '*.<file_extension>'` | Search for files by extension |
+
+Resources:
 
 - [Linuxize find guide](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
@@ -90,6 +95,8 @@ Read contents of a file or command output quickly and without filling up termina
     | `-S` | Toggle chopping long lines |
     | `/<string>` | Search for `<string>` |
     | `n`/`N` | Navigate between search matches |
+
+Resources:
 
 - [Linuxize less guide](https://linuxize.com/post/less-command-in-linux/)
 
@@ -128,9 +135,11 @@ I use screen to perform long-running tasks on a remote machine. It enables me to
     export SCREENDIR=$HOME/.screen
     ```
 
+Resources:
+
 - [Linuxize screen guide](https://linuxize.com/post/how-to-use-linux-screen/)
 
-## Additional Resources
+## Additional Guides
 
 - [Linuxize shebang guide](https://linuxize.com/post/bash-shebang/) - run script without having to specify the interpreter
 - [Linuxize add to the PATH environment variable](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/)

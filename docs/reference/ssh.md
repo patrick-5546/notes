@@ -1,6 +1,6 @@
 # :material-remote-desktop: SSH
 
-## Setup SSH keys
+## Setup SSH Keys
 
 SSH key-based authentication allows you SSH into remote machines without a password.
 
@@ -10,8 +10,9 @@ Guide: [Setup SSH keys](https://linuxize.com/post/how-to-set-up-ssh-keys-on-ubun
     - Although the guide is for Ubuntu 20.04, it should work for most Linux distributions
         - It also works in PowerShell, using the given alternative to `ssh-copy-id`
 
-## Other resources
+## Other Resources
 
+- [`ssh` command guide](https://linuxize.com/post/ssh-command-in-linux/)
 - [Specify the starting directory for a SSH session](https://docs.microsoft.com/en-us/windows/terminal/tutorials/ssh#specify-starting-directory)
 - [Setup SSH keys on Synology DSM 6](https://stamler.ca/enable-passwordless-ssh-on-synology-dsm6/)
 

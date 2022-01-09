@@ -141,4 +141,11 @@ markdownlint resources:
 
 - [Schedule workflow runs](https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#scheduled-events)
 
+## Example Sites
+
+- This site!
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) and [Pymdown Extensions](https://facelessuser.github.io/pymdown-extensions/) documentation
+- [up42](https://sdk.up42.com/)
+    - Uses the mkdocstrings plugin for the Code Reference
+
 --8<-- "includes/abbreviations.md"
