@@ -35,7 +35,6 @@
 | ++ctrl+f++ | Find on page |
 | (++shift++) + ++enter++ | Navigate between matches to your Find Bar search |
 | ++ctrl+h++ | Open history |
-| ++ctrl+shift+i++ | Open Developer Tools |
 | ++ctrl+l++ | Select the URL in the address bar to edit |
 | ++ctrl+r++ | Refresh the current tab |
 | ++ctrl+t++ | Open a new tab and switch to it |
@@ -46,6 +45,7 @@
 | ++ctrl++ + ++plus++ / ++minus++ | Adjust zoom |
 | ++ctrl++ + (++shift++) + ++tab++ | Navigate between tabs |
 | ++ctrl++ + left click | Open link in new tab |
+| ++f12++ | Open Developer Tools |
 
 ## OneNote
 

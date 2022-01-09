@@ -106,3 +106,5 @@ nav:
     - SSH: reference/ssh.md
     - Windows Shortcuts: reference/shortcuts.md
     - WSL: reference/wsl.md
+  - About Me: profile.md
+

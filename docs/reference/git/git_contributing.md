@@ -60,7 +60,7 @@ git remote prune origin
 
 - Make `git pull` or `git fetch` prune by default with `git config --global fetch.prune true`
     - Local branches tracking a remote that has been prunes are identified as gone in the output of `git branch -vv`
-        - Delete these branches with `git branch -D <branch_name>`
+        - Delete these branches with `git branch -D <branch1> <branch2> ...`
     - Reference: [Cleaning up old remote git branches](https://stackoverflow.com/questions/3184555/cleaning-up-old-remote-git-branches)
 
 ## More contribution best practices for GitHub
@@ -77,3 +77,4 @@ git remote prune origin
 - Wiki: host very basic documentation,
 [GitHub Flavored Markdown](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) only
     - Advanced GitHub Flavored Markdown syntax: [Render code snippet](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/creating-a-permanent-link-to-a-code-snippet#linking-to-code)
+- [Choosing the right open source license](https://choosealicense.com/)
