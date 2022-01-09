@@ -1,6 +1,6 @@
 # PowerShell Setup
 
-PowerShell with file icons, autocomplete, and a custom theme. Followed the setup guide in the [Resources](#resources) section
+PowerShell with file icons, autocomplete, and a custom theme. Followed the setup guide in the [Resources](./powershell.md#resources) section
 
 ## Setup
 
