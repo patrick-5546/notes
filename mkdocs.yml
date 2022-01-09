@@ -93,12 +93,14 @@ nav:
     - IDE: setup/ide.md
     - Other Software: setup/software.md
   - Reference:
+    - Docker: reference/docker.md
     - Git:
-      - Git Contribution Process: reference/git/git_contributing.md
-      - Git Commands: reference/git/git_commands.md
+      - Contribution Process: reference/git/git_contributing.md
+      - Commands: reference/git/git_commands.md
     - Linux Commands: reference/linux.md # pipe, chmod, du, export, ls, less (reference aliases)
     - Material for MkDocs: reference/mkdocs.md
     - Python: reference/python.md
     - SSH: reference/ssh.md
     - Windows Shortcuts: reference/shortcuts.md
     - WSL: reference/wsl.md
+  - About Me: https://www.linkedin.com/in/patrick-5546/

@@ -17,14 +17,14 @@ Aliases are custom commands that map to a longer command.
 
     Oh My Zsh creates a lot of useful aliases, here are some that I regularly use:
 
-    ``` shell
-    alias l='ls -lah'
-    alias ll='ls -lh'
-    alias md='mkdir -p'
-    alias rd='rmdir'
+    ``` console
+    $ alias
+    ...
+    l='ls -lah'
+    ll='ls -lh'
+    md='mkdir -p'
+    rd=rmdir
     ```
-
-    - Aliases that I use from the Git plugin are detailed in the [Commands page](./git/git_commands.md#oh-my-zsh-git-plugin-aliases)
 
     Aliases that I defined myself
 
