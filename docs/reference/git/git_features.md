@@ -26,8 +26,8 @@ Undo committed (but not pushed) changes.
 | Command | Description |
 | --------- | ----------- |
 | `git log` | Check the commit history of the current branch |
-| `git reset HEAD~1` | Unstages the changes made in last commit, but does not modify the files |
-| `git reset --hard HEAD~5` | Undoes the changes made in the last 5 commits |
+| `git reset --soft HEAD~1` | Undo the last commit, but keep the files staged/added (ready to commit) |
+| `git reset --hard HEAD~5` | Undo the last 5 commits, reverting the files that were changed since then |
 
 ## Stashing changes
 
@@ -84,31 +84,3 @@ Resources:
 
 - [Submodule chapter in the Git book](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 - [Create a submodule that tracks a specific branch](https://stackoverflow.com/questions/9189575/git-submodule-tracking-latest/9189815#9189815)
-
-## Oh My Zsh Git plugin
-
-The [Zsh Git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git) provides many aliases.
-I have listed the ones I use the most below:
-
-``` sh
-ga='git add'
-gb='git branch'
-gbD='git branch -D'
-gcb='git checkout -b'
-gcl='git clone --recurse-submodules'
-gcmsg='git commit -m'
-gd='git diff'
-gdca='git diff --cached'
-gl='git pull'
-gp='git push'
-gpsup='git push --set-upstream origin $(git_current_branch)'
-gra='git remote add'
-grv='git remote -v'
-grrm='git remote remove'
-grh='git reset'
-grhh='git reset --hard'
-grs='git restore'
-grst='git restore --staged'
-gst='git status'
-gsu='git submodule update'
-```
