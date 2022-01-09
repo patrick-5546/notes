@@ -43,19 +43,12 @@ PowerShell with file icons, autocomplete, and a custom theme. Followed the setup
 
 5. To get rid of the startup messages before prompt, you can uncomment the `Clear-Host` command at the end of the Powershell profile
 
-6. **Using Git Bash**, navigate to the setup repository and run the git configuration file
-
-    ``` sh
-    ./windows/git_config_windows.sh
-    ```
-
 !!! question "Why symbolic link?"
     See my reasoning in the [IDE](../ide.md#why-symbolic-link) page.
 
 ## Relevant Files in My [Setup Repository](https://github.com/patrick-5546/setup)
 
 - `poshthemes/atomic_tweak_windows.json`
-- `windows/git_config_windows.sh`
 - `windows/Microsoft.PowerShell_profile.ps1`
 
 ## Resources

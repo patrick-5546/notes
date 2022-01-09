@@ -39,7 +39,6 @@ for all my Windows Terminal shells.
 3. My settings, themes, and sample profiles can be found in `windows\windows_terminal_sample_settings.json`
 
 4. The [PowerShell](./powershell.md) and [Zsh](./zsh.md) pages detail how I setup these shells to use in Windows Terminal
-    - [Add Git Bash to Windows Terminal](https://stackoverflow.com/a/57369284)
 
 ## Windows Terminal Shortcuts
 
