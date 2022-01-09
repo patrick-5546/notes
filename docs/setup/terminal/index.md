@@ -36,11 +36,7 @@ for all my Windows Terminal shells.
 2. Install fonts that support symbols used by Oh My Posh (i.e., [Nerd Fonts](https://www.nerdfonts.com/font-downloads))
     1. My fonts can be extracted from `windows\fonts.zip`
 
-3. My settings, themes, and profiles can be found in `windows\windows_terminal_settings.json`. To symbolic link:
-
-    ``` powershell
-    New-Item -ItemType SymbolicLink -Path "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -Value "$env:USERPROFILE\git_projects\.setup\windows\windows_terminal_settings.json"
-    ```
+3. My settings, themes, and sample profiles can be found in `windows\windows_terminal_sample_settings.json`
 
 4. The [PowerShell](./powershell.md) and [Zsh](./zsh.md) pages detail how I setup these shells to use in Windows Terminal
     - [Add Git Bash to Windows Terminal](https://stackoverflow.com/a/57369284)
@@ -70,9 +66,8 @@ All the available shortcuts are listed in the `Actions` tab of the settings page
 
 ## Relevant Files in My [Setup Repository](https://github.com/patrick-5546/setup)
 
-- `windows/fonts/`
-- `windows/icons/`
-- `windows/windows_terminal_settings.json`
+- `windows/fonts.zip`
+- `windows/windows_terminal_sample_settings.json`
 
 ## Resources
 

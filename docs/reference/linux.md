@@ -2,7 +2,7 @@
 
 Linux commands that I regularly use.
 
-## alias
+## `alias`
 
 Aliases are custom commands that map to a longer command.
 
@@ -35,7 +35,7 @@ Aliases are custom commands that map to a longer command.
     alias llt='ls -lhrt'
     ```
 
-## screen
+## `screen`
 
 I use screen to perform long-running tasks on a remote machine. It enables me to connect and disconnect from the machine
 (i.e. via [SSH](./ssh.md)) without exiting the command.

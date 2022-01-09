@@ -20,7 +20,6 @@ Shortcuts that I frequently use.
 | ++win+shift+s++ | Take a screenshot using Snipping Tool |
 | ++win+arrow-up++ | Maximize window |
 | ++win++ + ++arrow-left++ / ++arrow-right++ | Maximize window to the left/right side of the screen |
-| ++f11++ | Full screen application |
 
 ## File Explorer
 
@@ -35,7 +34,7 @@ Shortcuts that I frequently use.
 | Shortcut | Description |
 | -------- | ----------- |
 | ++ctrl+f++ | Find on page |
-| (++shift++) + ++enter++ | Navigate between matches to your Find Bar search |
+| ++ctrl++ + (++shift++) + ++g++ | Navigate between matches to your Find Bar search |
 | ++ctrl+h++ | Open history |
 | ++ctrl+shift+i++ | Open Developer Tools |
 | ++ctrl+l++ | Select the URL in the address bar to edit |
@@ -48,25 +47,6 @@ Shortcuts that I frequently use.
 | ++ctrl++ + ++plus++ / ++minus++ | Adjust zoom |
 | ++ctrl++ + (++shift++) + ++tab++ | Navigate between tabs |
 | ++ctrl++ + left click | Open link in new tab |
-
-## OneNote
-
-Specifically, the OneNote application from the Microsoft Store.
-
-| Shortcut | Description |
-| -------- | ----------- |
-| ++ctrl+f++ | Open search box |
-| ++arrow-down++| While searching, preview the next result |
-| ++ctrl+n++ | Create a new page at the end of the current section |
-| ++ctrl+alt+n++ | Create a new page below the current page |
-| ++ctrl+alt+shift+n++ | Create a new sub-page below the current page |
-| ++ctrl+t++ | Create a new section |
-| ++ctrl+period++ | Toggle bulleted list formatting |
-| ++ctrl+slash++ | Toggle numbered list formatting |
-| ++ctrl+alt++ + ++minus++ / ++plus++ | Hide and show navigation pane |
-| ++alt+equal++ | Create equation |
-| ++shift+enter++ | Insert a line break |
-| ++tab++ at the end of a line | Create a table |
 
 ## Taskbar
 
@@ -91,4 +71,3 @@ My Windows Terminal Shortcuts can be found in the [Terminal page](../setup/termi
 
 - [Keyboard shortcuts in Windows](https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
 - [Keyboard shortcuts in Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad)
-- [Keyboard shortcuts in OneNote](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950)
