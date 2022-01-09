@@ -1,5 +1,7 @@
 # :material-git: Git Commands
 
+Quick reference for the Git commands that I regularly use.
+
 !!! info "File specifiers"
 
     | Specifier | Description |

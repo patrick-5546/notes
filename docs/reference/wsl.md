@@ -33,7 +33,7 @@
 
 - `wsl --help` to see all WSL commands and their descriptions
 
-## Commands Inside WSL Distributions
+## Commands For Inside WSL Distributions
 
 - Sign in to Git using the Git Credential Manager in Windows
 

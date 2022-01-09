@@ -1,5 +1,7 @@
 # :material-keyboard: Windows Keyboard Shortcuts
 
+Shortcuts that I frequently use.
+
 !!! note ""
     Shortcuts with italicized descriptions are Windows 11 only.
 
