@@ -56,7 +56,7 @@ All the available shortcuts are listed in the `Actions` tab of the settings page
 | ++ctrl+tab++ | Cycle forwards between tabs (same as Microsoft Edge) |
 | ++ctrl+w++ | *Close tab (from Microsoft Edge)* |
 | ++alt+shift+d++ | Split pane the long way |
-| ++ctrl++ + ++h++ / ++j++ / ++k++ / ++l++ | *Move between panes (from my IDE configuration)* |
+| ++ctrl++ + ++h++/++j++/++k++/++l++ | *Move between panes (from my IDE configuration)* |
 | ++ctrl+q++ | *Close pane* |
 
 !!! info "What are panes?"
