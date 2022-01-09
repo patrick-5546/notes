@@ -24,4 +24,6 @@ jobs:
         run: pip install -r docs/requirements.txt
 
       - name: Deploy MkDocs application
+        env:
+          GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
         run: mkdocs gh-deploy --force
