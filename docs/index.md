@@ -1,7 +1,6 @@
 ---
 hide:
   - navigation
-  - toc
 ---
 
 # Patrick's Notes
@@ -9,6 +8,8 @@ hide:
 Welcome to my personal notes, where I am free to rant about whatever I want :smile:.
 I have big plans for this website, though I'm not sure if I have the time to match :sweat_smile:;
 for a sneak peak, check out the open issues of the corresponding repository.
+
+## Site Purpose
 
 I created this website to:
 
@@ -23,7 +24,8 @@ retention and serves as a resource that I can use to refresh my memory.
 
 4. Inspire and guide others to take advantage of the powerful capabilities of popular coding-related software.
 
-## Contents
+## Site Contents
 
 - Setup: My Windows and Linux configurations
 - Reference: Quick reference on how to use popular coding-related software
+- About Me: Graphics related to my experiences

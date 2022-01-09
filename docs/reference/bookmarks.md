@@ -1,6 +1,6 @@
 # Bookmarks
 
-Miscellaneous sites that I use unrelated to the other pages.
+Miscellaneous references and tools that I use unrelated to the other pages.
 
 ## References
 
@@ -10,6 +10,7 @@ Miscellaneous sites that I use unrelated to the other pages.
 
 ## Tools
 
+- [Bitwarden](https://bitwarden.com/) - password manager
 - [Notion](https://www.notion.so/product) - notetaking and project management
     - [Video introduction to Notion](https://www.youtube.com/watch?v=ODl5FOMu8kI&t=380s)
 - [TinyWow](https://tinywow.com/) - various PDF, image, and video tools
