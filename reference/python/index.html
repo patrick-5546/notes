@@ -10,21 +10,21 @@
         <meta name="author" content="Patrick Creighton">
       
       
-        <link rel="canonical" href="https://patrick-5546.github.io/notes/setup/terminal/powershell/">
+        <link rel="canonical" href="https://patrick-5546.github.io/notes/reference/python/">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.1">
     
     
       
-        <title>PowerShell - Patrick's Notes</title>
+        <title>Python - Patrick's Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.23b6d78a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.23b6d78a.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -38,7 +38,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#powershell-setup" class="md-skip">
+        <a href="#python" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +80,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Patrick&#39;s Notes" class="md-header__button md-logo" aria-label="Patrick's Notes" data-md-component="logo">
+    <a href="../.." title="Patrick&#39;s Notes" class="md-header__button md-logo" aria-label="Patrick's Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PowerShell
+              Python
             
           </span>
         </div>
@@ -196,10 +196,26 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
   </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../setup/" class="md-tabs__link">
+        Setup
+      </a>
+    </li>
+  
 
       
         
@@ -213,23 +229,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link md-tabs__link--active">
-        Setup
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../reference/bookmarks/" class="md-tabs__link">
+      <a href="../bookmarks/" class="md-tabs__link md-tabs__link--active">
         Reference
       </a>
     </li>
@@ -257,7 +257,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Patrick&#39;s Notes" class="md-nav__button md-logo" aria-label="Patrick's Notes" data-md-component="logo">
+    <a href="../.." title="Patrick&#39;s Notes" class="md-nav__button md-logo" aria-label="Patrick's Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -288,7 +288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -301,14 +301,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -328,7 +326,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../">Setup</a>
+          <a href="../../setup/">Setup</a>
           
             <label for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
@@ -350,14 +348,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" data-md-state="indeterminate" type="checkbox" id="__nav_2_2" checked>
       
       
       
@@ -375,7 +371,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">Terminal</a>
+          <a href="../../setup/terminal/">Terminal</a>
           
             <label for="__nav_2_2">
               <span class="md-nav__icon md-icon"></span>
@@ -397,66 +393,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          PowerShell
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../setup/terminal/powershell/" class="md-nav__link">
         PowerShell
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    Setup
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#relevant-files-in-my-setup-repository" class="md-nav__link">
-    Relevant Files in My Setup Repository
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -468,7 +409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../zsh/" class="md-nav__link">
+      <a href="../../setup/terminal/zsh/" class="md-nav__link">
         Zsh
       </a>
     </li>
@@ -489,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ide/" class="md-nav__link">
+      <a href="../../setup/ide/" class="md-nav__link">
         IDE
       </a>
     </li>
@@ -503,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../software/" class="md-nav__link">
+      <a href="../../setup/software/" class="md-nav__link">
         Other Software
       </a>
     </li>
@@ -523,12 +464,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -569,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/bookmarks/" class="md-nav__link">
+      <a href="../bookmarks/" class="md-nav__link">
         Bookmarks
       </a>
     </li>
@@ -615,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/git/git_contributing/" class="md-nav__link">
+      <a href="../git/git_contributing/" class="md-nav__link">
         Git Contribution Process
       </a>
     </li>
@@ -629,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/git/git_commands/" class="md-nav__link">
+      <a href="../git/git_commands/" class="md-nav__link">
         Git Commands
       </a>
     </li>
@@ -650,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/linux/" class="md-nav__link">
+      <a href="../linux/" class="md-nav__link">
         Linux Commands
       </a>
     </li>
@@ -664,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/mkdocs/" class="md-nav__link">
+      <a href="../mkdocs/" class="md-nav__link">
         Material for MkDocs
       </a>
     </li>
@@ -676,11 +619,100 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../reference/python/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Python
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conventions" class="md-nav__link">
+    Conventions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imports" class="md-nav__link">
+    Imports
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pip" class="md-nav__link">
+    Pip
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyenv" class="md-nav__link">
+    Pyenv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripting" class="md-nav__link">
+    Scripting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-environments" class="md-nav__link">
+    Virtual Environments
+  </a>
+  
+    <nav class="md-nav" aria-label="Virtual Environments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -692,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/ssh/" class="md-nav__link">
+      <a href="../ssh/" class="md-nav__link">
         SSH
       </a>
     </li>
@@ -706,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/shortcuts/" class="md-nav__link">
+      <a href="../shortcuts/" class="md-nav__link">
         Windows Shortcuts
       </a>
     </li>
@@ -720,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/wsl/" class="md-nav__link">
+      <a href="../wsl/" class="md-nav__link">
         WSL
       </a>
     </li>
@@ -761,23 +793,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    Setup
+  <a href="#conventions" class="md-nav__link">
+    Conventions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#relevant-files-in-my-setup-repository" class="md-nav__link">
-    Relevant Files in My Setup Repository
+  <a href="#imports" class="md-nav__link">
+    Imports
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#pip" class="md-nav__link">
+    Pip
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyenv" class="md-nav__link">
+    Pyenv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripting" class="md-nav__link">
+    Scripting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-environments" class="md-nav__link">
+    Virtual Environments
+  </a>
+  
+    <nav class="md-nav" aria-label="Virtual Environments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#resources" class="md-nav__link">
     Resources
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -794,73 +860,124 @@
               
                 
 
-<h1 id="powershell-setup">PowerShell Setup<a class="headerlink" href="#powershell-setup" title="Permanent link">&para;</a></h1>
-<p>PowerShell with file icons, autocomplete, and a custom theme. Followed the setup guide in the <a href="#resources">Resources</a> section</p>
-<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p>Download the PowerShell app from the Microsoft Store</p>
+<h1 id="python"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.14 7.5A2.86 2.86 0 0 1 22 10.36v3.78A2.86 2.86 0 0 1 19.14 17H12c0 .39.32.96.71.96H17v1.68a2.86 2.86 0 0 1-2.86 2.86H9.86A2.86 2.86 0 0 1 7 19.64v-3.75a2.85 2.85 0 0 1 2.86-2.85h5.25a2.85 2.85 0 0 0 2.85-2.86V7.5h1.18m-4.28 11.79c-.4 0-.72.3-.72.89 0 .59.32.71.72.71a.71.71 0 0 0 .71-.71c0-.59-.32-.89-.71-.89m-10-1.79A2.86 2.86 0 0 1 2 14.64v-3.78A2.86 2.86 0 0 1 4.86 8H12c0-.39-.32-.96-.71-.96H7V5.36A2.86 2.86 0 0 1 9.86 2.5h4.28A2.86 2.86 0 0 1 17 5.36v3.75a2.85 2.85 0 0 1-2.86 2.85H8.89a2.85 2.85 0 0 0-2.85 2.86v2.68H4.86M9.14 5.71c.4 0 .72-.3.72-.89 0-.59-.32-.71-.72-.71-.39 0-.71.12-.71.71s.32.89.71.89z"/></svg></span> Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h1>
+<h2 id="conventions">Conventions<a class="headerlink" href="#conventions" title="Permanent link">&para;</a></h2>
 <ul>
-<li>This app is the latest version of PowerShell and includes the PSReadLine Module for autocomplete</li>
+<li><a href="https://realpython.com/python-pep8/">PEP 8 styling guideline walkthrough</a><ul>
+<li><a href="https://flake8.pycqa.org/en/latest/user/invocation.html">Using the flake8 linter</a> - checks for errors (including failing to comply with PEP 8 guidelines</li>
 </ul>
 </li>
-<li>
-<p>Install the requirements</p>
-<ol>
-<li>
-<p>Install oh-my-posh</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span><span class="p">=</span><span class="n">JanDeDobbeleer</span><span class="p">.</span><span class="n">OhMyPosh</span>
-</code></pre></div>
-</li>
-<li>
-<p>Install Terminal Icons</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">Terminal-Icons</span> <span class="n">-Repository</span> <span class="n">PSGallery</span>
-</code></pre></div>
-</li>
-</ol>
-</li>
-<li>
-<p>In the PowerShell profile, update absolute path to Oh My Posh theme if necessary, and comment out the <code>Clear-Host</code> command at the end for debugging purposes</p>
-<div class="highlight"><span class="filename">windows\Microsoft.PowerShell_profile.ps1</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">oh-my-posh</span> <span class="p">-</span><span class="n">-init</span> <span class="p">-</span><span class="n">-shell</span> <span class="n">pwsh</span> <span class="p">-</span><span class="n">-config</span> <span class="s2">&quot;$env:USERPROFILE\Programming\git_projects\.setup\poshthemes\atomic_tweak_windows.json&quot;</span> <span class="p">|</span> <span class="nb">Invoke-Expression</span>
-</code></pre></div>
-</li>
-<li>
-<p>Symbolic link the PowerShell profile to the <code>Powershell</code> directory in an Administrator PowerShell prompt</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nb">New-Item</span> <span class="n">-ItemType</span> <span class="n">SymbolicLink</span> <span class="n">-Path</span> <span class="s2">&quot;$env:USERPROFILE\Documents\PowerShell\Microsoft.PowerShell_profile.ps1&quot;</span> <span class="n">-Value</span> <span class="s2">&quot;$env:USERPROFILE\Programming\git_projects\.setup\windows\Microsoft.PowerShell_profile.ps1&quot;</span>
-</code></pre></div>
-<details class="bug">
-<summary>PSReadLine feature is unsupported</summary>
-<p>Install the latest release of PSReadLine (check <a href="https://github.com/PowerShell/PSReadLine/releases">here</a>). In
-December 2021, the latest release was v2.2.0-beta4:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">PSReadLine</span> <span class="n">-RequiredVersion</span> <span class="n">2</span><span class="p">.</span><span class="n">2</span><span class="p">.</span><span class="n">0-beta4</span> <span class="n">-AllowPrerelease</span>
-</code></pre></div>
-</details>
-</li>
-<li>
-<p>To get rid of the startup messages before prompt, you can uncomment the <code>Clear-Host</code> command at the end of the Powershell profile</p>
-</li>
-<li>
-<p><strong>Using Git Bash</strong>, navigate to the setup repository and run the git configuration file</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>./windows/git_config_windows.sh
-</code></pre></div>
-</li>
-</ol>
-<div class="admonition question">
-<p class="admonition-title">Why symbolic link?</p>
-<p>See my reasoning in the <a href="../../ide/#why-symbolic-link">IDE</a> page.</p>
+<li><a href="https://dbader.org/blog/meaning-of-underscores-in-python">Meaning and naming conventions around single and double underscores</a></li>
+</ul>
+<h2 id="imports">Imports<a class="headerlink" href="#imports" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://realpython.com/absolute-vs-relative-python-imports/">Recap on imports, absolute vs relative imports</a></li>
+<li><a href="https://stackoverflow.com/a/12173406">Python 2 vs 3 imports</a></li>
+</ul>
+<h2 id="pip">Pip<a class="headerlink" href="#pip" title="Permanent link">&para;</a></h2>
+<p>Package installer.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pip install &lt;package&gt;</code></td>
+<td>Install the latest version of a package</td>
+</tr>
+<tr>
+<td><code>pip install &lt;package&gt;==&lt;version&gt;</code></td>
+<td>Install the specified version of a package</td>
+</tr>
+<tr>
+<td><code>pip install -r requirements.txt</code></td>
+<td>Install the packages from a <code>requirements.txt</code> file</td>
+</tr>
+<tr>
+<td><code>pip list --outdated</code></td>
+<td>View outdated packages</td>
+</tr>
+<tr>
+<td><code>pip install --upgrade &lt;package&gt;</code></td>
+<td>Upgrade the desired packages</td>
+</tr>
+<tr>
+<td><code>pip uninstall &lt;package&gt;</code></td>
+<td>Uninstall a package</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p>If pip has not been added to the path, replace <code>pip</code> with <code>python -m pip</code> in the commands above.</p>
 </div>
-<h2 id="relevant-files-in-my-setup-repository">Relevant Files in My <a href="https://github.com/patrick-5546/setup">Setup Repository</a><a class="headerlink" href="#relevant-files-in-my-setup-repository" title="Permanent link">&para;</a></h2>
+<h2 id="pyenv">Pyenv<a class="headerlink" href="#pyenv" title="Permanent link">&para;</a></h2>
+<p>Easily switch between multiple versions of Python.</p>
 <ul>
-<li><code>poshthemes/atomic_tweak_windows.json</code></li>
-<li><code>windows/git_config_windows.sh</code></li>
-<li><code>windows/Microsoft.PowerShell_profile.ps1</code></li>
+<li><a href="https://github.com/pyenv/pyenv#installation">Installation</a></li>
+<li><a href="https://github.com/pyenv/pyenv/blob/master/COMMANDS.md">Commands reference</a></li>
 </ul>
-<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
+<h2 id="scripting">Scripting<a class="headerlink" href="#scripting" title="Permanent link">&para;</a></h2>
 <ul>
-<li>The PowerShell profile is from <a href="https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and-the-windows-terminal">this setup guide</a><ul>
-<li>Refer to the <a href="https://www.youtube.com/watch?v=VT2L1SXFq9U&amp;list=LL&amp;index=21">accompanying video</a> that walks through the article if any issues arise</li>
+<li>Library for powerful, user-friendly command-line parsing: <a href="https://docs.python.org/3/howto/argparse.html">argparse tutorial</a></li>
 </ul>
+<h2 id="virtual-environments">Virtual Environments<a class="headerlink" href="#virtual-environments" title="Permanent link">&para;</a></h2>
+<p>Bundle all the packages and their versions to run an application so that they do not conflict with the globally installed python packages.</p>
+<ol>
+<li>
+<p>Create virtual environment directory (suggested name: <code>.venv</code>).</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48L3 12m17-9v8.75l-10 .15V5.21L20 3M3 13l6 .09v6.81l-6-1.15V13m17 .25V22l-10-1.91V13.1l10 .15z"/></svg></span> Windows</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.62 8.35c-.42.28-1.75 1.04-1.95 1.19-.39.31-.75.29-1.14-.01-.2-.16-1.53-.92-1.95-1.19-.48-.31-.45-.7.08-.92 1.64-.69 3.28-.64 4.91.03.49.21.51.6.05.9m7.22 7.28c-.93-2.09-2.2-3.99-3.84-5.66a4.31 4.31 0 0 1-1.06-1.88c-.1-.33-.17-.67-.24-1.01-.2-.88-.29-1.78-.7-2.61-.73-1.58-2-2.4-3.84-2.47-1.81.05-3.16.81-3.95 2.4-.21.43-.36.88-.46 1.34-.17.76-.32 1.55-.5 2.32-.15.65-.45 1.21-.96 1.71-1.61 1.57-2.9 3.37-3.88 5.35-.14.29-.28.58-.37.88-.19.66.29 1.12.99.96.44-.09.88-.18 1.3-.31.41-.15.57-.05.67.35.65 2.15 2.07 3.66 4.24 4.5 4.12 1.56 8.93-.66 9.97-4.58.07-.27.17-.37.47-.27.46.14.93.24 1.4.35.49.09.85-.16.92-.64.03-.26-.06-.49-.16-.73"/></svg></span> Linux</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>py -m venv .venv
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>python3 -m venv .venv
+</code></pre></div>
+</div>
+</div>
+</div>
 </li>
+<li>
+<p>Activate virtual environment. Use the active shell's corresponding <code>activate</code> script.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.83 4c.49 0 .8.4.67.89l-3.16 14.22c-.11.49-.59.89-1.08.89H2.17c-.49 0-.8-.4-.67-.89L4.66 4.89C4.77 4.4 5.25 4 5.74 4h16.09m-6 12h-4c-.46 0-.83.38-.83.84 0 .47.37.85.83.85h4c.47 0 .85-.38.85-.85 0-.46-.38-.84-.85-.84m-10.05.28a.87.87 0 0 0-.21 1.22c.28.42.84.5 1.24.23 7.35-5.17 7.4-5.23 7.45-5.26.18-.16.27-.38.28-.6.01-.2-.04-.37-.16-.56L9.46 6.03A.867.867 0 0 0 8.21 6c-.36.32-.38.88-.05 1.24l4.15 4.44-6.53 4.6z"/></svg></span> Windows Powershell</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.62 8.35c-.42.28-1.75 1.04-1.95 1.19-.39.31-.75.29-1.14-.01-.2-.16-1.53-.92-1.95-1.19-.48-.31-.45-.7.08-.92 1.64-.69 3.28-.64 4.91.03.49.21.51.6.05.9m7.22 7.28c-.93-2.09-2.2-3.99-3.84-5.66a4.31 4.31 0 0 1-1.06-1.88c-.1-.33-.17-.67-.24-1.01-.2-.88-.29-1.78-.7-2.61-.73-1.58-2-2.4-3.84-2.47-1.81.05-3.16.81-3.95 2.4-.21.43-.36.88-.46 1.34-.17.76-.32 1.55-.5 2.32-.15.65-.45 1.21-.96 1.71-1.61 1.57-2.9 3.37-3.88 5.35-.14.29-.28.58-.37.88-.19.66.29 1.12.99.96.44-.09.88-.18 1.3-.31.41-.15.57-.05.67.35.65 2.15 2.07 3.66 4.24 4.5 4.12 1.56 8.93-.66 9.97-4.58.07-.27.17-.37.47-.27.46.14.93.24 1.4.35.49.09.85-.16.92-.64.03-.26-.06-.49-.16-.73"/></svg></span> Linux</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>.venv\Scripts\Activate.ps1
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>source .venv/bin/activate
+</code></pre></div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>Install the required packages: <a href="#pip">pip section</a></p>
+</li>
+<li>
+<p>Create/update the <code>requirements.txt</code> file (to record the versions of packages used in the project)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>pip freeze &gt; requirements.txt
+</code></pre></div>
+</li>
+<li>
+<p>Exit the virtual environment</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>deactivate
+</code></pre></div>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">VS Code integration</p>
+<p>After selecting <code>.venv/bin/python</code> to be the Python interpreter, terminals and debuggers will run
+in the virtual environment by default.</p>
+</div>
+<h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://docs.python.org/3/tutorial/venv.html">Virtual Environments and Packages</a></li>
 </ul>
 
   <hr>
@@ -868,7 +985,7 @@ December 2021, the latest release was v2.2.0-beta4:</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 8, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 9, 2022</span>
       
     
   </small>
@@ -891,7 +1008,7 @@ December 2021, the latest release was v2.2.0-beta4:</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Terminal Setup" rel="prev">
+        <a href="../mkdocs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Material for MkDocs" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -900,20 +1017,20 @@ December 2021, the latest release was v2.2.0-beta4:</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Terminal Setup
+              Material for MkDocs
             </div>
           </div>
         </a>
       
       
         
-        <a href="../zsh/" class="md-footer__link md-footer__link--next" aria-label="Next: Zsh" rel="next">
+        <a href="../ssh/" class="md-footer__link md-footer__link--next" aria-label="Next: SSH" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Zsh
+              SSH
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -971,12 +1088,12 @@ December 2021, the latest release was v2.2.0-beta4:</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.expand", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.c7dec7e7.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.expand", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.c7dec7e7.min.js"}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.da79ceb7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.da79ceb7.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

@@ -2,37 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://patrick-5546.github.io/notes/</loc>
-         <lastmod>2022-01-01</lastmod>
+         <lastmod>2022-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://patrick-5546.github.io/notes/reference/bookmarks/</loc>
+         <lastmod>2022-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://patrick-5546.github.io/notes/reference/linux/</loc>
+         <lastmod>2022-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://patrick-5546.github.io/notes/reference/mkdocs/</loc>
+         <lastmod>2022-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://patrick-5546.github.io/notes/reference/python/</loc>
+         <lastmod>2022-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://patrick-5546.github.io/notes/reference/shortcuts/</loc>
+         <lastmod>2022-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://patrick-5546.github.io/notes/reference/ssh/</loc>
+         <lastmod>2022-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://patrick-5546.github.io/notes/reference/wsl/</loc>
+         <lastmod>2022-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://patrick-5546.github.io/notes/reference/git/git_commands/</loc>
+         <lastmod>2022-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://patrick-5546.github.io/notes/reference/git/git_contributing/</loc>
+         <lastmod>2022-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://patrick-5546.github.io/notes/setup/</loc>
-         <lastmod>2022-01-01</lastmod>
+         <lastmod>2022-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://patrick-5546.github.io/notes/setup/ide/</loc>
-         <lastmod>2022-01-01</lastmod>
+         <lastmod>2022-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://patrick-5546.github.io/notes/setup/software/</loc>
-         <lastmod>2022-01-01</lastmod>
+         <lastmod>2022-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://patrick-5546.github.io/notes/setup/terminal/</loc>
-         <lastmod>2022-01-01</lastmod>
+         <lastmod>2022-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://patrick-5546.github.io/notes/setup/terminal/powershell/</loc>
-         <lastmod>2022-01-01</lastmod>
+         <lastmod>2022-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://patrick-5546.github.io/notes/setup/terminal/zsh/</loc>
-         <lastmod>2022-01-01</lastmod>
+         <lastmod>2022-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

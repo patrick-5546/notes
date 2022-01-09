@@ -10,21 +10,21 @@
         <meta name="author" content="Patrick Creighton">
       
       
-        <link rel="canonical" href="https://patrick-5546.github.io/notes/setup/terminal/powershell/">
+        <link rel="canonical" href="https://patrick-5546.github.io/notes/reference/wsl/">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.1">
     
     
       
-        <title>PowerShell - Patrick's Notes</title>
+        <title>WSL - Patrick's Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.23b6d78a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.23b6d78a.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -38,7 +38,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#powershell-setup" class="md-skip">
+        <a href="#wsl" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +80,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Patrick&#39;s Notes" class="md-header__button md-logo" aria-label="Patrick's Notes" data-md-component="logo">
+    <a href="../.." title="Patrick&#39;s Notes" class="md-header__button md-logo" aria-label="Patrick's Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PowerShell
+              WSL
             
           </span>
         </div>
@@ -196,10 +196,26 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
   </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../setup/" class="md-tabs__link">
+        Setup
+      </a>
+    </li>
+  
 
       
         
@@ -213,23 +229,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link md-tabs__link--active">
-        Setup
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../reference/bookmarks/" class="md-tabs__link">
+      <a href="../bookmarks/" class="md-tabs__link md-tabs__link--active">
         Reference
       </a>
     </li>
@@ -257,7 +257,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Patrick&#39;s Notes" class="md-nav__button md-logo" aria-label="Patrick's Notes" data-md-component="logo">
+    <a href="../.." title="Patrick&#39;s Notes" class="md-nav__button md-logo" aria-label="Patrick's Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -288,7 +288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -301,14 +301,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -328,7 +326,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../">Setup</a>
+          <a href="../../setup/">Setup</a>
           
             <label for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
@@ -350,14 +348,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" data-md-state="indeterminate" type="checkbox" id="__nav_2_2" checked>
       
       
       
@@ -375,7 +371,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">Terminal</a>
+          <a href="../../setup/terminal/">Terminal</a>
           
             <label for="__nav_2_2">
               <span class="md-nav__icon md-icon"></span>
@@ -397,66 +393,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          PowerShell
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../setup/terminal/powershell/" class="md-nav__link">
         PowerShell
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    Setup
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#relevant-files-in-my-setup-repository" class="md-nav__link">
-    Relevant Files in My Setup Repository
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -468,7 +409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../zsh/" class="md-nav__link">
+      <a href="../../setup/terminal/zsh/" class="md-nav__link">
         Zsh
       </a>
     </li>
@@ -489,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ide/" class="md-nav__link">
+      <a href="../../setup/ide/" class="md-nav__link">
         IDE
       </a>
     </li>
@@ -503,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../software/" class="md-nav__link">
+      <a href="../../setup/software/" class="md-nav__link">
         Other Software
       </a>
     </li>
@@ -523,12 +464,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -569,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/bookmarks/" class="md-nav__link">
+      <a href="../bookmarks/" class="md-nav__link">
         Bookmarks
       </a>
     </li>
@@ -615,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/git/git_contributing/" class="md-nav__link">
+      <a href="../git/git_contributing/" class="md-nav__link">
         Git Contribution Process
       </a>
     </li>
@@ -629,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/git/git_commands/" class="md-nav__link">
+      <a href="../git/git_commands/" class="md-nav__link">
         Git Commands
       </a>
     </li>
@@ -650,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/linux/" class="md-nav__link">
+      <a href="../linux/" class="md-nav__link">
         Linux Commands
       </a>
     </li>
@@ -664,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/mkdocs/" class="md-nav__link">
+      <a href="../mkdocs/" class="md-nav__link">
         Material for MkDocs
       </a>
     </li>
@@ -678,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/python/" class="md-nav__link">
+      <a href="../python/" class="md-nav__link">
         Python
       </a>
     </li>
@@ -692,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/ssh/" class="md-nav__link">
+      <a href="../ssh/" class="md-nav__link">
         SSH
       </a>
     </li>
@@ -706,7 +649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/shortcuts/" class="md-nav__link">
+      <a href="../shortcuts/" class="md-nav__link">
         Windows Shortcuts
       </a>
     </li>
@@ -718,11 +661,73 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../reference/wsl/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          WSL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         WSL
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#backing-up-and-restoring-wsl-distributions" class="md-nav__link">
+    Backing up and Restoring WSL Distributions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-wsl-commands" class="md-nav__link">
+    More WSL Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands-inside-wsl-distributions" class="md-nav__link">
+    Commands Inside WSL Distributions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -761,15 +766,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    Setup
+  <a href="#backing-up-and-restoring-wsl-distributions" class="md-nav__link">
+    Backing up and Restoring WSL Distributions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#relevant-files-in-my-setup-repository" class="md-nav__link">
-    Relevant Files in My Setup Repository
+  <a href="#more-wsl-commands" class="md-nav__link">
+    More WSL Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands-inside-wsl-distributions" class="md-nav__link">
+    Commands Inside WSL Distributions
   </a>
   
 </li>
@@ -794,73 +806,79 @@
               
                 
 
-<h1 id="powershell-setup">PowerShell Setup<a class="headerlink" href="#powershell-setup" title="Permanent link">&para;</a></h1>
-<p>PowerShell with file icons, autocomplete, and a custom theme. Followed the setup guide in the <a href="#resources">Resources</a> section</p>
-<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
+<h1 id="wsl"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48L3 12m17-9v8.75l-10 .15V5.21L20 3M3 13l6 .09v6.81l-6-1.15V13m17 .25V22l-10-1.91V13.1l10 .15z"/></svg></span> <abbr title="Windows Subsystem for Linux">WSL</abbr><a class="headerlink" href="#wsl" title="Permanent link">&para;</a></h1>
+<h2 id="backing-up-and-restoring-wsl-distributions">Backing up and Restoring <abbr title="Windows Subsystem for Linux">WSL</abbr> Distributions<a class="headerlink" href="#backing-up-and-restoring-wsl-distributions" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
-<p>Download the PowerShell app from the Microsoft Store</p>
+<p>Export a <abbr title="Windows Subsystem for Linux">WSL</abbr> distribution for backup/migration from PowerShell</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">wsl</span> <span class="p">-</span><span class="n">-export</span> <span class="p">&lt;</span><span class="n">distribution_name</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="n">filename</span><span class="p">&gt;</span>
+</code></pre></div>
+</li>
+<li>
+<p>To import a <abbr title="Windows Subsystem for Linux">WSL</abbr> distribution from PowerShell</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">wsl</span> <span class="p">-</span><span class="n">-import</span> <span class="p">&lt;</span><span class="n">distribution_name</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="n">install_location</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="n">filename</span><span class="p">&gt;</span>
+</code></pre></div>
+</li>
+<li>
+<p>This new <abbr title="Windows Subsystem for Linux">WSL</abbr> distribution will start as the root user. To start as another user, add the following to <code>/etc/wsl.conf</code> from inside the distribution</p>
+<table class="highlighttable"><tr><th colspan="2" class="filename"><div class="highlight"><span class="filename">wsl.conf</span></div></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p p-Indicator">[</span><span class="nv">user</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="l l-Scalar l-Scalar-Plain">default=&lt;username&gt;</span>
+</code></pre></div>
+</td></tr></table>
+</li>
+<li>
+<p><code class="highlight"><span class="n">wsl</span> <span class="p">-</span><span class="n">-shutdown</span></code> from PowerShell and restart to see the change</p>
+</li>
+</ol>
+<h2 id="more-wsl-commands">More <abbr title="Windows Subsystem for Linux">WSL</abbr> Commands<a class="headerlink" href="#more-wsl-commands" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wsl -l -v</code></td>
+<td>List <abbr title="Windows Subsystem for Linux">WSL</abbr> distributions along with their state and version</td>
+</tr>
+<tr>
+<td><code>wsl -t &lt;distgribution_name&gt;</code></td>
+<td>Terminate/shut down a <abbr title="Windows Subsystem for Linux">WSL</abbr> distribution</td>
+</tr>
+<tr>
+<td><code>wsl --unregister &lt;distribution_name&gt;</code></td>
+<td>Unregisters <abbr title="Windows Subsystem for Linux">WSL</abbr> distribution and deletes root filesystem</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li>This app is the latest version of PowerShell and includes the PSReadLine Module for autocomplete</li>
+<li><code>wsl --help</code> to see all <abbr title="Windows Subsystem for Linux">WSL</abbr> commands and their descriptions</li>
 </ul>
-</li>
-<li>
-<p>Install the requirements</p>
-<ol>
-<li>
-<p>Install oh-my-posh</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span><span class="p">=</span><span class="n">JanDeDobbeleer</span><span class="p">.</span><span class="n">OhMyPosh</span>
-</code></pre></div>
-</li>
-<li>
-<p>Install Terminal Icons</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">Terminal-Icons</span> <span class="n">-Repository</span> <span class="n">PSGallery</span>
-</code></pre></div>
-</li>
-</ol>
-</li>
-<li>
-<p>In the PowerShell profile, update absolute path to Oh My Posh theme if necessary, and comment out the <code>Clear-Host</code> command at the end for debugging purposes</p>
-<div class="highlight"><span class="filename">windows\Microsoft.PowerShell_profile.ps1</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">oh-my-posh</span> <span class="p">-</span><span class="n">-init</span> <span class="p">-</span><span class="n">-shell</span> <span class="n">pwsh</span> <span class="p">-</span><span class="n">-config</span> <span class="s2">&quot;$env:USERPROFILE\Programming\git_projects\.setup\poshthemes\atomic_tweak_windows.json&quot;</span> <span class="p">|</span> <span class="nb">Invoke-Expression</span>
-</code></pre></div>
-</li>
-<li>
-<p>Symbolic link the PowerShell profile to the <code>Powershell</code> directory in an Administrator PowerShell prompt</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nb">New-Item</span> <span class="n">-ItemType</span> <span class="n">SymbolicLink</span> <span class="n">-Path</span> <span class="s2">&quot;$env:USERPROFILE\Documents\PowerShell\Microsoft.PowerShell_profile.ps1&quot;</span> <span class="n">-Value</span> <span class="s2">&quot;$env:USERPROFILE\Programming\git_projects\.setup\windows\Microsoft.PowerShell_profile.ps1&quot;</span>
-</code></pre></div>
-<details class="bug">
-<summary>PSReadLine feature is unsupported</summary>
-<p>Install the latest release of PSReadLine (check <a href="https://github.com/PowerShell/PSReadLine/releases">here</a>). In
-December 2021, the latest release was v2.2.0-beta4:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">PSReadLine</span> <span class="n">-RequiredVersion</span> <span class="n">2</span><span class="p">.</span><span class="n">2</span><span class="p">.</span><span class="n">0-beta4</span> <span class="n">-AllowPrerelease</span>
-</code></pre></div>
-</details>
-</li>
-<li>
-<p>To get rid of the startup messages before prompt, you can uncomment the <code>Clear-Host</code> command at the end of the Powershell profile</p>
-</li>
-<li>
-<p><strong>Using Git Bash</strong>, navigate to the setup repository and run the git configuration file</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>./windows/git_config_windows.sh
-</code></pre></div>
-</li>
-</ol>
-<div class="admonition question">
-<p class="admonition-title">Why symbolic link?</p>
-<p>See my reasoning in the <a href="../../ide/#why-symbolic-link">IDE</a> page.</p>
-</div>
-<h2 id="relevant-files-in-my-setup-repository">Relevant Files in My <a href="https://github.com/patrick-5546/setup">Setup Repository</a><a class="headerlink" href="#relevant-files-in-my-setup-repository" title="Permanent link">&para;</a></h2>
+<h2 id="commands-inside-wsl-distributions">Commands Inside <abbr title="Windows Subsystem for Linux">WSL</abbr> Distributions<a class="headerlink" href="#commands-inside-wsl-distributions" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>poshthemes/atomic_tweak_windows.json</code></li>
-<li><code>windows/git_config_windows.sh</code></li>
-<li><code>windows/Microsoft.PowerShell_profile.ps1</code></li>
+<li>
+<p>Sign in to Git using the Git Credential Manager in Windows</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>git config --global credential.helper <span class="s2">&quot;/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe&quot;</span>
+</code></pre></div>
+</li>
+<li>
+<p>Open a <abbr title="Windows Subsystem for Linux">WSL</abbr> file/directory using the Windows default program</p>
+<ul>
+<li>For example: File Explorer for directories, Excel for CSV files</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>wslview &lt;file_or_directory&gt;
+</code></pre></div>
+</li>
 </ul>
 <h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
 <ul>
-<li>The PowerShell profile is from <a href="https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and-the-windows-terminal">this setup guide</a><ul>
-<li>Refer to the <a href="https://www.youtube.com/watch?v=VT2L1SXFq9U&amp;list=LL&amp;index=21">accompanying video</a> that walks through the article if any issues arise</li>
-</ul>
-</li>
+<li><a href="https://docs.microsoft.com/en-us/windows/wsl/install">Install <abbr title="Windows Subsystem for Linux">WSL</abbr></a></li>
+<li><a href="https://winaero.com/export-import-wsl-linux-distro-windows-10/">Export and import <abbr title="Windows Subsystem for Linux">WSL</abbr> distributions</a></li>
+<li><a href="https://github.com/microsoft/WSL/issues/4276#issuecomment-553367389">Change default user in <abbr title="Windows Subsystem for Linux">WSL</abbr> 2</a></li>
+<li><a href="https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-git">Get started using Git on <abbr title="Windows Subsystem for Linux">WSL</abbr></a></li>
 </ul>
 
   <hr>
@@ -868,7 +886,7 @@ December 2021, the latest release was v2.2.0-beta4:</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 8, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 9, 2022</span>
       
     
   </small>
@@ -891,7 +909,7 @@ December 2021, the latest release was v2.2.0-beta4:</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Terminal Setup" rel="prev">
+        <a href="../shortcuts/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Windows Shortcuts" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -900,26 +918,11 @@ December 2021, the latest release was v2.2.0-beta4:</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Terminal Setup
+              Windows Shortcuts
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../zsh/" class="md-footer__link md-footer__link--next" aria-label="Next: Zsh" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Zsh
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
@@ -971,12 +974,12 @@ December 2021, the latest release was v2.2.0-beta4:</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.expand", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.c7dec7e7.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.expand", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.c7dec7e7.min.js"}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.da79ceb7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.da79ceb7.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
