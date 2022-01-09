@@ -41,8 +41,7 @@ nav:
 
 ## Reference
 
-<!-- TODO: link to reference/mkdocs.md raw on GitHub -->
-Demonstrations of the features I use. View [this page raw](./mkdocs.md) for the Markdown syntax used.
+Demonstrations of the features I use. View [this page raw](https://raw.githubusercontent.com/patrick-5546/notes/main/docs/reference/mkdocs.md) for the Markdown syntax used.
 View the documentation reference for what be in the configuration file to enable a feature.
 
 ### Collapsible blocks, code block formatting, embedding external files
