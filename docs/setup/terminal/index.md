@@ -24,6 +24,7 @@ for all my Windows Terminal shells.
 !!! tip "Customizing Oh My Posh themes to use in Windows Terminal"
     - I would recommend against right-aligning segments, as their formatting gets messed up when resizing panes.
     - To open tabs/panes in the current directory, add `#!json "osc99": true,` to your Oh My Posh theme.
+        - If not using Oh My Posh, refer to the [related Windows Terminal documentation page](https://docs.microsoft.com/en-us/windows/terminal/tutorials/new-tab-same-directory)
 
 ## Setup
 
