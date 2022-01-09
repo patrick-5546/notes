@@ -70,9 +70,10 @@ git remote prune origin
 - Discussions: gather feedback and ideas from non-code collaborators
     - [Best practices for community conversations](https://docs.github.com/en/discussions/guides/best-practices-for-community-conversations-on-github)
 - Actions: automate, customize, and execute software development workflows
-    - [Actions Documentation](https://docs.github.com/en/actions)
+    - [Actions documentation](https://docs.github.com/en/actions)
     - [GitHub Marketplace - Actions](https://github.com/marketplace?type=actions)
     - [Explanation of this project's workflows](../mkdocs.md#ci-cd-using-github-actions)
+    - [Encrypted secrets documentation](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
 - Wiki: host very basic documentation,
 [GitHub Flavored Markdown](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) only
     - Advanced GitHub Flavored Markdown syntax: [Render code snippet](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/creating-a-permanent-link-to-a-code-snippet#linking-to-code)

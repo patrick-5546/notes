@@ -105,6 +105,8 @@ However, it does not check whether a section exists in the file (`./index.md#ove
 
 The Materials for MkDocs documentation gives an example deploy workflow. I modified it slightly
 to properly support page revision times using [mkdocs-git-revision-date-localized-plugin](#plugins).
+I also used encrypted secrets to
+[use Google Analytics](https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/#google-analytics) without exposing the key.
 
 ??? quote "Deploy workflow for this project"
 

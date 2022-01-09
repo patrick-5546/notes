@@ -41,6 +41,9 @@ plugins:
 
 # Customization
 extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: material/github
       link: https://github.com/patrick-5546
