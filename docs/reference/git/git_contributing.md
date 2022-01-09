@@ -69,7 +69,8 @@ git remote prune origin
 - Milestones and projects: [Milestones vs. projects](https://stackoverflow.com/a/39701381)
 - Discussions: gather feedback and ideas from non-code collaborators
     - [Best practices for community conversations](https://docs.github.com/en/discussions/guides/best-practices-for-community-conversations-on-github)
-- Actions: [Actions Documentation](https://docs.github.com/en/actions)
+- Actions: automate, customize, and execute software development workflows
+    - [Actions Documentation](https://docs.github.com/en/actions)
     - [GitHub Marketplace - Actions](https://github.com/marketplace?type=actions)
     - [Explanation of this project's workflows](../mkdocs.md#ci-cd-using-github-actions)
 - Wiki: host very basic documentation,

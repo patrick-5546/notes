@@ -1,5 +1,11 @@
 # :material-language-python: Python
 
+## Conventions
+
+- [PEP 8 styling guideline walkthrough](https://realpython.com/python-pep8/)
+    - [Using the flake8 linter](https://flake8.pycqa.org/en/latest/user/invocation.html) - checks for errors (including failing to comply with PEP 8 guidelines
+- [Meaning and naming conventions around single and double underscores](https://dbader.org/blog/meaning-of-underscores-in-python)
+
 ## Imports
 
 - [Recap on imports, absolute vs relative imports](https://realpython.com/absolute-vs-relative-python-imports/)
