@@ -1,6 +1,12 @@
 # :material-linux: Linux Commands
 
 Linux commands that I regularly use.
+[Linuxize.com](https://linuxize.com/) has some amazing guides for common linux commands and tasks.
+If their site does not have cover the desired content, `man <command>` to view the full documentation of a command.
+
+## [Linuxize Basic Linux Commands](https://linuxize.com/post/basic-linux-commands/)
+
+- Covers man, pwd, cd, ls, cat, touch, mkdir, ln, rm, cp, mv, apt, dnf, chmod, chown, sudo, useradd, passwd, userdel, groupadd, groupdel, and usermod
 
 ## alias
 
@@ -34,6 +40,58 @@ Aliases are custom commands that map to a longer command.
     alias lt='ls -lahrt'
     alias llt='ls -lhrt'
     ```
+
+- [Linuxize alias guide](https://linuxize.com/post/how-to-create-bash-aliases/)
+
+## du
+
+Estimates disk usage of the given files or directories.
+
+| Command     | Description                          |
+| ----------- | ------------------------------------ |
+| `du -ha <file/directory>` | Get size of each file within the directory recursively |
+| `du -h --max-depth=1 <directory>` | Get size of directories up to the first level |
+| `du -hs` | Get only the size of the current working directory |
+
+- [Linuxize du guide](https://linuxize.com/post/du-command-in-linux/)
+
+## find
+
+Recursively searches for files and directories.
+
+| Command | Description |
+| ------- | ----------- |
+| `find -type f -iname <filename>` | Search for files by name, ignoring case |
+| `find -type f -name '*.<file_extension>'` | Search for files by extension |
+
+- [Linuxize find guide](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+
+## less
+
+Read contents of a file or command output quickly and without filling up terminal.
+
+| Command | Description |
+| ------- | ----------- |
+| `less <filename>` | Read the contents of a file |
+| `<command> | less` | Read the standard output (what would be printed to the terminal) of `<command>` |
+
+??? info "Commands inside less"
+
+    | Command | Description |
+    | ------- | ----------- |
+    | `h` | Display help |
+    | `q` | Exit |
+    | `g` | Go to first line of file |
+    | *#*`g` | Go to line *#* |
+    | `G` | Go to last line of file |
+    | `j`/`k` | Move forward and backward by line |
+    | `f`/`b` | Move forward and backward by window |
+    | `-N` | Toggle line numbers |
+    | `-S` | Toggle chopping long lines |
+    | `/<string>` | Search for `<string>` |
+    | `n`/`N` | Navigate between search matches |
+
+- [Linuxize less guide](https://linuxize.com/post/less-command-in-linux/)
 
 ## screen
 
@@ -70,9 +128,11 @@ I use screen to perform long-running tasks on a remote machine. It enables me to
     export SCREENDIR=$HOME/.screen
     ```
 
-## Resources
+- [Linuxize screen guide](https://linuxize.com/post/how-to-use-linux-screen/)
 
-- Walkthroughs of common Linux commands can be found by searching [linuxize.com](https://linuxize.com/).
-- `man <command>` to view the full documentation of a command.
+## Additional Resources
+
+- [Linuxize shebang guide](https://linuxize.com/post/bash-shebang/) - run script without having to specify the interpreter
+- [Linuxize add to the PATH environment variable](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/)
 
 --8<-- "includes/abbreviations.md"
