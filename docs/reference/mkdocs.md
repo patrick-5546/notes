@@ -124,9 +124,4 @@ to properly support page revision times using [mkdocs-git-revision-date-localize
     --8<-- ".github/workflows/deploy.yml"
     ```
 
-### Resources
-
-- [GitHub Marketplace - Actions](https://github.com/marketplace?type=actions)
-- [Workflow syntax documentation](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions)
-
 --8<-- "includes/abbreviations.md"
