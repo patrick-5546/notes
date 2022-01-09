@@ -1,0 +1,26 @@
+name: Check Links
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    # Every Saturday at 11:00am UTC
+    - cron: '0 11 * * 6'
+
+jobs:
+  # https://github.com/gaurav-nelson/github-action-markdown-link-check
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Check markdown pages for broken links
+      uses: gaurav-nelson/github-action-markdown-link-check@v1
+      with:
+        config-file: '.mlc_config.json'
+        folder-path: 'docs, includes'
