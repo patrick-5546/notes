@@ -85,9 +85,7 @@ Resources:
 - [Submodule chapter in the Git book](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 - [Create a submodule that tracks a specific branch](https://stackoverflow.com/questions/9189575/git-submodule-tracking-latest/9189815#9189815)
 
-## Third Party
-
-### Oh My Zsh Git plugin
+## Oh My Zsh Git plugin
 
 The [Zsh Git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git) provides many aliases.
 I have listed the ones I use the most below:
@@ -114,7 +112,3 @@ grst='git restore --staged'
 gst='git status'
 gsu='git submodule update'
 ```
-
-### GitHub Actions
-
-See the [Material MkDocs page](../mkdocs.md#ci-cd-using-github-actions) for an explanation of this project's workflows.

@@ -1,52 +1,22 @@
-# :material-web: Material for MkDocs
-
-This website was created using Material for MkDocs, a simple yet powerful framework for creating documentation.
-All it requires is a Markdown file for every page, and a configuration file that connects everything together.
-With Material for MkDocs providing [somewhat] customizable features, frontend, and deployment methods,
-I can focus my time on the content of the site.
+# :material-web: Mkdocs
 
 ## Useful Documentation Pages
 
 - [Search for icons](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search)
 - [Types of collapsible blocks](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types)
 - [Keyboard keys syntax](https://facelessuser.github.io/pymdown-extensions/extensions/keys/#extendingmodifying-key-map-index)
-- [Setup](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
+- [Setup (configuration file)](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
 - [Reference](https://squidfunk.github.io/mkdocs-material/reference/)
 
-## Setup
-
-### Page Tree Example
-
-Based on this site. Paths in the page tree are relative to `docs/`.
-
-``` yaml
-nav:
-  - Home: index.md                      # Homepage, first tab
-  - Setup:                              # Second tab
-    - setup/index.md                    # Second tab homepage
-    - Settings: setup/settings.md       # Second tab first page
-  - Reference:                          # Third tab
-    - Mkdocs: reference/docker.md.md    # Third tab first page (no third tab homepage)
-```
-
-### Plugins
-
-!!! tip ""
-    If you have no plugins entry in your config file yet, you'll likely also want to add the search plugin.
-    MkDocs enables it by default if there is no plugins entry set.
-
-- Automatic documentation generation using [mkdocstrings](https://mkdocstrings.github.io/)
-- Page revision time using [mkdocs-git-revision-date-localized-plugin](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin)
-
-## Reference
+## Reference Examples
 
 <!-- TODO: link to reference/mkdocs.md raw on GitHub -->
-Demonstrations of the features I use. View [this page raw](`reference/mkdocs.md`) for the Markdown syntax used.
-View the documentation reference for what be in the configuration file to enable a feature.
+Demonstrations of the features I regularly use. View this file (`reference/mkdocs.md`) raw for the syntax.
+View the documentation to see which extensions need to be included in the configuration file (`mkdocs.yml`)
 
 ### Collapsible blocks, code block formatting, embedding external files
 
-??? quote "Click to toggle open/close"
+??? quote "Result of collapsible blocks, code block formatting, and embedding external files"
 
     Syntax highlighting for inline code: Python's `#!python range()` function...
 
@@ -74,7 +44,9 @@ Result:
 
 WSL is a term in the glossary.
 
-### Table, keyboard keys
+### Table, keyboard shortcuts
+
+Result:
 
 | Shortcut     | Description                          |
 | ----------- | ------------------------------------ |
@@ -82,46 +54,56 @@ WSL is a term in the glossary.
 | ++windows+ctrl++ + ++arrow-left++/++arrow-right++ | Navigate between virtual desktops |
 | ++f11++ | Fullscreen |
 
-### Task list, inline math equations
+### Task list, inline math equations (MathJax)
 
 - [x] Result of task list
 - [ ] Prove $e=mc^2$
 
-## CI / CD Using GitHub Actions
+## Project Layout
 
-### Lint
+    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files.
+    includes/
+        abbreviations.md  # The glossary, defining terms used across the docs.
 
-I use markdownlint to check for programmatic and stylistic errors in the application's Markdown files.
+### Page tree
 
-I configured the errors using a `.markdownlint.json` file in the project's root directory to support
-the syntax of Material for MkDocs features.
+``` yaml
+theme:
+  name: material
+  features:
+    - navigation.tabs
 
-??? quote "markdownlint configuration for this project"
+nav:
+  - Home: index.md                      # Homepage, first tab
+  - Setup:                              # Second tab
+    - setup/index.md                    # Second tab homepage
+    - Settings: setup/settings.md       # Second tab first page
+  - Reference:                          # Third tab
+    - Mkdocs: reference/docker.md.md    # Third tab first page (no third tab homepage)
+```
 
-    ``` json title=".markdownlint.json" linenums="1"
+## Extras
+
+### Markdown Lint
+
+1. Use VS Code's [markdownlint extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+    1. If not using VS Code, can also [install the tool](https://github.com/markdownlint/markdownlint)
+2. Modify/exclude rules in `.markdownlint.json` in the root directory
+    1. [markdownlint rules](https://github.com/DavidAnson/markdownlint/blob/v0.24.0/doc/Rules.md)
+
+??? quote ".markdownlint.json file for this project"
+
+    ``` json linenums="1"
     --8<-- ".markdownlint.json"
     ```
 
-??? quote "Lint workflow for this project"
+### Github actions
 
-    ``` yaml title=".github/workflows/lint.yml" linenums="1"
-    --8<-- ".github/workflows/lint.yml"
-    ```
+#### Lint
 
-Resources:
-
-- [markdownlint rules reference](https://github.com/DavidAnson/markdownlint/blob/v0.24.0/doc/Rules.md)
-- [markdownlint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
-
-### Deploy
-
-The Materials for MkDocs documentation gives an example deploy workflow. I modified it slightly
-to properly support page revision times using [mkdocs-git-revision-date-localized-plugin](./mkdocs.md#plugins).
-
-??? quote "Deploy workflow for this project"
-
-    ``` yaml title=".github/workflows/deploy.yml" linenums="1"
-    --8<-- ".github/workflows/deploy.yml"
-    ```
+#### Deploy to Github Pages
 
 --8<-- "includes/abbreviations.md"
