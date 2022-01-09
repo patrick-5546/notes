@@ -108,7 +108,7 @@ the syntax of Material for MkDocs features.
     --8<-- ".github/workflows/lint.yml"
     ```
 
-markdownlint resources:
+Resources:
 
 - [markdownlint rules reference](https://github.com/DavidAnson/markdownlint/blob/v0.24.0/doc/Rules.md)
 - [markdownlint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
@@ -123,5 +123,10 @@ to properly support page revision times using [mkdocs-git-revision-date-localize
     ``` yaml title=".github/workflows/deploy.yml" linenums="1"
     --8<-- ".github/workflows/deploy.yml"
     ```
+
+### Resources
+
+- [GitHub Marketplace - Actions](https://github.com/marketplace?type=actions)
+- [Workflow syntax documentation](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions)
 
 --8<-- "includes/abbreviations.md"

@@ -95,8 +95,8 @@ nav:
   - Reference:
     - Docker: reference/docker.md
     - Git:
-      - Contribution Process: reference/git/contributing.md
-      - Commands: reference/git/git_features.md
+      - Contributing: reference/git/contributing.md
+      - Features: reference/git/git_features.md
     - Windows Keyboard Shortcuts: reference/shortcuts.md
     - Linux Commands: reference/linux.md # pipe, chmod, du, export, ls, less (reference aliases)
     - Material for MkDocs: reference/mkdocs.md

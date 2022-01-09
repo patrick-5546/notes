@@ -1,29 +1,30 @@
 # :material-rocket-launch: Contributing to a Git Repository
 
-For a walkthrough of the contribution process, read [First Contributions](https://github.com/firstcontributions/first-contributions/blob/master/README.md)
+## Read [First Contributions](https://github.com/firstcontributions/first-contributions/blob/master/README.md)
 
-!!! note "Comments on the First Contributions walkthrough"
-    - If you have access to the repository, there is no need to fork it; clone and work on the repository itself
+- Note: if you have access to the repository, there is no need to fork it; clone and work on the repository itself
 
-## Goals
+## Additonal Notes
+
+### Goals
 
 - Main branch only contains working code
 - Collaborate with others effectively (i.e., code reviews)
 - Clear, progressive development process
 
-## Issues
+### Issues
 
 - Bug: Describe issue, steps to reproduce, expected behavior, screenshots, additional context
 - Feature: Give context, describe solution, describe alternatives, additional context
 - Link to relevant code, projects, labels, milestones, etc.
 
-## Commits
+### Commits
 
 - Make a commit for each unit change, giving it a descriptive name
     - For example: "added `<function_name>` function", "updated tests to match"
 - At the end of a session `git push`, to update the remote repository with your changes
 
-## Pull requests
+### Pull requests
 
 Compared to committing directly to the main branch, pull requests can be used to ensure that the code in the main branch is clear and correct through:
 
@@ -41,7 +42,7 @@ Creating a pull request:
 or "Rebase and Merge" for hotfixes and one off commits
     - Learn more about GitHub merge types and best practices [here](https://rietta.com/blog/github-merge-types/)
 
-## Updating your local repository
+### Updating your local repository
 
 ``` title="Update the current local branch and the remote tracking branches for all other branches"
 git pull --rebase
@@ -59,19 +60,6 @@ git remote prune origin
 ```
 
 - Make `git pull` or `git fetch` prune by default with `git config --global fetch.prune true`
-    - Local branches tracking a remote that has been prunes are identified as gone in the output of `git branch -vv`
-        - Delete these branches with `git branch -D <branch_name>`
-    - Reference: [Cleaning up old remote git branches](https://stackoverflow.com/questions/3184555/cleaning-up-old-remote-git-branches)
-
-## More contribution best practices for GitHub
-
-- Labels: [GitHub labels best practices](https://medium.com/@dave_lunny/sane-github-labels-c5d2e6004b63)
-- Milestones and projects: [Milestones vs. projects](https://stackoverflow.com/a/39701381)
-- Discussions: gather feedback and ideas from non-code collaborators
-    - [Best practices for community conversations](https://docs.github.com/en/discussions/guides/best-practices-for-community-conversations-on-github)
-- Actions: [Actions Documentation](https://docs.github.com/en/actions)
-    - [GitHub Marketplace - Actions](https://github.com/marketplace?type=actions)
-    - [Explanation of this project's workflows](../mkdocs.md#ci-cd-using-github-actions)
-- Wiki: host very basic documentation,
-[GitHub Flavored Markdown](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) only
-    - Advanced GitHub Flavored Markdown syntax: [Render code snippet](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/creating-a-permanent-link-to-a-code-snippet#linking-to-code)
+- Local branches tracking a remote that is gone are identified as gone when using `git branch -vv`
+    - Delete a local branch with `git branch -D <branch_name>`
+- Learn more: [Cleaning up old remote git branches](https://stackoverflow.com/questions/3184555/cleaning-up-old-remote-git-branches)
