@@ -1,58 +1,36 @@
 # :material-microsoft-windows: WSL
 
-## Backing up and Restoring WSL Distributions
+Importing and exporting WSL distributions
 
-1. Export a WSL distribution for backup/migration from PowerShell
+```
+wsl --export Ubuntu ubuntu.tar
+wsl --import Ubuntu2 .\Ubuntu2 ubuntu.tar
+```
 
-    ``` powershell
-    wsl --export <distribution_name> <filename>
-    ```
+Add the following to `/etc/wsl.conf`
 
-2. To import a WSL distribution from PowerShell
+``` yaml
+[user]
+default=<username>
+```
 
-    ``` powershell
-    wsl --import <distribution_name> <install_location> <filename>
-    ```
+then `wsl -t Ubuntu`
 
-3. This new WSL distribution will start as the root user. To start as another user, add the following to `/etc/wsl.conf` from inside the distribution
+Remove files for a distribution
 
-    ``` yaml linenums="1" title="wsl.conf"
-    [user]
-    default=<username>
-    ```
+```
+wsl --unregister Ubuntu2
+```
 
-4. `#!powershell wsl --shutdown` from PowerShell and restart to see the change
+Signing in to Git using the windows credential manager
 
-## More WSL Commands
+```
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
+```
 
-| Command | Description |
-| ------- | ----------- |
-| `wsl -l -v` | List WSL distributions along with their state and version |
-| `wsl -t <distgribution_name>` | Terminate/shut down a WSL distribution |
-| `wsl --unregister <distribution_name>` | Unregisters WSL distribution and deletes root filesystem |
-
-- `wsl --help` to see all WSL commands and their descriptions
-
-## Commands For Inside WSL Distributions
-
-- Sign in to Git using the Git Credential Manager in Windows
-
-    ``` sh
-    git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
-    ```
-
-- Open a WSL file/directory using the Windows default program
-    - For example: File Explorer for directories, Excel for CSV files
-
-    ``` sh
-    wslview <file_or_directory>
-    ```
-
-## Resources
-
-- [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install)
-- [Export and import WSL distributions](https://winaero.com/export-import-wsl-linux-distro-windows-10/)
-- [Change default user in WSL 2](https://github.com/microsoft/WSL/issues/4276#issuecomment-553367389)
-- [Get started using Git on WSL](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-git)
+```
+wsl -l -v
+wsl -t Ubuntu
+```
 
 --8<-- "includes/abbreviations.md"

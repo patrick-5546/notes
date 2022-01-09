@@ -88,3 +88,4 @@ Zsh is a shell for Linux (and thus WSL). My setup repository contains scripts th
 ## Resources
 
 - [Oh My Zsh Plugins](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins)
+- [Get started using Git on WSL](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-git)
