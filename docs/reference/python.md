@@ -36,7 +36,12 @@ Easily switch between multiple versions of Python.
 
 ## Scripting
 
-- Library for powerful, user-friendly command-line parsing: [argparse tutorial](https://docs.python.org/3/howto/argparse.html)
+- Built-in library for command-line parsing: [argparse tutorial](https://docs.python.org/3/howto/argparse.html)
+- Built-in library for logging: [logging tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
+- Testing framework: [PyTest tutorial](https://www.guru99.com/pytest-tutorial.html)
+- [Built-in exceptions](https://docs.python.org/3/library/exceptions.html)
+- [Regular expressions tutorial](https://docs.python.org/3/howto/regex.html)
+- [Top data science libraries](https://www.simplilearn.com/top-python-libraries-for-data-science-article)
 
 ## Virtual Environments
 
