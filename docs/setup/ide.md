@@ -71,12 +71,12 @@ and [Settings Cycler](https://marketplace.visualstudio.com/items?itemName=hoover
         | Git History | View git log, file history, compare branches or commits |
         | GitLens | See who commited each line of code and when they did it |
         | Live Share Extension Pack | Real-time collaborative development (like Google Docs for programming) |
-        | Markdown Preview Enhanced | Better markdown preview |
         | Peacock | Change workspace border color to be able to quickly identify workspaces |
         | Remote Development | Support for development using WSL, SSH, and Docker |
         | toggle semicolon | ++ctrl+semicolon++ to add or remove the semicolon at the end of a line |
         | vscode-icons | Clean file icons for the file explorer |
         | vscode-pdf | Display pdf file in VS Code |
+        | `<language/framework>` Extension Pack | Popular extensions for the other languages and frameworks you use |
 
 ### Why symbolic link?
 
