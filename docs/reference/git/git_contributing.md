@@ -63,7 +63,7 @@ git remote prune origin
         - Delete these branches with `git branch -D <branch1> <branch2> ...`
     - Reference: [Cleaning up old remote git branches](https://stackoverflow.com/questions/3184555/cleaning-up-old-remote-git-branches)
 
-## More contribution best practices for GitHub
+## GitHub-specific best practices
 
 - Labels: [GitHub labels best practices](https://medium.com/@dave_lunny/sane-github-labels-c5d2e6004b63)
 - Milestones and projects: [Milestones vs. projects](https://stackoverflow.com/a/39701381)
