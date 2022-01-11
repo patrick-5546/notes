@@ -97,7 +97,6 @@ nav:
     - Other Software: setup/software.md
   - Internship Preparation:
     - Applications: internship_prep/applications.md
-    - Behavioral Questions: internship_prep/behavioral.md
     - Technical Questions:
       - internship_prep/technical/index.md  # disclaimer: not a learning resource, but for brush up / review / knowledge check
       - Hardware: internship_prep/technical/hw.md  # definitions list for each topic, use abbreviations
