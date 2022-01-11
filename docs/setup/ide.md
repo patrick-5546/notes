@@ -38,6 +38,8 @@ Several quirks that I have noticed with my VS Code configuration:
     - Workaround: remap ++shift+k++, or replace in insert mode
 - Undo and redo behavior is different in Vim and VS Code. Thus saving a file, making a change, then using ++u++ to undo will not bring the file back to its saved state
     - Workaround: save every time, or map ++u++ and ++ctrl+r++ to the VS Code implementation of undo and redo
+- The [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+extension causes vscode-neovim bug out occassionally and other undesired behaviors
 
 ## Setup
 
