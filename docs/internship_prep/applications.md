@@ -128,8 +128,8 @@ or revise my resume and cover letter to strengthen those areas.
 
 ### After being selected
 
-- Research technical terms in job description
-    - Be able to explain them in your own words
+- Study job requisites
+    - Be able to explain them in your own words and relate to your past experiences
 - Prepare common general questions:
     - Why do you want to work for the company?
         - Research reputation, work culture, products/services, etc.
