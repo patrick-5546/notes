@@ -12,7 +12,7 @@ In economic terms, my strategy has a high upfront cost, but minimal recurring co
 !!! quote ""
     How your experiences and achievements make you the best candidate for the position
 
-### Technical Skills
+### Technical skills
 
 - Copy vocabulary from job descriptions
 - Organize skills into groups (i.e., languages, hardware, tools/frameworks)
@@ -61,7 +61,7 @@ In economic terms, my strategy has a high upfront cost, but minimal recurring co
     - Thank the hiring committee for their time
     - Include how they can arrange an interview
 
-### Templates
+### Create templates
 
 To reduce the time it takes to write a cover letter,
 prepare a template for each type of position you want to apply to:

@@ -96,11 +96,14 @@ nav:
     - IDE: setup/ide.md
     - Other Software: setup/software.md
   - Internship Preparation:
+    - internship_prep/index.md  # disclaimer: not a learning resource, but for brush up / review / knowledge check
     - Applications: internship_prep/applications.md
-    - Technical Questions:
-      - internship_prep/technical/index.md  # disclaimer: not a learning resource, but for brush up / review / knowledge check
-      - Hardware: internship_prep/technical/hw.md  # definitions list for each topic, use abbreviations
-      - Software: internship_prep/technical/sw.md
+    - Hardware Interviews:
+      - Reference: internship_prep/hardware/hw_reference.md  # definitions list for each topic, use abbreviations
+      - Questions: internship_prep/hardware/hw_questions.md
+    - Software Interviews:
+      - Reference: internship_prep/software/sw_reference.md
+      - Questions: internship_prep/software/sw_questions.md
   - Reference:
     - Bookmarks: reference/bookmarks.md
     - Git:
