@@ -1,1 +1,26 @@
 # Hardware Interview Questions
+
+- Implement buffer and inverter from XOR
+- NOR from 2:1 multiplexers
+- AND from 2:1 mux
+- NOT from NAND
+- reset flip flop from flop
+- Implement flip flop (synch and asynch reset, enable) and latch in Verilog
+    - latch vs flop waveform
+- Power dissipation: static (leakage) when current is idle, dynamic when current is switching
+- Multiply: expensive, so add or shift
+- Mealy vs Moore (use Mealy in practice)
+- One hot vs binary state encodings
+    - One hot requires more flops, but simplifies next state and output logic
+- Inferred latch occurs when not all combinations of input logic are defined
+- Setup violation → metastable, hold time → lose previous data
+    - How to solve hold time violation (buffer on data or clock path, increase gate delays - increase drive strength or threshold voltage, c→q time)
+- Clock domain crossing: synchronize, metastability MTBF
+- Gray code applications: glitch, cdc
+- For loop in systemverilog increases readability
+- Latch only application: clock gating (if clk past input to output)
+- RC circuits
+- Different types of adders
+- State machine diagram of an elevator
+- Clock jitter (absolute difference of clock edge from ideal caused by noise), skew (arrives at different flops at different times), slew (transition rate)
+- Setup and hold slack

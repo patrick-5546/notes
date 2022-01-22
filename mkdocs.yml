@@ -98,6 +98,7 @@ nav:
   - Internship Preparation:
     - internship_prep/index.md  # disclaimer: not a learning resource, but for brush up / review / knowledge check
     - Applications: internship_prep/applications.md
+    - Interview Preparation: internship_prep/interview_prep.md
     - Hardware Interviews:
       - Reference: internship_prep/hardware/hw_reference.md  # definitions list for each topic, use abbreviations
       - Questions: internship_prep/hardware/hw_questions.md
