@@ -5,63 +5,97 @@
 
 ## Before being selected
 
-- For each technical experience on your resume:
-    - Ensure that the source code is easily accessible with documentation and diagrams
-        - For example, in a GitHub repository (can make it private if needed)
-        - Make it easy to show and explain technical details during an interview
-    - Prepare for common interview questions: [Resume Experiences Table Template](https://patrick5546.notion.site/fb50e74ce3194687a518737c0087d667?v=0af8635decac4f66b9aafd24eb755e3e)
-- Review relevant technical topics
-- Prepare for behavioral questions
-    - ~30 second answer to "tell me about yourself"
-        - Can come up with a couple answers for different types of jobs
-    - Think of a unique and insightful strength and weakness that you have
-- Get interview experience
-    - Any interview practice is good practice
-        - Apply to as many positions as possible
-        - Talk with professors about research opportunities
-        - Make an appointment with your co-op advisor
-        - Ask a friend
-    - Explain technical experiences so that even people not in the industry can follow
-    - Practice on-the-spot thinking; connect your answers with relevant experiences
+### Prepare for questions about resume experiences
 
-## After being selected
+For each technical experience on your resume, ensure that the source code is easily accessible with documentation and diagrams.
+For example, push it to a GitHub repository (make it private if required).
+This is helpful when explaining technical details during an interview
 
-- Study job requisites
-    - Be able to explain them in your own words and relate to your past experiences
-- Prepare common general questions:
-    - Why do you want to work for the company?
-        - Research reputation, work culture, products/services, etc.
-- Prepare questions for your interviewer
-    - Show that you are engaged, curious, and passionate about the company and position
-- Prepare common technical questions
-    - More important to be able to clearly explain your ongoing thought process than to solve the problem
-    - Resources:
-        - Current employees
-        - Cracking the Coding Interview
-        - Glassdoor
-        - Reddit
-        - [LeetCode Top Interview Questions](https://leetcode.com/problemset/top-interview-questions/)
+Next, prepare for common interview questions related to your experiences:
 
-## Solving Open Ended Problems
+- **Describe a time when you had a conflict when working on a team, and how you resolved it**
+    - I have been asked this many times
+- Tell me about yourself
+    - Can come up with a couple responses for different types of jobs
+- Describe a problem that you solved
+- Describe your process for debugging code
+- Describe a leadership experience
 
-- **Describe problem in your own words (and write it down)**
-    - Ask clarifying questions
-    - State assumptions
-    - Describe base/simple case (inputs and outputs)
-    - "Is that correct?"
+Good topics to bring up include:
+
+- Need to collaborate with colleagues to find the best possible solution
+    - Receptive to feedback and varying perspectives
+    - Each person has different strenghts
+- Bottom up approach - reusability, test each small part
+- Besides performance, consider reliability, sustainable, and reparability
+
+### Prepare for open-ended technical questions
+
+!!! tip ""
+    It is more important to be able to clearly explain your ongoing thought process than to solve the problem.
+
+[Video on technical interview preparation](https://www.youtube.com/watch?v=8Myx-vy0csM)
+
+Use the STAR method:
+
+Situation
+
+- Listen/read the problem carefully and multiple times
+- Describe/write the problem in your own words
+- State assumptions
+- Don't be afraid to ask clarifying questions
+
+Task
+
+- Describe/write a simple example
+- Think about the inputs and outputs
+
+Action
+
 - Demonstrate logical thinking
     - Give initial thoughts, broad overview
     - Subdivide into different parts
-    - Talk about each part
-    - "Am I heading in the right direction?"
-        - Ask for feedback, or what they would do, then riff off that
-- Topics
-    - Collaborate with colleagues to find the best possible solution (not like a school project)
-        - Open to feedback, gaining additional perspectives
-        - Recognize that I don't know everything
-    - Bottom up approach - reusability, test each small part
-    - Besides performance, consider reliability, sustainable, and reparability
-    - How to measure 4L from 3L and 5L buckets
-    - Leadership experience
-    - How to deal with conflict
-    - Describe problem that you solved
+- Devise initial solution
+- Walkthrough with a simple example to verify correctness
+- Think about potental optimizations
+
+Results
+
+- Test final solution
+- Ask for feedback, or what they would do, and discuss from there
+
+### Gain interview experience
+
+- Any interview practice is good practice
+    - Apply to as many positions as possible
+    - Talk with professors about research opportunities
+    - Make an appointment with your co-op advisor
+    - Ask a friend
+- Explain technical experiences so that even people not in the industry can follow
+- Practice on-the-spot thinking; connect your answers with relevant experiences
+
+## After being selected
+
+### Study job requisites
+
+Be able to explain them in your own words and relate to your past experiences.
+
+### Prepare for position-specific questions
+
+- Why do you want to work for the company/team/position?
+    - Research reputation, work culture, products/services, etc.
+- Prepare questions for your interviewer intended to
+    - Help decide if the position is right for you
+    - Demonstrate your enthusiasm and passion for the company/position and its products
+
+#### Position-specific technical questions
+
+Places where you can find past/common interview questions include:
+
+- Past or current employees and interns
+- Glassdoor
+- Reddit
+- LeetCode
+- Cracking the Coding Interview
+- My hardware and software Reference and Questions pages briefly go over the content covered and questions asked in my past interviews
+    - They are intended as a way to review and gauge your knowledge rather than to learn new topics

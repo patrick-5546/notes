@@ -90,7 +90,6 @@ and maybe in the terms used in the introduction general statement.
     - Learn about the industry, company, and their personal experiences
     - Ask them about open positions and referrals
     - Mention them in your cover letter
-- Places to look for postings: co-op board, company websites, Indeed, LinkedIn, Glassdoor, Zip recruiter
 
 ### Stay organized, analyze results, iteratively improve
 
