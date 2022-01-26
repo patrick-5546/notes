@@ -98,8 +98,8 @@ If this functionality does not matter to you, there is no need to symbolic link 
 ## Resources
 
 - VS Code / Neovim integration setup guide: [VSCode with embedded Neovim](https://www.youtube.com/watch?v=g4dXZ0RQWdw&list=LL&index=9&t=381s)
-- [`init.vim` without my changes](https://github.com/LunarVim/LunarVim/blob/rolling/utils/lv-vscode/init.vim)
-- [`settings.json` and `keybindings.json` without my changes](https://github.com/LunarVim/LunarVim/tree/rolling/utils/vscode_config)
+- [`init.vim` without my changes](https://github.com/LunarVim/LunarVim/blob/626343c2de0599d1129e1e6b70d62aacc56ab000/utils/lv-vscode/init.vim)
+- [`settings.json` and `keybindings.json` without my changes](https://github.com/LunarVim/LunarVim/tree/626343c2de0599d1129e1e6b70d62aacc56ab000/utils/vscode_config)
 - Vim configuration: [tylerlum/vim_configuration](https://github.com/tylerlum/vim_configuration), [amix/vimrc](https://github.com/amix/vimrc)
 - [Workaround `:number` and `:relativenu` not working in VS Code](https://github.com/asvetliakov/vscode-neovim/issues/175#issuecomment-929630274)
 
