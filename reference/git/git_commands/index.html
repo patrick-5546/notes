@@ -644,6 +644,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#rm" class="md-nav__link">
+    Rm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#stash" class="md-nav__link">
     Stash
   </a>
@@ -840,6 +847,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#rm" class="md-nav__link">
+    Rm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#stash" class="md-nav__link">
     Stash
   </a>
@@ -952,11 +966,31 @@
 </tr>
 <tr>
 <td><code>git reset HEAD~1</code></td>
-<td>Unstages the changes made in last commit, but does not modify the files</td>
+<td>Unstage the changes made in last commit, but do not modify the files</td>
 </tr>
 <tr>
 <td><code>git reset --hard HEAD~5</code></td>
-<td>Undoes the changes made in the last 5 commits</td>
+<td>Undo the changes made in the last 5 commits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rm">Rm<a class="headerlink" href="#rm" title="Permanent link">&para;</a></h2>
+<p>Remove files</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git rm &lt;file_specifier&gt;</code></td>
+<td>Remove files from Git and delete them</td>
+</tr>
+<tr>
+<td><code>git rm --cached &lt;file_specifier&gt;</code></td>
+<td>Remove files from Git but do not delete them</td>
 </tr>
 </tbody>
 </table>
@@ -1113,8 +1147,10 @@ I have listed the ones I regularly use below.</p>
 <a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="nv">grhh</span><span class="o">=</span><span class="s1">&#39;git reset --hard&#39;</span>
 <a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="nv">grs</span><span class="o">=</span><span class="s1">&#39;git restore&#39;</span>
 <a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="nv">grst</span><span class="o">=</span><span class="s1">&#39;git restore --staged&#39;</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="nv">gst</span><span class="o">=</span><span class="s1">&#39;git status&#39;</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="nv">gsu</span><span class="o">=</span><span class="s1">&#39;git submodule update&#39;</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="nv">grm</span><span class="o">=</span><span class="s1">&#39;git rm&#39;</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="nv">grmc</span><span class="o">=</span><span class="s1">&#39;git rm --cached&#39;</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="nv">gst</span><span class="o">=</span><span class="s1">&#39;git status&#39;</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="nv">gsu</span><span class="o">=</span><span class="s1">&#39;git submodule update&#39;</span>
 </code></pre></div>
 
   <hr>
@@ -1122,7 +1158,7 @@ I have listed the ones I regularly use below.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 9, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 26, 2022</span>
       
     
   </small>
