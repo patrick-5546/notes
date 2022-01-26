@@ -89,24 +89,15 @@ WSL is a term in the glossary.
 
 ## CI / CD Using GitHub Actions
 
-### Check Links
-
-I check for broken links using markdown-link-check. This action checks links to pages on the internet
-(`https://www.google.com`) and files in the repository (`./index.md`).
-However, it does not check whether a section exists in the file (`./index.md#overview`).
-
-??? quote "Link-checking workflow for this project"
-
-    ``` yaml title=".github/workflows/check_links.yml" linenums="1"
-    --8<-- ".github/workflows/check_links.yml"
-    ```
-
 ### Deploy
 
 The Materials for MkDocs documentation gives an example deploy workflow. I modified it slightly
 to properly support page revision times using [mkdocs-git-revision-date-localized-plugin](#plugins).
 I also used encrypted secrets to
 [use Google Analytics](https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/#google-analytics) without exposing the key.
+This workflow is run on every push to the main branch
+
+#### Deploy workflow
 
 ??? quote "Deploy workflow for this project"
 
@@ -116,10 +107,13 @@ I also used encrypted secrets to
 
 ### Lint
 
+#### Markdown linter
+
 I use markdownlint to check for programmatic and stylistic errors in the application's Markdown files.
 
 I configured the errors using a `.markdownlint.json` file in the project's root directory to support
 the syntax of Material for MkDocs features.
+This workflow is run on every push and pull request to the main branch.
 
 ??? quote "markdownlint configuration for this project"
 
@@ -127,16 +121,31 @@ the syntax of Material for MkDocs features.
     --8<-- ".markdownlint.json"
     ```
 
+markdownlint resources:
+
+- [markdownlint rules reference](https://github.com/DavidAnson/markdownlint/blob/v0.24.0/doc/Rules.md)
+- [markdownlint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+
+#### Check Markdown links
+
+I check for broken links using markdown-link-check. This action checks links to pages on the internet
+(`https://www.google.com`) and files in the repository (`./index.md`).
+However, it does not check whether a section exists in the file (`./index.md#overview`).
+This workflow is run on every push and pull request to the main branch, as well as on a schedule.
+
+#### Lint workflows
+
 ??? quote "Lint workflow for this project"
 
     ``` yaml title=".github/workflows/lint.yml" linenums="1"
     --8<-- ".github/workflows/lint.yml"
     ```
 
-markdownlint resources:
+??? quote "Scheduled Tasks workflow for this project"
 
-- [markdownlint rules reference](https://github.com/DavidAnson/markdownlint/blob/v0.24.0/doc/Rules.md)
-- [markdownlint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+    ``` yaml title=".github/workflows/scheduled_tasks.yml" linenums="1"
+    --8<-- ".github/workflows/scheduled_tasks.yml"
+    ```
 
 ### Resources
 
@@ -144,9 +153,9 @@ markdownlint resources:
 
 ## Example Sites
 
-- This site!
 - [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) and [Pymdown Extensions](https://facelessuser.github.io/pymdown-extensions/) documentation
 - [up42](https://sdk.up42.com/)
     - Uses the mkdocstrings plugin for the Code Reference
+- This site!
 
 --8<-- "includes/abbreviations.md"

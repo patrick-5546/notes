@@ -26,8 +26,17 @@ Undo committed (but not pushed) changes.
 | Command | Description |
 | --------- | ----------- |
 | `git log` | Check the commit history of the current branch |
-| `git reset HEAD~1` | Unstages the changes made in last commit, but does not modify the files |
-| `git reset --hard HEAD~5` | Undoes the changes made in the last 5 commits |
+| `git reset HEAD~1` | Unstage the changes made in last commit, but do not modify the files |
+| `git reset --hard HEAD~5` | Undo the changes made in the last 5 commits |
+
+## Rm
+
+Remove files
+
+| Command | Description |
+| --------- | ----------- |
+| `git rm <file_specifier>` | Remove files from Git and delete them |
+| `git rm --cached <file_specifier>` | Remove files from Git but do not delete them |
 
 ## Stash
 
@@ -113,6 +122,8 @@ grh='git reset'
 grhh='git reset --hard'
 grs='git restore'
 grst='git restore --staged'
+grm='git rm'
+grmc='git rm --cached'
 gst='git status'
 gsu='git submodule update'
 ```

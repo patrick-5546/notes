@@ -38,6 +38,8 @@ Several quirks that I have noticed with my VS Code configuration:
     - Workaround: remap ++shift+k++, or replace in insert mode
 - Undo and redo behavior is different in Vim and VS Code. Thus saving a file, making a change, then using ++u++ to undo will not bring the file back to its saved state
     - Workaround: save every time, or map ++u++ and ++ctrl+r++ to the VS Code implementation of undo and redo
+- The [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+extension causes vscode-neovim bug out occassionally and other undesired behaviors
 
 ## Setup
 
@@ -71,12 +73,12 @@ and [Settings Cycler](https://marketplace.visualstudio.com/items?itemName=hoover
         | Git History | View git log, file history, compare branches or commits |
         | GitLens | See who commited each line of code and when they did it |
         | Live Share Extension Pack | Real-time collaborative development (like Google Docs for programming) |
-        | Markdown Preview Enhanced | Better markdown preview |
         | Peacock | Change workspace border color to be able to quickly identify workspaces |
         | Remote Development | Support for development using WSL, SSH, and Docker |
         | toggle semicolon | ++ctrl+semicolon++ to add or remove the semicolon at the end of a line |
         | vscode-icons | Clean file icons for the file explorer |
         | vscode-pdf | Display pdf file in VS Code |
+        | `<language/framework>` Extension Pack | Popular extensions for the other languages and frameworks you use |
 
 ### Why symbolic link?
 
@@ -96,8 +98,8 @@ If this functionality does not matter to you, there is no need to symbolic link 
 ## Resources
 
 - VS Code / Neovim integration setup guide: [VSCode with embedded Neovim](https://www.youtube.com/watch?v=g4dXZ0RQWdw&list=LL&index=9&t=381s)
-- [`init.vim` without my changes](https://github.com/LunarVim/LunarVim/blob/rolling/utils/lv-vscode/init.vim)
-- [`settings.json` and `keybindings.json` without my changes](https://github.com/LunarVim/LunarVim/tree/rolling/utils/vscode_config)
+- [`init.vim` without my changes](https://github.com/LunarVim/LunarVim/blob/626343c2de0599d1129e1e6b70d62aacc56ab000/utils/lv-vscode/init.vim)
+- [`settings.json` and `keybindings.json` without my changes](https://github.com/LunarVim/LunarVim/tree/626343c2de0599d1129e1e6b70d62aacc56ab000/utils/vscode_config)
 - Vim configuration: [tylerlum/vim_configuration](https://github.com/tylerlum/vim_configuration), [amix/vimrc](https://github.com/amix/vimrc)
 - [Workaround `:number` and `:relativenu` not working in VS Code](https://github.com/asvetliakov/vscode-neovim/issues/175#issuecomment-929630274)
 
