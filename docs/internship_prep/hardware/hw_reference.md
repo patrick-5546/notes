@@ -1,46 +1,34 @@
 # Hardware Reference
 
-## ASICSs vs FPGAs vs Processors
+## ASIC vs FPGA vs Processor
 
-### ASIC
-
-- High performance
-- Low power
-- Cheaper for large volumes
-
-### FPGA
-
-- “Instant Manufacturability”
-- Cheaper for small volumes
-
-### Processor
-
-- Easy to design (software)
-- General purpose
+|  | ASIC | FPGA | Processor |
+| -------- | ---- | ---- | --------- |
+| Performance | High | Medium | Low |
+| Power Consumption | Low | Medium | High |
+| Flexibility | None | Somewhat | General purpose |
+| Design Process | Difficult, long | Medium | Easy, quick (software) |
+| Cost | Cheaper for large volumes | Cheaper for small volumes | Cheapest (mass-produced) |
 
 ## FPGA Design Process
 
-![FPGA Design Process](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled.png)
+<figure markdown>
+  ![FPGA Pictures](../../assets/fpga_pics.png)
+  <figcaption>(Left) FPGA Design Process; (Right) 3-Input LUT</figcaption>
+</figure>
 
-FPGA Design Process
-
-![3-input LUT](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%201.png)
-
-3-input LUT
-
-1. Synthesis: break logic into LUTs
-    1. $n$ input LUT can make any $n$-input function, combinational or sequential
-2. Mapping/placing: place LUTs into CLBs such that
-    1. Connected LUTs are close to each other
-    2. Critical path is approximately minimized
-3. Routing: connecting logic blocks together
-    1. Uses programmable switches
-        1. NMOS acts as conductor when config bit (part of bitstream) is 1 → connect tracks
-    2. Varying segment lengths to connect CLBs that are far or close to each other
-        1. Use shorter segment lengths to minimize delays and noise and crosstalk
-        2. Longer segments have extra capacitance and limited quantity
-4. Timing analysis: looks for timing violations
-    1. Path delay is sum of all logic and wire delays 
+1. **Synthesis:** break logic into LUTs
+    - A $n$-input LUT can make any $n$-input function, combinational or sequential
+2. **Mapping/placing:** place LUTs into CLBs such that
+    - Connected LUTs are close to each other
+    - Critical path is approximately minimized
+3. **Routing:** connecting logic blocks together
+    - Uses programmable switches: NMOS acts as conductor when the configuration bit (part of bitstream) is 1, connecting the tracks
+    - Connects CLBs with segments of varying lengths
+        - Shorter segments minimize delay, noise, and crosstalk
+        - Longer segments have extra capacitance and limited quantity, but minimize the number of segments needed
+4. **Timing analysis:** looks for timing violations
+    - Path delay is sum of all logic and wire delays
 
 ## SystemVerilog
 
@@ -56,15 +44,16 @@ FPGA Design Process
 
 ## Caches
 
-- Temporal (recently accessed in cache), and spatial (multi-word blocks) locality
-    - If more temporal, decrease block size and number of sets; increase associativity
-    - Instructions more spatial, data both
-    - Temporal locality memory mountain: levels, based which level of cache can fully contain working set
-    - Spatial locality memory mountain: throughput decreases with increasing stride length until stride length ≥ block size
-- Amdahl's law: speed up = 1 / (1-a + a/k), where a is the percentage of sped up code by a factor of k
-- associativity: number of cache lines per set
-    - increasing associativity decreases conflict misses, but decreases performance (lookup and replacement times)
-- Block size: number of bytes per cache line
+- Offer temporal (recently accessed in cache), and spatial (multi-word blocks) locality
+    - Instructions more spatial, data can be both
+    - To better support temporal: decrease block size and number of sets, increase associativity
+        - Block size: number of bytes per cache line
+        - Associativity: number of cache lines per set
+    - Memory mountains
+        - Temporal: levels, based on which level of cache can fully contain the working set
+        - Spatial: throughput decreases with increasing stride length until stride length ≥ block size
+- Amdahl's law: speed up = $\frac{1}{(1-a) + \frac{a}{k}}$, where $a$ is the percentage of code sped up by $k$ times
+    - Increasing associativity decreases conflict misses, but decreases performance (lookup and replacement times)
 - Write through is good for synchronization, write back is faster when modifying same cache line multiple times
 
 ## Timing
@@ -72,102 +61,121 @@ FPGA Design Process
 ### Gate Delay
 
 - Every wire and transistor has parasitic capacitance (physical property)
-- Delay of logic gate is time for it to charge the capacitance on its output
-    - Equivalent capacitance of the parasitic capacitances of the wires and transistors
-    - Proportional to R*C (n*R*C for n gates, where n is the number of gates in the path)
-        - R depends on size of logic gate transistor (bigger → lower R) and length of wire (longer → higher R)
-        - C depends on the same things in the same ways as R, but also depends on fanout (larger fanout → higher C, summing for each [parallel] branch)
+- Delay of logic gate is the time it takes to charge the capacitance on its output,
+which is the net capacitance of the parasitic capacitances of the wires and transistors
+    - Proportional to $RC$ ($nRC$ for $n$ gates, where $n$ is the number of gates in the path)
+        - $R$ depends on size of logic gate transistor (bigger → lower $R$) and length of wire (longer → higher $R$)
+        - $C$ depends on the same things in the same ways as $R$, but also depends on fanout (larger fanout → higher $C$)
             - Fanout: number of inputs driven by an output
                 - Reduce fanout by splitting net, but this increases the number of gates
 
 ### Modelling Delays
 
-- Setup time: how long input needs to be stable before clock edge to be accepted
-    - clock period ≥ clk→q max + critical path + setup time
-    - Setup violation causes metastability
-    - Fix by slowing down clock or moving registers around to reduce length of critical path (i.e. pipelining, which is best when critical path >> other paths)
-- Hold time: how long input needs to be stable after clock edge to be accepted
-    - clk→q min + fastest path ≥ hold time
-    - Hold time violation causes the loss of data
-        - Could be caused by clock skew
-    - Fix by increasing gate/DFF delays, adding buffers to data path or first clock path
+#### Setup Time
 
-### Old STA Notes - [setup and hold slack](https://asic-soc.blogspot.com/2013/08/setup-and-hold-slack.html)
+How long input needs to be stable before clock edge to be accepted.
 
-- Slew rate: rate of change from 0 to 1, or 1 to 0
-- Skew: clock signal arrives at different times for different components, fix using buffers
-- Setup time: how long input needs to be stable before clock edge to be accepted
-    - clock period ≥ clk→q max + critical path + setup time
-- Hold time: how long input needs to be stable after clock edge to be accepted
-    - clk→q min + fastest path ≥ hold time
-    - cannot be fixed by increasing clock period
-- Slack: time when it actually happens vs when it must happen (has to happen before must happen, positive slack)
-    - setup: required - arrival
-    - hold: arrival (clk→q if from register + combo) - required (clock - setup)
-- Glitch: short output change when two inputs change simultaneously, i.e., gated clock (use feedback path instead; overlap on kmap)
+$$
+T_{\text{clk}} \geq T_{\text{clk2qMax}} + T_{\text{combinationalMax}} + T_{\text{setup}}
+$$
 
-#### Practical Issues
+- Setup violation causes metastability
+    - Fix by slowing down clock or moving registers around to reduce length of critical path
+        - For example, pipelining, which is best when critical path >> other paths)
 
-- Retiming in pipelining: move combinational logic from one side of DFF to another to balance critical path length of each stage
-- Clock skew: clock edge arrives at different components at different times (i.e. difference in length of wires)
-    - Implications: change in Fmax (changes setup time), failure of design (hold time violations and functional problems like second clock arriving to late loses the current value)
-    - Minimize relative skew using
-        - H-tree network (route so that same distance to each flop)
-        - Global clocks that have dedicated routing to minimize clock skew; however, limited availability
-- Phase locked loops: mixed signal circuit that generates output clocks aligned to an input clock
-    - Motivation: usually there is clock skew between the input and output clocks of a clock divider/multiplier, and routing a generated clock is unpredictable
-    - Can even generate output clocks with the same phase as input clock
+#### Hold Time
+
+How long input needs to be stable after clock edge to be accepted.
+
+$$
+T_{\text{clk2qMin}} + T_{\text{combinationalMin}} \geq T_{\text{hold}}
+$$
+
+- Hold time violation causes the loss of data
+    - Could be caused by clock skew
+    - Fix by increasing gate/DFF delays or adding buffers to data path or earlier clock paths
+        - Cannot be fixed by increasing clock period
 
 ### Glitches
 
 - Glitch: undesired short-lived pulse that occurs before a signal settles to its intended value
 - Caused by unequal arrival times of inputs on combinational gates + same output is generated by different values of state bits
-    - For example, XORing the bits 01 → 0, transitioning to 11 or 00 → 1 before settling at 10 → 1
+    - Ex 1: XORing the bits 01 → 0, transitioning to 11 or 00 → 1 before settling at 10 → 1
+    - Ex 2: clock gating incorrectly such that the output of the AND gate (enable) glitches
+        - Clock gating is used to reduce dynamic power
     - Any transition consumes power, so unnecessary transitions consume unnecessary power
 
 #### Glitches in FSMs
 
-- Effects
-    - Edges triggered inputs (i.e. clocks) may be falsely triggered
-    - Enables may glitch before being sampled, causing garbage to be read
-    - Hard to detect
-- Avoiding glitches
-    - Try to make it so that only 1 input bit changes at a time
-    - Register next outputs
-        - Quick fix, but adds one cycle delay, does not support direct dependence of outputs on inputs, requires extra registers
-    - Eliminate combinational logic after state machine
-        - Move before current state machine or next state machine
-    - Require outputs to either be
-        - Driven from a state bit or its complement
-        - Driven by (simple) combinatorial logic that depends on a single state bit (safest for signals that are constant for the duration of the state machine's operation)
+Effects
+
+- Edges triggered inputs (i.e. clocks) may be falsely triggered
+- Enables may glitch before being sampled, causing garbage to be read
+- Hard to detect
+
+Avoiding glitches
+
+- Try to make it so that only 1 input bit changes at a time
+- Register next outputs
+    - Quick fix, but adds one cycle delay, does not support direct dependence of outputs on inputs, requires extra registers
+- Eliminate combinational logic after state machine
+    - Move before current state machine or next state machine
+- Require outputs to either be:
+    - Driven from a state bit or its complement
+    - Driven by (simple) combinatorial logic that depends on a single state bit
+        - Safest for signals that are constant for the duration of the state machine's operation
 
 ### Clock Domain Crossings
 
-- Clock domain: all DFFs in each clock domain are clocked by the same clock
+- Clock domain: all DFFs in each clock domain run on the same clock
 - Signals that cross clock domains will likely cause timing violations
-    - Asynchronous signals also cause timing violations in a similar manner
-- On a timing violation, output may get the right value, wrong value, or become metastable (value between 0 and 1 that resolves randomly) → may cause system-wide failure
+- Asynchronous signals also cause timing violations in a similar manner
+- On a timing violation, output may get the right value, wrong value, or become metastable (value between 0 and 1 that resolves randomly)
+    - May cause system-wide failure
 
 #### Metastability
 
-- If the time it takes for a metastable node to resolve is greater than setup slack (negative slack), then system failure
-- $MTBF(t_{slack})=\frac{e^{t_{slack}/C_0}}{C_1f_{CLK}f_{DATA}}$
-    - Average time between two failure-causing instances of metastability
-    - Increases exponentially with slack
-    - Maximize by synchronizing asynchronous inputs
+If the time it takes for a metastable node to resolve is greater than setup slack (negative slack),
+then system-wide failure occurs.
+
+- Quantitately measure with MTBF: average time between two failure-causing instances of metastability
+
+$$
+\text{MTBF}(t_{\text{slack}}) = \frac{e^{\frac{t_{\text{slack}}}{C_0}}}{C_1f_{\text{clk}}f_{\text{data}}}
+$$
+
+- Increases exponentially with slack
+- Maximize by synchronizing asynchronous inputs
 
 ### Slack
 
-- Time when it actually happens vs when it must happen (has to happen before must happen, positive slack)
-- setup slack: required - arrival
-- hold slack: arrival (clk→q if from register + combo) - required (clock - setup)
-- required time: clock path
-    - Reg to reg and input to reg: Tclock - Tsetup
-    - Reg to output: unconstrained
-- arrival time: data path
-    - Reg to reg and reg to output: Tclk-q + Tcombo
-    - Input to reg: Tcombo
-- Reference: [ASIC-System on Chip-VLSI Design: Setup and hold slack (asic-soc.blogspot.com)](https://asic-soc.blogspot.com/2013/08/setup-and-hold-slack.html)
+Time when it actually happens vs when it must happen (positive slack when it happens before must).
+
+- Setup: $T_{\text{required}} - T_{\text{arrival}}$
+- Hold: $T_{\text{arrival}} - T_{\text{required}}$
+- Required time: clock path
+    - Reg2reg and input2reg: $T_{clk} + T_{setup}$
+    - Reg2output: unconstrained
+- Arrival time: data path
+    - Reg2reg and reg2output: $T_{clk2q} + T_{combo}$
+    - Input to reg: $T_{combo}$
+
+Reference: [Setup and hold slack](https://asic-soc.blogspot.com/2013/08/setup-and-hold-slack.html)
+
+### Practical Issues
+
+- Retiming in pipelining: move combinational logic from one side of DFF to another to balance the critical path length of each stage
+- Clock skew: clock edge arrives at different components at different times (might be due to the difference in path lengths)
+    - Implications
+        - change in $F_{max}$: changes setup time
+        - Failure of design: hold time violations and functional problems losing current value because second clock arrives too late
+    - Fix using
+        - Buffers
+        - H-tree network (route so that same distance to each flop)
+        - Global clocks that have dedicated routing to minimize clock skew; however, limited availability
+- PLLs: mixed signal circuit that generates output clocks aligned to an input clock
+    - Motivation: usually there is clock skew between the input and output clocks of a clock divider/multiplier, and routing a generated clock is unpredictable
+    - Can even generate output clocks with the same phase as input clock
 
 ## Arithmetic Circuits
 
@@ -190,9 +198,9 @@ FPGA Design Process
         - $P_{3:0} = P_3P_2P_1P_0$
     - $C_{out} = G_{in} + P_{in}C_{in}$
     - Delay of 4 bit adder: 4 gates
-        
+
         ![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%202.png)
-        
+
         - All generate and propagate bits ready in 1 gate
         - All carry bits ready in 2 gates (AND OR network)
         - Sum input and carry bits (same as XOR) in 1 gate
@@ -200,11 +208,11 @@ FPGA Design Process
         1. Compute all $G_i,P_i$
         2. Compute all $G,P$ for each 4-bit block
         3. $C_{in}$ propagates through each block
-        
+
         ![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%203.png)
-        
+
         ![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%204.png)
-        
+
         - Thus $t_{CLA} = 4log_4(N)t_{PD}$ (proportional to logN)
 
 ### Miscellaneous Arithmetic Circuits
@@ -233,9 +241,8 @@ FPGA Design Process
 
 - Signed multipliers: subtract last number (two's complement) rather than add it
 - Serial (multi-cycle) multiplier
-    
+
     ![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%207.png)
-    
 
 ## Decimal Numbers
 
@@ -251,7 +258,12 @@ FPGA Design Process
 
 ![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%209.png)
 
-- Binary scientific notation: (±1.m * 2^e → sign * 1.mantissa/significand * base^exponent)
+Binary scientific notation
+
+$$
+\pm 1.\text{xxx} \times 2^e \Leftrightarrow \{\text{sign}\}1.\{\text{mantissa}\} \times \{\text{base}\}^{\{\text{exponent}\}}
+$$
+
 - Purpose of bias is to circumvent the need for a signed exponent field
 - 64-bit: 1 sign bit: 11 exponent bits: 52 fraction bits, bias is 1023
     - Largest positive: exponent is all 1s except LSB, mantissa is all 1s
@@ -259,9 +271,8 @@ FPGA Design Process
 - Special cases
     - Subnormal: exponent all 0s, mantissa is interpreted as being preceded by 0
         - Smallest positive: mantissa is all 0's except LSB
-        
+
         ![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%2010.png)
-        
 
 ### Fixed vs Floating Point
 
@@ -291,3 +302,5 @@ FPGA Design Process
     - Revise implementation (add instead of multiply, invert bus)
     - Pipelining (adding flip flops prevents glitches from propagating → reduce glitch power)
         - Disadvantage: flip flops use power, extra burden on clock tree
+
+--8<-- "includes/abbreviations.md"
