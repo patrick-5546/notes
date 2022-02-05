@@ -28,7 +28,7 @@
 | Command | Description |
 | ------- | ----------- |
 | `wsl -l -v` | List WSL distributions along with their state and version |
-| `wsl -t <distgribution_name>` | Terminate/shut down a WSL distribution |
+| `wsl -t <distribution_name>` | Terminate/shut down a WSL distribution |
 | `wsl --unregister <distribution_name>` | Unregisters WSL distribution and deletes root filesystem |
 
 - `wsl --help` to see all WSL commands and their descriptions

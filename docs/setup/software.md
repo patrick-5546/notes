@@ -21,8 +21,8 @@ Recommended options:
 
 Using a package manager such as winget allows software to be quickly and easily installed,
 upgraded, and uninstalled using the terminal. Winget is relatively new and thus does not yet support
-as many packages as other Windows package managers, but since it is built into Windows 11 and
-quickly growing, it is definitely the way to go moving forwards. I have been using Chocolatey to get
+as many packages as other package managers. However, it is quickly growing, built into Windows 11, and
+compatible with other package managers and the standard Windows Installer. I have been using Chocolatey to get
 packages that are not yet available on winget, but this has become increasingly rare.
 
 ??? info "Useful applications I installed using a package manager"

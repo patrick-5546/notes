@@ -4,6 +4,9 @@
             "pattern": "^https://linuxize.com/"
         },
         {
+            "pattern": "^https://www.linkedin.com/"
+        },
+        {
             "pattern": "^https://www.interviewbit.com/"
         }
     ]
