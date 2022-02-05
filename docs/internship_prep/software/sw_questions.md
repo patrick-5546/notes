@@ -22,5 +22,5 @@ I have listed some software technical questions that were asked in my interviews
 
 ## Resources
 
-- [40+ OOPs Interview Questions and Answers](https://www.interviewbit.com/oops-interview-questions)
-- [Top Embedded C Interview Questions](https://www.interviewbit.com/embedded-c-interview-questions)
+- [40+ OOPs Interview Questions and Answers](https://www.interviewbit.com/oops-interview-questions/)
+- [Top Embedded C Interview Questions](https://www.interviewbit.com/embedded-c-interview-questions/)
