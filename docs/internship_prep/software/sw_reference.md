@@ -1,9 +1,12 @@
 # Software Reference
 
+!!! warning "Disclaimer"
+    My software-related interview experiences have largely come from interviews for hardware/embedded positions.
+    If you have experience interviewing for software positions and want to contribute, feel free to contact me.
+
 ## Concepts
 
-!!! quote ""
-    Be able to explain concepts in your own words and give examples of you applying them
+Be able to explain concepts in your own words and give examples of you applying them.
 
 ### Agile software development
 
@@ -28,7 +31,4 @@
 ### DevOps
 
 - CI/CD
-
-### And more
-
-- Look at vocabulary that job descriptions use
+- Docker, Kubernetes

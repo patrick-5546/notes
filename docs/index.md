@@ -27,5 +27,6 @@ retention and serves as a resource that I can use to refresh my memory.
 ## Site Contents
 
 - Setup: My Windows and Linux configurations
+- Internship Preparation: How I efficiently apply for internships and prepare for interviews
 - Reference: Quick reference on how to use popular coding-related software
 - About Me: Graphics related to my experiences

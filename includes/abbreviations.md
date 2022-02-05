@@ -9,6 +9,7 @@
 *[DRAM]: Dynamic Random Access Memory
 *[DFFs]: Delay Flip Flops
 *[FPGA]: Field Programmable Gate Array
+*[FSM]: Finite State Machine
 *[FSMs]: Finite State Machines
 *[GUI]: Graphical User Interface
 *[LSB]: Least Significant Bit

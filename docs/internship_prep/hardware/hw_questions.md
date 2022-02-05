@@ -1,26 +1,43 @@
-# Hardware Interview Questions
+# Hardware Questions
 
-- Implement buffer and inverter from XOR
-- NOR from 2:1 multiplexers
-- AND from 2:1 mux
-- NOT from NAND
-- reset flip flop from flop
-- Implement flip flop (synch and asynch reset, enable) and latch in Verilog
-    - latch vs flop waveform
-- Power dissipation: static (leakage) when current is idle, dynamic when current is switching
-- Multiply: expensive, so add or shift
-- Mealy vs Moore (use Mealy in practice)
-- One hot vs binary state encodings
-    - One hot requires more flops, but simplifies next state and output logic
-- Inferred latch occurs when not all combinations of input logic are defined
-- Setup violation → metastable, hold time → lose previous data
-    - How to solve hold time violation (buffer on data or clock path, increase gate delays - increase drive strength or threshold voltage, c→q time)
-- Clock domain crossing: synchronize, metastability MTBF
-- Gray code applications: glitch, cdc
-- For loop in systemverilog increases readability
-- Latch only application: clock gating (if clk past input to output)
-- RC circuits
+I have listed some hardware technical questions that were asked in my interviews below.
+With the academic and extracurricular experience to be a candidate for more technical positions when seeking my second internship,
+the average question difficulty rose accordingly.
+
+The answers to some of these questions can be found in the [Hardware Reference](./hw_refence.md) page.
+
+## Seeking my first internship
+
+- Difference between a latch and DFF
+- Difference between a Mealy and Moore FSM
+- Implement gates (AND, NOR, etc.) from 2:1 multiplexers
+- Create a DFF with reset from a regular DFF
+
+## Seeking my second internship
+
+- Draw and compare the waveforms for a latch and DFF
+- How to select between a Mealy and Moore FSM
+- Implement a buffer and inverter from a NAND or XOR gate
+- Implement DFFs (synchronous and asynchronous reset, enable) and latch in Verilog
+- Different types of power dissipation
 - Different types of adders
-- State machine diagram of an elevator
-- Clock jitter (absolute difference of clock edge from ideal caused by noise), skew (arrives at different flops at different times), slew (transition rate)
+- Hardware multiplication and alternatives
+- One hot vs binary FSM state encodings
+- Causes of inferred latches
+- Applications of latches
+- Causes and fixes for setup and hold time violations
+- Causes and fixes for clock domain crossings; metastability
+- Gray code applications
+- SystemVerilog vs Verilog
+    - Purpose of for loops in SystemVerilog
+- Transistors
+- RC circuits
+- Clock jitter, skew
 - Setup and hold slack
+- Draw a state machine diagram of an elevator (more details about the elevator's functionality were given)
+
+## Resources
+
+- [VLSI Interview Questions](http://asic.co.in/Index_files/vlsi_interview_questions.htm)
+
+--8<-- "includes/abbreviations.md"

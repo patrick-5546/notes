@@ -1,15 +1,26 @@
-# Software Interview Questions
+# Software Questions
 
-## From Hardware/Embedded Interviews
+I have listed some software technical questions that were asked in my interviews below.
 
-- Python: datatypes, list vs array, advantage of Numpy (vectorized)
-- Multiply numbers up to 100 digits
-- Check, set, clear, and toggle ith bit (bitwise operations, shifting)
-- global vs static
-- private vs protected function
-- polymorphism
-- pointers
-- segmentation fault
+!!! warning "Disclaimer"
+    My software-related interview experiences have largely come from interviews for hardware/embedded positions.
+    If you have experience interviewing for software positions and want to contribute, feel free to contact me.
+
+## Software questions from interviews for hardware/embedded positions
+
+- Multiply numbers up to 100 digits long
 - Alphabetically sort a string
-- Resources: [Top Embedded C Interview Questions (2022) - InterviewBit](https://www.interviewbit.com/embedded-c-interview-questions),
-[40+ OOPs Interview Questions and Answers (2022) - InterviewBit](https://www.interviewbit.com/oops-interview-questions/)
+- Check, set, clear, and toggle a bit
+- Polymorphism
+    - See the [Resources](#resources) section
+- Python questions
+    - Datatypes
+    - List vs array
+    - Performance advantage of Numpy
+- C/C++ questions
+    - See the [Resources](#resources) section
+
+## Resources
+
+- [Top Embedded C Interview Questions](https://www.interviewbit.com/embedded-c-interview-questions)
+- [40+ OOPs Interview Questions and Answers](https://www.interviewbit.com/oops-interview-questions/)
