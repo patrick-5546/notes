@@ -5,7 +5,9 @@
         },
         {
             "pattern": "^https://www.linkedin.com/"
+        },
+        {
+            "pattern": "^https://www.interviewbit.com/"
         }
-    ],
-    "timeout": "30s"
+    ]
 }
