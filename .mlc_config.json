@@ -5,6 +5,9 @@
         },
         {
             "pattern": "^https://www.linkedin.com/"
+        },
+        {
+            "pattern": "^https://www.interviewbit.com/"
         }
     ]
 }
