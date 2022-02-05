@@ -5,8 +5,8 @@ hide:
 
 # Patrick's Notes
 
-Welcome to my personal notes, where I am free to rant about whatever I want :smile:.
-I have big plans for this website, though I'm not sure if I have the time to match :sweat_smile:;
+Welcome to my personal notes on a variety of subjects that interest me.
+I have big plans for this website, though I'm not sure if I have the time to match;
 for a sneak peak, check out the open issues of the corresponding repository.
 
 ## Site Purpose
@@ -28,5 +28,7 @@ retention and serves as a resource that I can use to refresh my memory.
 
 - Setup: My Windows and Linux configurations
 - Internship Preparation: How I efficiently apply for internships and prepare for interviews
-- Reference: Quick reference on how to use popular coding-related software
+- Reference: Quick reference on how to use popular programming-related software
 - About Me: Graphics related to my experiences
+
+--8<-- "includes/abbreviations.md"
