@@ -1,6 +1,8 @@
 *[ASIC]: Application-Specific Integrated Circuit
 *[CD]: Continuous Deployment
 *[CI]: Continuous Integration
+*[CLA]: Carry Lookahead Adder
+*[CLAs]: Carry Lookahead Adders
 *[CLB]: Configurable Logic Block
 *[CLBs]: Configurable Logic Blocks
 *[CLI]: Command Line Interface
@@ -9,6 +11,7 @@
 *[FPGA]: Field Programmable Gate Array
 *[FSMs]: Finite State Machines
 *[GUI]: Graphical User Interface
+*[LSB]: Least Significant Bit
 *[LUT]: Lookup Table
 *[LUTs]: Lookup Tables
 *[OOP]: Object-Oriented Programming

@@ -30,14 +30,6 @@
 4. **Timing analysis:** looks for timing violations
     - Path delay is sum of all logic and wire delays
 
-## SystemVerilog
-
-- Types of modules
-    - Behavioral: describe what module does (gate level)
-    - Structural: describe how it is built from simpler modules (instantiates other modules)
-- Unlike regular Verilog, SystemVerilog supports OOP and generate statements
-    - Generate statements are for readability; they don’t change hardware implementation
-
 ## Memory
 
 - Types: DRAM (volatile, capacitor), SRAM (nonvolatile, cross-coupled inverter), ROM (nonvolatile, read only)
@@ -55,6 +47,39 @@
 - Amdahl's law: speed up = $\frac{1}{(1-a) + \frac{a}{k}}$, where $a$ is the percentage of code sped up by $k$ times
     - Increasing associativity decreases conflict misses, but decreases performance (lookup and replacement times)
 - Write through is good for synchronization, write back is faster when modifying same cache line multiple times
+
+## Power Optimization
+
+### Types of Power
+
+*Dynamic:* every time a wire is switched from 0 to 1 or 1 to 0, some power is dissipated
+
+$$
+P_{dynamic} = \alpha fCV^2
+$$
+
+*Static:* every transistor on the chip leaks, even when it is not doing anything
+
+### Power vs Transistor Size
+
+As digital circuits shrink (and chip voltages decrease):
+
+- Dynamic power decreases: $V$ and $C$ decrease in dynamic power equation
+- Static power increases: leakage current increases
+- Today static power is about as big as dynamic power
+
+### Reducing Power Consumption
+
+- Custom chip
+    - Turn off regions that are unused to reduce static power (dark silicon)
+    - Multiple threshold libraries
+- FPGA
+    - Minimize area (less leakage, may allow for smaller FPGA)
+- General
+    - Lower voltage
+    - Revise implementation (add instead of multiply, invert bus)
+    - Pipelining: adding flip flops prevents glitches from propagating, which reduces glitch power
+        - Disadvantage: flip flops use power, which places extra burden on the clock tree
 
 ## Timing
 
@@ -181,126 +206,162 @@ Reference: [Setup and hold slack](https://asic-soc.blogspot.com/2013/08/setup-an
 
 ### Adders
 
-- 1-bit adders: half adder (2 input, 2-bit output), full adder (adds carry in bit to half adder)
+#### 1-bit adders
 
-#### Multibit Adders (Carry propagate adders)
+- *Half adder:* two 1-bit inputs, 2-bit output
+- *Full adder:* half adder + carry in and out
 
-- Ripple-carry (slow): chain of full adders that bitwise add N-bit inputs; $t_{ripple} \approx Nt_{FA}$
-    - $t_{FA}$ is the delay of a full adder
-    - Delay proportionate to N
-    - FPGAs optimized for ripple carry adders, so faster than other implementations with N ≤ 16
-- Carry select (less slow): calculate high-order bits for both cases of carry-in, select correct case when carry in is available
-    - Requires more hardware, but faster
-- Carry-lookahead (fast): compute carry out for k-bit blocks using generate and propagate signals
-    - $G_i = A_iB_i$
-        - $G_{3:0} = G_3+P_3(G_2+P_2(G_1+P_1G_0))$
-    - $P_i = A_i+B_i$
-        - $P_{3:0} = P_3P_2P_1P_0$
-    - $C_{out} = G_{in} + P_{in}C_{in}$
-    - Delay of 4 bit adder: 4 gates
+#### Multi-bit adders
 
-        ![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%202.png)
+There are several types of carry propagate adders:
 
-        - All generate and propagate bits ready in 1 gate
-        - All carry bits ready in 2 gates (AND OR network)
-        - Sum input and carry bits (same as XOR) in 1 gate
-    - Not very scalable, so typical to make a 32-bit CLA out of 4-bit CLAs
-        1. Compute all $G_i,P_i$
-        2. Compute all $G,P$ for each 4-bit block
-        3. $C_{in}$ propagates through each block
+*Ripple-carry (slow):* chain of full adders that bitwise add N-bit inputs
 
-        ![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%203.png)
+- Delay: $t_{ripple} \approx Nt_{FA}$, where $t_{FA}$ is the delay of a full adder
+    - Proportional to N
+- FPGAs are optimized for ripple carry adders, so faster than other implementations with $N ≤ 16$
 
-        ![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%204.png)
+*Carry select (less slow):* calculate higher-order bits for both cases of carry-in, then select correct case when carry in is available
 
-        - Thus $t_{CLA} = 4log_4(N)t_{PD}$ (proportional to logN)
+- Requires more hardware, but slightly faster
+
+*Carry-lookahead (fast):* compute carry out for $k$-bit blocks using generate and propagate signals
+
+- $G_i = A_iB_i$
+    - $G_{3:0} = G_3+P_3(G_2+P_2(G_1+P_1G_0))$
+- $P_i = A_i+B_i$
+    - $P_{3:0} = P_3P_2P_1P_0$
+- $C_{out} = G_{in} + P_{in}C_{in}$
+- Delay of 4-bit adder: $4 t_{PD}$, where $t_{PD}$ is the delay of a single AND/OR gate
+    - All $G,P$ terms available in $t_{PD}$
+    - $C$ terms (sum of products) available in $2t_{PD}$
+    - Results from full adder (sum, no carry out) available in $t_{PD}$
+- Not very scalable, so typical to make a N-bit CLA out of smaller $k$-bit CLAs
+    - Delay: $t_{CLA} = t_{pg} + t_{pg\_block} + \frac{N}{k-1}t_{AND\_OR} + kt_{FA}$
+        - $t_{pg}$: delay to generate all $G_i,P_i$
+        - $t_{pg\_block}$: delay to generate all $G_{i:j},P_{i:j}$ for every $k$-bit CLA
+        - $t_{AND\_OR}$: delay from $C_{in}$ to $C_{out}$ of the final AND/OR gate in a $k$-bit CLA
+        - $t_{CLA} = 4\log_4(N)t_{PD}$
+            - Proportional to $\log N$
+
+    ![Untitled](../../assets/large_cla.png)
 
 ### Miscellaneous Arithmetic Circuits
 
-- Subtractor: take two's complement of second input
-- Equality comparator: AND all the bitwise XORs
-- Less than comparator: subtractor; last (sign) bit is 1 when A < B
-- Shift less than: all 0's, except LSB is result of less than comparator (A < B)
-- Arithmetic shifters (`<<<` `>>>`) are the same as logical shifters (`<<` `>>`) except the right arithmetic shift is sign extended
-- Division: most complex, always use multi-cycle dividers in practice
+- *Subtractor:* take two's complement of second input
+- *Equality comparator:* AND all the bitwise XORs
+- *Less than comparator:* subtractor; last (sign) bit is 1 when A < B
+- *Shift less than:* all 0's, except LSB is result of less than comparator (A < B)
+- *Shifters:* arithmetic shifters (`<<<` `>>>`) are the same as logical shifters (`<<` `>>`) except the right arithmetic shift is sign extended
+- *Division:* most complex, always use multi-cycle dividers in practice
 
 ### Multipliers
 
-- Multiplication is a complex operation: avoid if possible
-    - Add instead of multiply: 7*2 → 7+7
-    - Shift instead of multiply (power's of 2): 7*2 → 7 << 2
-- 1-bit x N-bit: AND operation
-- N-bit x N-bit: sum of shifted 1-bit X N-bit for each bit in the second term (same as multiplication by hand)
-- Large multipliers: constructed out of smaller N-bit x N-bit multipliers
-    - 2N-bit x 2N-bit produces 4N-bit result
-    - $2^N, 2^{2N}$ terms in equation shift are shift lefts
+Multiplication is a complex operation: avoid if possible
 
-![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%205.png)
+- Add instead of multiply: $7 \times 2 \rightarrow 7 + 7$
+- Shift instead of multiply for powers of 2: $7 \times 2 \rightarrow 7 << 2$
 
-![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%206.png)
+*1-bit x N-bit:* AND operation
 
-- Signed multipliers: subtract last number (two's complement) rather than add it
-- Serial (multi-cycle) multiplier
+*N-bit x N-bit:* sum of shifted 1-bit x N-bit for each bit in the second term (long multiplication method)
 
-    ![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%207.png)
+*Large multiplier:* constructed out of smaller N-bit x N-bit multipliers
+
+- Let $A$ be a $2N$-bit number, with $A_H$ being the upper N bits and $A_L$ being the lower N bits.
+Let $B,B_H,B_L$ be defined a similar matter. Therefore,
+
+    $$
+    \displaylines{A = A_{2N-1}A_{2N-2}...A_0 = A_H \times 2^N + A_L \\
+                  B = B_{2N-1}B_{2N-2}...B_0 = B_H \times 2^N + B_L}
+    $$
+
+    - $2^N$ shifts left by N bits
+
+- The product of $A$ and $B$ is
+
+    $$
+    A \times B = A_HB_H2^{2N} + (A_HB_L+A_LB_H)2^N + A_LB_L
+    $$
+
+    - $2N$-bit x $2N$-bit produces a $4N$-bit result
+
+*Signed multipliers* subtract last number (two's complement) rather than add it
+
+*Serial (multi-cycle) multiplier:*
+
+```
+P = 0
+while B != 0:
+    if B(0) == 1:
+        P = P + A
+    A = A << 1
+    B = B >> 1
+```
 
 ## Decimal Numbers
 
 ### Fixed Point
 
-- Base 2, N-bit representation: m integer bits (m<n), n-m fraction bits
-- Arithmetic operations: align decimal, perform as usual
+Like decimal numbers but base 2. For example,
+
+$$
+101.01 = 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 + 0 \times 2^{-1} + 1 \times 2^{-2} = 5.25
+$$
+
+- N-bit representation has $M$ integer bits (left of decimal point) and $N-M$ fraction bits (right of decimal point)
+- Arithmetic operations: align decimal then perform as usual
     - Multiplication and division result in loss of precision
 
 ### Floating Point
 
-![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%208.png)
-
-![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%209.png)
-
-Binary scientific notation
+Binary scientific notation:
 
 $$
-\pm 1.\text{xxx} \times 2^e \Leftrightarrow \{\text{sign}\}1.\{\text{mantissa}\} \times \{\text{base}\}^{\{\text{exponent}\}}
+\pm 1.\text{xxx} \times 2^i \Leftrightarrow \{\text{sign}\}1.\{\text{mantissa}\} \times \{\text{base}\}^{\{\text{exponent}\}}
 $$
 
-- Purpose of bias is to circumvent the need for a signed exponent field
-- 64-bit: 1 sign bit: 11 exponent bits: 52 fraction bits, bias is 1023
+The floating point representation saves the sign, biased exponent, and mantissa fields of the number in binary scientific notation
+
+- 32-bit representation: 1 sign bit, 8 biased exponent bits, 23 mantissa bits
+- 64-bit representation: 1 sign bit, 11 biased exponent bits, 52 mantissa bits
+- Bias exponent to be positive to circumvent the need for a signed exponent field
+    - Bias is 127 for 32-bit and 1023 for 64-bit
+- Range
     - Largest positive: exponent is all 1s except LSB, mantissa is all 1s
     - Smallest positive: exponent is all 0s except LSB, mantissa is all 0s
 - Special cases
-    - Subnormal: exponent all 0s, mantissa is interpreted as being preceded by 0
+    - Subnormal (smaller than what is normally possible): exponent all 0s, mantissa is interpreted as being preceded by 0
         - Smallest positive: mantissa is all 0's except LSB
 
-        ![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%2010.png)
+    | Number | Sign | Biased Exponent | Mantissa |
+    | ------ | ---- | --------------- | -------- |
+    | 0 | X | 00000000 | 00000000000000000000000 |
+    | $\infty$ | 0 | 11111111 | 00000000000000000000000 |
+    | $-\infty$ | 1 | 11111111 | 00000000000000000000000 |
+    | NaN | X | 11111111 | non-zero |
+
+Example: write $-58.25_{10}$ in 32-bit floating point
+
+1. Convert decimal to binary: $58.25_{10} = 111010.01_2$
+2. Write in binary scientific notation: $1.1101001 \times 2^5$
+3. Fill in the fields
+    - Sign bit: $1$ (negative)
+    - Biased exponent: $127 + 5 = 132 = 10000100_2$
+    - Mantissa: $110 1001 0000 0000 0000 0000_2$
 
 ### Fixed vs Floating Point
 
-- Fixed: simpler circuitry → cheaper, smaller, less power consumption
+- Fixed: simpler circuitry, smaller, less power consumption, cheaper
 - Floating point: higher dynamic range of representable values
     - Not synthesizable unless explicitly accounted for; useful for simulation
 
-## Power Optimization
+## SystemVerilog
 
-### Types of Power
-
-![Untitled](Quick%20Reference%2099f7f99436be4200b1da42666f1af893/Untitled%2011.png)
-
-- As digital circuits shrink (and voltage of chips decrease)
-    - Dynamic power decreases (V and C decrease in dynamic power equation)
-    - Static power of new chip is a higher proportion of total power (decreasing dynamic power and increasing leakage current)
-
-### Reducing Power Consumption
-
-- Custom chip
-    - Turn off regions that are unused to reduce static power (dark silicon)
-    - Multiple threshold libraries
-- FGPA
-    - Minimize area (less leakage, may allow for smaller FPGA)
-- General
-    - Lower voltage
-    - Revise implementation (add instead of multiply, invert bus)
-    - Pipelining (adding flip flops prevents glitches from propagating → reduce glitch power)
-        - Disadvantage: flip flops use power, extra burden on clock tree
+- Types of modules
+    - Behavioral: describe what module does (gate level)
+    - Structural: describe how it is built from simpler modules (instantiates other modules)
+- Unlike regular Verilog, SystemVerilog supports OOP and generate statements
+    - Generate statements are for readability; they don’t change hardware implementation
 
 --8<-- "includes/abbreviations.md"
