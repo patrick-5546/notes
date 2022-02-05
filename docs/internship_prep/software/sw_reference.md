@@ -32,3 +32,5 @@ Be able to explain concepts in your own words and give examples of you applying 
 
 - CI/CD
 - Docker, Kubernetes
+
+--8<-- "includes/abbreviations.md"
