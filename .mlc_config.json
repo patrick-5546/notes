@@ -7,5 +7,5 @@
             "pattern": "^https://www.linkedin.com/"
         }
     ],
-    "timeout": "20s"
+    "timeout": "30s"
 }
