@@ -5,9 +5,9 @@ hide:
 
 # Patrick's Notes
 
-Welcome to my personal notes on a variety of subjects that interest me.
+Welcome to my personal notes on various programming-related topics.
 I have big plans for this website, though I'm not sure if I have the time to match;
-for a sneak peak, check out the open issues of the corresponding repository.
+for a sneak peak, check out the [open issues](https://github.com/patrick-5546/notes/issues).
 
 ## Site Purpose
 
