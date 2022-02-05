@@ -8,7 +8,7 @@ I can focus my time on the content of the site.
 ## Useful Documentation Pages
 
 - [Search for icons](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search)
-- [Types of collapsible blocks](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types)
+- [Admonition types](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types)
 - [Keyboard keys syntax](https://facelessuser.github.io/pymdown-extensions/extensions/keys/#extendingmodifying-key-map-index)
 - [Setup](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
 - [Reference](https://squidfunk.github.io/mkdocs-material/reference/)
@@ -86,6 +86,8 @@ WSL is a term in the glossary.
 
 - [x] Result of task list
 - [ ] Prove $e=mc^2$
+
+Bug: [Line break workaround in math equations](https://github.com/mathjax/MathJax/issues/2312#issuecomment-538185951)
 
 ## CI / CD Using GitHub Actions
 

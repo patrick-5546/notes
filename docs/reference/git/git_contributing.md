@@ -76,5 +76,6 @@ git remote prune origin
     - [Encrypted secrets documentation](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
 - Wiki: host very basic documentation,
 [GitHub Flavored Markdown](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) only
-    - Advanced GitHub Flavored Markdown syntax: [Render code snippet](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/creating-a-permanent-link-to-a-code-snippet#linking-to-code)
+    - [Advanced Formatting in GitHub Markdown](https://gist.github.com/apaskulin/1ad686e42c7165cb9c22f9fe1e389558)
+    - [Render a code snippet in an issue](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/creating-a-permanent-link-to-a-code-snippet#linking-to-code)
 - [Choosing the right open source license](https://choosealicense.com/)
