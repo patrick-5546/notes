@@ -1,12 +1,12 @@
 # Software Questions
 
-I have listed some software technical questions that were asked in my interviews below.
-
 !!! warning "Disclaimer"
     My software-related interview experiences have largely come from interviews for hardware/embedded positions.
     If you have experience interviewing for software positions and want to contribute, feel free to contact me.
 
-## Software questions from interviews for hardware/embedded positions
+I have listed some software technical questions that were asked in my interviews below.
+
+## Software questions from hardware/embedded interviews
 
 - Multiply numbers up to 100 digits long
 - Alphabetically sort a string
@@ -22,5 +22,5 @@ I have listed some software technical questions that were asked in my interviews
 
 ## Resources
 
-- [Top Embedded C Interview Questions](https://www.interviewbit.com/embedded-c-interview-questions)
 - [40+ OOPs Interview Questions and Answers](https://www.interviewbit.com/oops-interview-questions/)
+- [Top Embedded C Interview Questions](https://www.interviewbit.com/embedded-c-interview-questions)

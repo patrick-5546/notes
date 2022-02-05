@@ -15,6 +15,7 @@
 *[LSB]: Least Significant Bit
 *[LUT]: Lookup Table
 *[LUTs]: Lookup Tables
+*[MTBF]: Mean Time Between Failure
 *[OOP]: Object-Oriented Programming
 *[PLLs]: Phase-Locked Loops
 *[ROM]: Read-Only Memory

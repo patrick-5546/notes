@@ -8,7 +8,7 @@
 ### Prepare for questions about resume experiences
 
 For each technical experience on your resume, ensure that the source code is easily accessible with documentation and diagrams.
-For example, push it to a GitHub repository (make it private if required).
+For example, push it to a GitHub repository (making it private if required).
 This is helpful when explaining technical details during an interview
 
 Next, prepare for common interview questions related to your experiences:
@@ -16,14 +16,14 @@ Next, prepare for common interview questions related to your experiences:
 - **Describe a time when you had a conflict when working on a team, and how you resolved it**
     - I have been asked this many times
 - Tell me about yourself
-    - Can come up with a couple responses for different types of jobs
+    - Come up with a couple responses for different types of jobs
 - Describe a problem that you solved
 - Describe your process for debugging code
 - Describe a leadership experience
 
-Good topics to bring up include:
+Good topics to practice talking about include:
 
-- Need to collaborate with colleagues to find the best possible solution
+- Collaborating with colleagues to find the best possible solution
     - Receptive to feedback and varying perspectives
     - Each person has different strenghts
 - Bottom up approach - reusability, test each small part
@@ -31,8 +31,8 @@ Good topics to bring up include:
 
 ### Prepare for open-ended technical questions
 
-!!! tip ""
-    It is more important to be able to clearly explain your ongoing thought process than to solve the problem.
+!!! quote ""
+    It is more important to be able to clearly explain your ongoing thought process than to solve the problem
 
 [Video on technical interview preparation](https://www.youtube.com/watch?v=8Myx-vy0csM)
 

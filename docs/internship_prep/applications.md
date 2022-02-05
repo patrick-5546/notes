@@ -75,7 +75,7 @@ prepare a template for each type of position you want to apply to:
 - Robotics/Controls
 
 These templates will vary in the experience they describe in the body paragraph
-and maybe in the terms used in the introduction general statement.
+and maybe also in the terms used in the introduction general statement.
 
 ## Job Search
 
