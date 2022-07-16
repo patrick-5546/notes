@@ -27,6 +27,6 @@ Website for my notes on various programming-related topics.
     - "debug Run Application" runs `mkdocs serve`
     - "debug Launch Application" runs `mkdocs serve` and opens the application in a new Microsoft Edge window
 
-### Command line
+### Command Line
 
 1. `mkdocs serve`
