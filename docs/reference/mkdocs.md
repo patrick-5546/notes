@@ -151,7 +151,7 @@ This workflow is run on every push and pull request to the main branch, as well 
 
 ### Resources
 
-- [Schedule workflow runs](https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#scheduled-events)
+- [Schedule workflow runs](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule)
 
 ## Example Sites
 
