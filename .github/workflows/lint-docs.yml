@@ -32,6 +32,6 @@ jobs:
     - name: Check markdown pages for broken links
       uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
-        config-file: '.mlc_config.json'
+        config-file: '.markdown-link-check.json'
         folder-path: 'docs, includes'
         file-path: './README.md'
