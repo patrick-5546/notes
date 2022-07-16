@@ -1,4 +1,4 @@
-name: Lint
+name: Lint Docs
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
     - name: Lint markdown pages
       uses: nosborn/github-action-markdown-cli@v3.0.1
       with:
-        files: 'docs/* includes/*'
+        files: 'docs/* includes/* README.md'
         config_file: '.markdownlint.json'
 
   # https://github.com/gaurav-nelson/github-action-markdown-link-check
@@ -32,5 +32,6 @@ jobs:
     - name: Check markdown pages for broken links
       uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
-        config-file: '.mlc_config.json'
+        config-file: '.markdown-link-check.json'
         folder-path: 'docs, includes'
+        file-path: './README.md'

@@ -1,6 +1,12 @@
 {
     "ignorePatterns": [
         {
+            "pattern": "^http://asic.co.in/"
+        },
+        {
+            "pattern": "^https://docs.github.com/"
+        },
+        {
             "pattern": "^https://linuxize.com/"
         },
         {
