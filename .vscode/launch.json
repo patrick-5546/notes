@@ -10,7 +10,20 @@
                 "serve"
             ],
             "console": "internalConsole",
-            "internalConsoleOptions": "neverOpen"
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "msedge",
+            "url": "http://localhost:8000"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Launch Application",
+            "configurations": ["Run Application", "Launch Edge"],
+            "stopAll": true
         }
     ]
 }

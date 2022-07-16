@@ -1,5 +1,2 @@
-# VS Code workspace customization
-.vscode/settings.json
-
 # Python virtual environment
 .venv/
