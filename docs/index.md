@@ -14,7 +14,7 @@ for a sneak peak, check out the [open issues](https://github.com/patrick-5546/no
 I created this website to:
 
 1. Consolidate all my resources and references in one place. I just hate it when I recognize an error
-message but forget how I resolved it. Or when I revisit a tool and have to relearn how it works.
+message but forgot how I resolved it. Or when I revisit a tool and forgot how it works.
 Thus, I plan to record what I learn here while it is fresh in my memory.
 
 2. Further my understanding of what I learn by writing it in my own words. This improves learning
