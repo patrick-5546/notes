@@ -7,7 +7,7 @@ hide:
 
 ## Hobbies
 
-:material-basketball: :material-volleyball: :fontawesome-solid-skiing: :material-violin: :material-camera:
+:material-basketball: :material-volleyball: :fontawesome-solid-person-skiing: :material-violin: :material-camera:
 
 ## Technology Stack Timeline
 
