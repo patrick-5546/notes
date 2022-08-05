@@ -1,4 +1,8 @@
 {
+    "cSpell.enabled": true,
+    "cSpell.enableFiletypes": [
+        "!yaml",
+    ],
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
     },
@@ -6,5 +10,5 @@
         "!ENV",
         "tag:yaml.org,2002:python/name:materialx.emoji.twemoji",
         "tag:yaml.org,2002:python/name:materialx.emoji.to_svg"
-    ]
+    ],
 }
