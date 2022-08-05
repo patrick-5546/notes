@@ -5,12 +5,15 @@ changelog:
     authors:
       - imgbot
   categories:
-    - title: Breaking Changes 🛠
+    - title: New Pages
       labels:
-        - breaking-change
-    - title: Exciting New Features 🎉
+        - new
+    - title: Updated Pages
       labels:
-        - enhancement
+        - update
+    - title: Infrastructure Updates
+      labels:
+        - infrastructure
     - title: Other Changes
       labels:
         - "*"
