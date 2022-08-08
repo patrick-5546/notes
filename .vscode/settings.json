@@ -1,13 +1,5 @@
 {
     "cSpell.enabled": true,
-    "cSpell.enableFiletypes": [
-        "!yaml",
-    ],
-    "cSpell.words": [
-        "chezmoi",
-        "dotfiles",
-        "homelab"
-    ],
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
     },

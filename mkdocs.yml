@@ -90,12 +90,16 @@ nav:
   - Home: index.md
   - Setup:
     - setup/index.md
-    - Terminal:
-      - setup/terminal/index.md
-      - PowerShell: setup/terminal/powershell.md
-      - Zsh: setup/terminal/zsh.md
+    - Terminals:
+      - Windows: setup/terminals/windows-terminals.md
+      - Linux: setup/terminals/linux-terminals.md
+    - CLI:
+      - Common: setup/cli/common-cli.md
+      - Windows: setup/cli/windows-cli.md
+      - Linux: setup/cli/linux-cli.md
     - IDE: setup/ide.md
-    - Other Software: setup/software.md
+    - Other Software:
+      - Windows: setup/software/windows-software.md
   - Internship Preparation:
     - internship_prep/index.md  # disclaimer: not a learning resource, but for brush up / review / knowledge check
     - Applications: internship_prep/applications.md

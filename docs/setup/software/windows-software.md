@@ -1,4 +1,4 @@
-# Other Software
+# Windows Software
 
 ## Debloat Windows
 
