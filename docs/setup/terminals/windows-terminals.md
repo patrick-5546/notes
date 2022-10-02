@@ -13,24 +13,16 @@ It can be customized aesthetically and functionally to the moon:
 
 ## Setup
 
-1. Clone my setup repository
+1. [Install my dotfiles](https://github.com/patrick-5546/dotfiles#powershell-7-on-windows)
 
-    ``` powershell
-    git clone --depth=1 https://github.com/patrick-5546/setup.git "$env:USERPROFILE\git_projects\.setup"
-    ```
+2. Install a [Nerd Font](https://www.nerdfonts.com/font-downloads)
+    - The fonts I use can be found in `windows/fonts/` of my setup repository (currently I only use FiraCode)
 
-2. Install fonts that support symbols used by Oh My Posh (i.e., [Nerd Fonts](https://www.nerdfonts.com/font-downloads))
-    1. My fonts can be extracted from `windows\fonts.zip`
+3. My settings, themes, and profiles can be found in `reference_dotfiles/windows_terminal/windows_terminal_settings.json`
+   of the dotfiles repository
+    - The icons I use can be found in `windows/icons/` of my setup repository
 
-3. My settings, themes, and profiles can be found in `windows\windows_terminal_settings.json`. To symbolic link:
-
-    ``` powershell
-    New-Item -ItemType SymbolicLink -Path "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -Value "$env:USERPROFILE\git_projects\.setup\windows\windows_terminal_settings.json"
-    ```
-
-4. [Add Git Bash to Windows Terminal](https://stackoverflow.com/a/57369284)
-
-5. See the CLI pages for how I configured my Windows and Linux CLI
+4. See the [common](../cli/common-cli.md) and [windows](../cli/windows-cli.md) CLI pages for the features of my Windows CLI configuration
 
 ## Shortcuts
 
@@ -66,11 +58,11 @@ All the available shortcuts are listed in the `Actions` tab of the settings page
 
 ## Relevant Files in My Repositories
 
-[Dotfiles](https://github.com/patrick-5546/dotfiles)
+### [Dotfiles](https://github.com/patrick-5546/dotfiles)
 
-- Windows Terminal: `reference_dotfiles/windows_terminal/windows_terminal_settings.json`
+- `reference_dotfiles/windows_terminal/windows_terminal_settings.json`
 
-[Setup Repository](https://github.com/patrick-5546/setup) (Old)
+### [Setup](https://github.com/patrick-5546/setup) (Old)
 
 - `windows/fonts/`
 - `windows/icons/`
