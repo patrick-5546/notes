@@ -1,23 +1,20 @@
-# Windows Software
+# Other Windows Software
 
-## Debloat Windows
+## Chris Titus Tech's Windows Utility
 
-One click system tweaks and troubleshooting. To run, paste the following command into
-an Adminstrator PowerShell prompt:
+[Winutil](https://github.com/ChrisTitusTech/winutil) is meant to streamline installs, debloat with tweaks,
+troubleshoot with config, and fix Windows updates.
+To run, paste the following command into an Administrator PowerShell prompt:
 
 ``` powershell
-iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JJ8R4'))
+iwr -useb https://christitus.com/win | iex
 ```
 
-Watch the video at the end of [this](https://www.christitus.com/debloat-windows-10-2020/) article for
-an explanation of each option.
+Resources:
 
-Recommended options:
+- [The best Windows tool for 2022](https://www.youtube.com/watch?v=tPRv-ATUBe4)
 
-- Essential Tweaks
-- [If dual-booting] Set Time to UTC
-
-## Winget
+## Package Manager
 
 Using a package manager such as winget allows software to be quickly and easily installed,
 upgraded, and uninstalled using the terminal. Winget is relatively new and thus does not yet support
@@ -50,31 +47,34 @@ packages that are not yet available on winget, but this has become increasingly 
 | `winget upgrade --all` | Upgrade all apps |
 | `winget uninstall --id <app_id>` | Uninstall app |
 
-### Winget resources
+Resources:
 
 - [winget command reference and examples](https://docs.microsoft.com/en-us/windows/package-manager/winget/#commands)
 - [Search winget packages, generate command that installs the desired packages](https://winstall.app/)
 
-??? note "Chocolatey quick reference"
-    Run the following commands in an Administrator PowerShell prompt:
+### Chocolatey quick reference
 
-    - `-y` confirms all prompts so that the command runs without the need for user input
+Run the following commands in an Administrator PowerShell prompt:
 
-    | Command     | Description                          |
-    | ----------- | ------------------------------------ |
-    | `choco install <package1> <package2> -y` | Install packages |
-    | `choco list -l` | List packages installed using Chocolatey |
-    | `choco pin add -n <package>` | Keep package at current version |
-    | `choco pin list` | List pinned packages |
-    | `choco pin remove -n <package>` | Allow package to be upgraded |
-    | `choco outdated` | List outdated packages |
-    | `choco upgrade <package> -y` | Upgrade package |
-    | `choco upgrade all -y` | Upgrade all packages |
-    | `choco uninstall <package> -y` | Uninstall package |
+- `-y` confirms all prompts so that the command runs without the need for user input
 
-    - [Installing Chocolatey](https://chocolatey.org/install)
-    - [Search Chocolatey packages](https://community.chocolatey.org/packages)
-    - [Chocolatey command reference and examples](https://docs.chocolatey.org/en-us/choco/commands/)
+| Command     | Description                          |
+| ----------- | ------------------------------------ |
+| `choco install <package1> <package2> -y` | Install packages |
+| `choco list -l` | List packages installed using Chocolatey |
+| `choco pin add -n <package>` | Keep package at current version |
+| `choco pin list` | List pinned packages |
+| `choco pin remove -n <package>` | Allow package to be upgraded |
+| `choco outdated` | List outdated packages |
+| `choco upgrade <package> -y` | Upgrade package |
+| `choco upgrade all -y` | Upgrade all packages |
+| `choco uninstall <package> -y` | Uninstall package |
+
+Resources:
+
+- [Installing Chocolatey](https://chocolatey.org/install)
+- [Search Chocolatey packages](https://community.chocolatey.org/packages)
+- [Chocolatey command reference and examples](https://docs.chocolatey.org/en-us/choco/commands/)
 
 ## Microsoft Store
 

@@ -11,6 +11,7 @@
         "bpytop",
         "chezmoi",
         "choco",
+        "debloat",
         "devcontainer",
         "dotfiles",
         "homelab",
