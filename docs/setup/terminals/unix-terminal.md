@@ -1,7 +1,5 @@
 ## Unix Terminal
 
-See the [common](../cli/common-cli.md) and [windows](../cli/unix-cli.md) CLI pages for details on my Unix CLI configuration.
-
 ### Alacritty
 
 [Alacritty](https://github.com/alacritty/alacritty) is a fast, aesthetic, and customizable terminal emulator.

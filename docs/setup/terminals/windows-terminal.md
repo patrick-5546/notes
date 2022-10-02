@@ -20,8 +20,6 @@ It can be customized aesthetically and functionally to the moon:
    of the dotfiles repository
     - The icons I use can be found in `windows/icons/` of my setup repository
 
-3. See the [common](../cli/common-cli.md) and [windows](../cli/windows-cli.md) CLI pages for details on my Windows CLI configuration
-
 ## Shortcuts
 
 I have highlighted a few of the shortcuts that I regularly use. The shortcuts with bolded descriptions are ones I customized.
