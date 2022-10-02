@@ -7,14 +7,20 @@
     // words - list of words to be always considered correct
     "words": [
         "alacritty",
+        "amix",
         "bpytop",
         "chezmoi",
+        "choco",
+        "devcontainer",
         "dotfiles",
         "homelab",
         "Neovim",
         "nvim",
         "ripgrep",
         "roadmap",
+        "sailbot",
+        "subfolders",
+        "tylerlum",
         "vimrc",
         "winget"
     ],
