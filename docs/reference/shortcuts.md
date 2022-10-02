@@ -83,7 +83,7 @@ Specifically, the OneNote application from the Microsoft Store.
 
 ## Windows Terminal
 
-My Windows Terminal Shortcuts can be found in the [Terminal page](../setup/terminals/windows-terminals.md#shortcuts).
+My Windows Terminal Shortcuts can be found in the [Terminal page](../setup/terminals/windows-terminal.md#shortcuts).
 
 ## Resources
 

@@ -1,7 +1,6 @@
 # Common CLI
 
-I use [chezmoi](https://github.com/twpayne/chezmoi) to manage my dotfiles and installation scripts across operating
-systems and shells.
+I use [chezmoi](https://github.com/twpayne/chezmoi) to manage my dotfiles and installation scripts across computers, OS's, and shells.
 The installation instructions can be found in [my dotfiles repository](https://github.com/patrick-5546/dotfiles)'s README.
 
 ## Software

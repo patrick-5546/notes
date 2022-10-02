@@ -32,7 +32,6 @@ See the [Windows Keyboard Shortcuts](../reference/shortcuts.md) page for a list 
 To have the same experience on all the computers I use (personal, work, school, homelab), I:
 
 1. Created a [dotfiles repository](https://github.com/patrick-5546/dotfiles) that contains my dotfiles and an installation script
-    - Used [chezmoi](./cli/linux-cli.md#chezmoi) to manage these dotfiles across computers, OS's, and shells
 2. Standardized keyboard shortcuts across programs
     - Largely based on my Vim and Microsoft Edge keyboard shortcuts
 3. Standardized CLI configuration across shells
