@@ -3,6 +3,29 @@
 I use [chezmoi](https://github.com/twpayne/chezmoi) to manage my dotfiles and installation scripts across computers, OS's, and shells.
 Its installation instructions can be found in [my dotfiles repository](https://github.com/patrick-5546/dotfiles)'s README.
 
+## Shell
+
+### Aliases
+
+I created aliases for my most frequently used commands, and tried to keep them consistent across operating systems.
+
+My Git aliases are from [Oh My Zsh's git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git).
+On Windows, they are provided by the [powershell-git-aliases](https://github.com/gluons/powershell-git-aliases) plugin.
+
+Configuration files:
+
+- Unix: [`.config/zsh/aliases.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/zsh/aliases.zsh)
+- Windows: [`Documents/PowerShell/aliases.ps1`](https://github.com/patrick-5546/dotfiles/blob/main/Documents/PowerShell/aliases.ps1)
+
+### Functions
+
+Various helper functions are used in my shell configuration and aliases files.
+
+Configuration files:
+
+- Unix: [`.config/zsh/functions.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/zsh/functions.zsh)
+- Windows: [`Documents/PowerShell/functions.ps1`](https://github.com/patrick-5546/dotfiles/blob/main/Documents/PowerShell/functions.ps1)
+
 ## Software
 
 ### Fzf
@@ -10,8 +33,10 @@ Its installation instructions can be found in [my dotfiles repository](https://g
 [Fzf](https://github.com/junegunn/fzf) is an interactive filer for command line that can be used for any list.
 I mainly use it to search through my command history, replacing ++ctrl+r++.
 
-Configuration files: [`.config/fzf/completion.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/fzf/completion.zsh),
-[`.config/fzf/key-bindings.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/fzf/key-bindings.zsh).
+Configuration files:
+
+- [`.config/fzf/completion.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/fzf/completion.zsh)
+- [`.config/fzf/key-bindings.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/fzf/key-bindings.zsh)
 
 ### Git
 
@@ -37,24 +62,3 @@ Since it is compatible with all major operating systems, I can use the same conf
 to achieve a consistent aesthetic.
 
 Configuration file: [`.config/starship.toml`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/starship.toml).
-
-## Shell
-
-### Aliases
-
-I created aliases for my most frequently used commands, and tried to keep them consistent across operating systems.
-
-My Git aliases are from [Oh My Zsh's git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git).
-On Windows, they are provided by the [powershell-git-aliases](https://github.com/gluons/powershell-git-aliases) plugin.
-
-Configuration file: [`.config/zsh/aliases.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/zsh/aliases.zsh)
-for Unix, [`Documents/PowerShell/aliases.ps1`](https://github.com/patrick-5546/dotfiles/blob/main/Documents/PowerShell/aliases.ps1)
-for Windows.
-
-### Functions
-
-Various helper functions are used in my shell configuration and aliases files.
-
-Configuration file: [`.config/zsh/functions.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/zsh/functions.zsh)
-for Unix, [`Documents/PowerShell/functions.ps1`](https://github.com/patrick-5546/dotfiles/blob/main/Documents/PowerShell/functions.ps1)
-for Windows.
