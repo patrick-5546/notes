@@ -1,6 +1,6 @@
-# :material-linux: Linux Commands
+# :material-linux:/:material-apple: Linux/MacOS Commands
 
-[Linuxize.com](https://linuxize.com/) has some amazing guides for common linux commands and tasks.
+[Linuxize.com](https://linuxize.com/) has some amazing guides for common Linux/MacOS commands and tasks.
 If their site does not have cover the desired content, `man <command>` to view the full documentation of a command.
 
 ## [Linuxize Basic Linux Commands](https://linuxize.com/post/basic-linux-commands/)

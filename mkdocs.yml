@@ -92,11 +92,11 @@ nav:
     - setup/index.md
     - Terminals:
       - Windows: setup/terminals/windows-terminals.md
-      - Linux: setup/terminals/linux-terminals.md
+      - Unix: setup/terminals/unix-terminals.md
     - CLI:
       - Common: setup/cli/common-cli.md
       - Windows: setup/cli/windows-cli.md
-      - Linux: setup/cli/linux-cli.md
+      - Unix: setup/cli/unix-cli.md
     - IDE: setup/ide.md
     - Other Software:
       - Windows: setup/software/windows-software.md
@@ -115,7 +115,7 @@ nav:
     - Git:
       - Git Contribution Process: reference/git/git_contributing.md
       - Git Commands: reference/git/git_commands.md
-    - Linux Commands: reference/linux.md
+    - Unix Commands: reference/unix.md
     - Material for MkDocs: reference/mkdocs.md
     - Python: reference/python.md
     - SSH: reference/ssh.md

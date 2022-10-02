@@ -1,4 +1,4 @@
-# Linux CLI Configuration
+# Unix CLI Configuration
 
 ## Bpytop
 
@@ -10,7 +10,7 @@
 
 ## Shell: Zsh
 
-Zsh is a shell for Linux (and thus WSL). My setup repository contains scripts that installs my packages, plugins, and configuration files.
+Zsh is a shell for Unix. My setup repository contains scripts that installs my packages, plugins, and configuration files.
 
 ### Nvm
 
