@@ -9,16 +9,19 @@ It can be customized aesthetically and functionally to the moon:
 
 ## Demo
 
+This is a showcase of my Windows terminal configuration when I was using the [setup repository](https://github.com/patrick-5546/setup).
+
 ![Terminal Demo](../../assets/terminal_demo.gif)
 
 ## Setup
 
 1. Install a [Nerd Font](https://www.nerdfonts.com/font-downloads)
-    - The fonts I use can be found in `windows/fonts/` of my setup repository (currently I only use FiraCode)
+    - The fonts I use can be found in [`windows/fonts/`](https://github.com/patrick-5546/setup/tree/master/windows/fonts)
+      of my setup repository (currently I only use FiraCode)
 
-2. My settings, themes, and profiles can be found in `reference_dotfiles/windows_terminal/windows_terminal_settings.json`
+2. My settings, themes, and profiles can be found in [`reference_dotfiles/windows_terminal/windows_terminal_settings.json`](https://github.com/patrick-5546/dotfiles/blob/main/reference_dotfiles/windows_terminal/windows_terminal_settings.json)
    of the dotfiles repository
-    - The icons I use can be found in `windows/icons/` of my setup repository
+    - The icons I use can be found in [`windows/icons/`](https://github.com/patrick-5546/setup/tree/master/windows/icons) of my setup repository
 
 ## Shortcuts
 
@@ -51,17 +54,5 @@ All the available shortcuts are listed in the `Actions` tab of the settings page
 - [Windows Terminal 2.0 Roadmap](https://github.com/microsoft/terminal/blob/main/doc/terminal-v2-roadmap.md)
 - [Windows Terminal specify a starting directory for a SSH profile](https://docs.microsoft.com/en-us/windows/terminal/tutorials/ssh#specify-starting-directory)
 - [Windows Terminal open tab/pane in the current directory](https://docs.microsoft.com/en-us/windows/terminal/tutorials/new-tab-same-directory)
-
-## Relevant Files in My Repositories
-
-### [Dotfiles](https://github.com/patrick-5546/dotfiles)
-
-- `reference_dotfiles/windows_terminal/windows_terminal_settings.json`
-
-### [Setup](https://github.com/patrick-5546/setup) (Old)
-
-- `windows/fonts/`
-- `windows/icons/`
-- `windows/windows_terminal_settings.json`
 
 --8<-- "includes/abbreviations.md"
