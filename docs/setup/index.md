@@ -23,7 +23,7 @@ I use each OS to their advantage by running Windows on my personal device and us
 
 Every switch between using the mouse and keyboard takes time and energy, both of which I have little of. Thus, I use:
 
-- Vim commands. See the [IDE page](./ide#vim-keybindings.md) to learn more.
+- Vim commands. See the [IDE page](./ide.md#vim-keybindings) to learn more.
 - Keyboard shortcuts in Windows as much as possible.
 See the [Windows Keyboard Shortcuts page](../reference/shortcuts.md) for a list of the shortcuts I frequently use.
 
