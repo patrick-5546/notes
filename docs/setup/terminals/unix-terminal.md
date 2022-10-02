@@ -1,12 +1,12 @@
-## Unix Terminal
+# Unix Terminal
 
-### Alacritty
+## Alacritty
 
 [Alacritty](https://github.com/alacritty/alacritty) is a fast, aesthetic, and customizable terminal emulator.
 
 Relevant configuration file: [`.dot_alacritty.yml`](https://github.com/patrick-5546/dotfiles/blob/main/dot_alacritty.yml).
 
-### Tmux
+## Tmux
 
 [Tmux](https://github.com/tmux/tmux) is a customizable terminal emulator. It creates terminals (tabs or panes)
 using keyboard shortcuts. It helps with terminal organization, for example having separate terminals for git,
