@@ -1,26 +1,32 @@
-# Common CLI Configuration
+# Common CLI
 
-## Fzf
+I use [chezmoi](https://github.com/twpayne/chezmoi) to manage my dotfiles and installation scripts across operating
+systems and shells.
+The installation instructions can be found in [my dotfiles repository](https://github.com/patrick-5546/dotfiles)'s README.
 
-## Git
+## Software
 
-### Git CLI
+### Fzf
 
-### Delta
+### Git
 
-## Neovim
+#### Git CLI
 
-## Shell
+#### Delta
 
-### Aliases
+### Neovim
+
+### Shell
+
+#### Aliases
 
 Imported at the bottom, windows git aliases from module
 
-### Functions
+#### Functions
 
 Imported at the top
 
-## Starship
+### Starship
 
 [Starship](https://starship.rs) is a minimal, blazing-fast, and customizable prompt for any shell.
 Since it is compatible with all major operating systems, I can use the same configuration file for all my Windows Terminal shells.

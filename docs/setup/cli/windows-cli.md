@@ -1,12 +1,14 @@
-# Windows CLI Configuration
+# Windows CLI
 
 ## Shell: PowerShell 7
 
 PowerShell with file icons, autocomplete, and a custom theme. Followed the setup guide in the [Resources](#resources) section
 
-## Terminal-Icons
+## Package Manager: Chocolatey
 
-## Relevant Files in My [Dotfiles Repository](https://github.com/patrick-5546/dotfiles)
+## Software
+
+### Terminal-Icons
 
 ## Resources
 

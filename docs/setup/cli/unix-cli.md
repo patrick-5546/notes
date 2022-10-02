@@ -1,12 +1,4 @@
-# Unix CLI Configuration
-
-## Bpytop
-
-## Chezmoi
-
-## Dust
-
-## Fd
+# Unix CLI
 
 ## Shell: Zsh
 
@@ -18,12 +10,20 @@ Zsh is a shell for Unix. My setup repository contains scripts that installs my p
 
 ### Vi Mode
 
-## Ripgrep
+## Package Manager: HomeBrew
 
-## Tmux
+## Software
 
-## My Packages, Plugins, and Configuration Files
+### Bat
 
-## Relevant Files in My [Dotfiles Repository](https://github.com/patrick-5546/dotfiles)
+### Bpytop
+
+### Dust
+
+### Fd
+
+### Ripgrep
+
+### Tmux
 
 ## Resources
