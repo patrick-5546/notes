@@ -2,7 +2,9 @@
 
 ## Shell: Zsh
 
-Zsh is a shell for Unix. My setup repository contains scripts that installs my packages, plugins, and configuration files.
+Zsh is a shell for Unix.
+
+Relevant configuration file: ['.zshrc`](https://github.com/patrick-5546/dotfiles/blob/main/dot_zshrc.tmpl).
 
 ### Nvm
 
@@ -18,12 +20,10 @@ Zsh is a shell for Unix. My setup repository contains scripts that installs my p
 
 ### Bpytop
 
+Relevant configuration file: [`.config/bpytop/bpytop.conf`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/bpytop/bpytop.conf).
+
 ### Dust
 
 ### Fd
 
 ### Ripgrep
-
-### Tmux
-
-## Resources

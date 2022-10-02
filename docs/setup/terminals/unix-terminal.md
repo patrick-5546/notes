@@ -4,7 +4,7 @@
 
 [Alacritty](https://github.com/alacritty/alacritty) is a fast, aesthetic, and customizable terminal emulator.
 
-My configuration file: [`.dot_alacritty.yml`](https://github.com/patrick-5546/dotfiles/blob/main/dot_alacritty.yml)
+Relevant configuration file: [`.dot_alacritty.yml`](https://github.com/patrick-5546/dotfiles/blob/main/dot_alacritty.yml).
 
 ### Tmux
 
@@ -13,7 +13,7 @@ using keyboard shortcuts. It helps with terminal organization, for example havin
 build, and run commands. You can also detach and reattach to tmux sessions, which is especially useful for
 interacting with servers via the CLI.
 
-My configuration file: [`.tmux.conf`](https://github.com/patrick-5546/dotfiles/blob/main/dot_tmux.conf)
+Relevant configuration file: [`.tmux.conf`](https://github.com/patrick-5546/dotfiles/blob/main/dot_tmux.conf).
 
 Resources:
 
