@@ -10,7 +10,7 @@ Its installation instructions can be found in [my dotfiles repository](https://g
 [Fzf](https://github.com/junegunn/fzf) is an interactive filer for command line that can be used for any list.
 I mainly use it to search through my command history, replacing ++ctrl+r++.
 
-Relevant configuration files: [`.config/fzf/completion.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/fzf/completion.zsh),
+Configuration files: [`.config/fzf/completion.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/fzf/completion.zsh),
 [`.config/fzf/key-bindings.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/fzf/key-bindings.zsh).
 
 ### Git
@@ -18,38 +18,22 @@ Relevant configuration files: [`.config/fzf/completion.zsh`](https://github.com/
 See [Contributing to a Git Repository](../../reference/git/git_contributing.md) and [Git Commands](../../reference/git/git_commands.md)
 for my notes on Git.
 
-Relevant configuration file: [`.gitconfig`](https://github.com/patrick-5546/dotfiles/blob/main/dot_gitconfig.tmpl).
+Configuration file: [`.gitconfig`](https://github.com/patrick-5546/dotfiles/blob/main/dot_gitconfig.tmpl).
 
 #### Git CLI
 
+[GitHub CLI](https://github.com/cli/cli) brings GitHub functionality such as pull requests and issues to your terminal,
+but I only use it to login to GitHub.
+
 #### Delta
 
-### Neovim
-
-TODO: move to IDE page.
-
-Relevant configuration files: [`.config/nvim/init.vim`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/nvim/init.vim)
-which is used for my Unix CLI and identical to [`AppData/Local/nvim/init.vim`](https://github.com/patrick-5546/dotfiles/blob/main/AppData/Local/nvim/init.vim)
-which is used for my Windows CLI. They both source [`.vimrc`](https://github.com/patrick-5546/dotfiles/blob/main/dot_vimrc).
+[Delta](https://github.com/dandavison/delta) is a syntax-highting pager for git, diff, and grep output.
+It makes `git diff` so much easier to understand.
 
 ### Starship
 
 [Starship](https://starship.rs) is a minimal, blazing-fast, and customizable prompt for any shell.
-Since it is compatible with all major operating systems, I can use the same configuration file for all my Windows Terminal shells.
+Since it is compatible with all major operating systems, I can use the same configuration file across operating systems
+to achieve a consistent aesthetic.
 
-Relevant configuration file: [`.config/starship.toml`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/starship.toml).
-
-## Aliases
-
-Imported at the bottom, windows git aliases from module.
-
-Relevant configuration files: [`.config/zsh/aliases.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/zsh/aliases.zsh)
-for Unix, [`Documents/PowerShell/aliases.ps1`](https://github.com/patrick-5546/dotfiles/blob/main/Documents/PowerShell/aliases.ps1)
-for Windows.
-
-### Functions
-
-Imported at the top, used by aliases or other functions.
-
-Relevant configuration files: [`.config/zsh/functions.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/zsh/functions.zsh)
-for Unix, [`Documents/PowerShell/functions.ps1`](https://github.com/patrick-5546/dotfiles/blob/main/Documents/PowerShell/functions.ps1) for Windows.
+Configuration file: [`.config/starship.toml`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/starship.toml).
