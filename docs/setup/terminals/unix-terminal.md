@@ -1,4 +1,6 @@
-## Unix Terminal Setup
+## Unix Terminal
+
+See the [common](../cli/common-cli.md) and [windows](../cli/unix-cli.md) CLI pages for details on my Unix CLI configuration.
 
 ### Alacritty
 

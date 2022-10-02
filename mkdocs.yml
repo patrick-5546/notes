@@ -90,13 +90,13 @@ nav:
   - Home: index.md
   - Setup:
     - setup/index.md
-    - Terminals:
-      - Windows: setup/terminals/windows-terminals.md
-      - Unix: setup/terminals/unix-terminals.md
     - CLI:
       - Common: setup/cli/common-cli.md
-      - Windows: setup/cli/windows-cli.md
       - Unix: setup/cli/unix-cli.md
+      - Windows: setup/cli/windows-cli.md
+    - Terminal:
+      - Unix: setup/terminals/unix-terminal.md
+      - Windows: setup/terminals/windows-terminal.md
     - IDE: setup/ide.md
     - Other Software:
       - Windows: setup/software/windows-software.md

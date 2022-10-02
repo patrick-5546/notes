@@ -1,4 +1,4 @@
-# Windows Terminal Setup
+# Windows Terminal
 
 Windows Terminal is a terminal application to access shells such as PowerShell, WSL distributions, and SSH all in one place.
 
@@ -13,16 +13,14 @@ It can be customized aesthetically and functionally to the moon:
 
 ## Setup
 
-1. [Install my dotfiles](https://github.com/patrick-5546/dotfiles#powershell-7-on-windows)
-
-2. Install a [Nerd Font](https://www.nerdfonts.com/font-downloads)
+1. Install a [Nerd Font](https://www.nerdfonts.com/font-downloads)
     - The fonts I use can be found in `windows/fonts/` of my setup repository (currently I only use FiraCode)
 
-3. My settings, themes, and profiles can be found in `reference_dotfiles/windows_terminal/windows_terminal_settings.json`
+2. My settings, themes, and profiles can be found in `reference_dotfiles/windows_terminal/windows_terminal_settings.json`
    of the dotfiles repository
     - The icons I use can be found in `windows/icons/` of my setup repository
 
-4. See the [common](../cli/common-cli.md) and [windows](../cli/windows-cli.md) CLI pages for the features of my Windows CLI configuration
+3. See the [common](../cli/common-cli.md) and [windows](../cli/windows-cli.md) CLI pages for details on my Windows CLI configuration
 
 ## Shortcuts
 
