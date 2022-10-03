@@ -90,12 +90,16 @@ nav:
   - Home: index.md
   - Setup:
     - setup/index.md
+    - CLI:
+      - Common: setup/cli/common-cli.md
+      - Unix: setup/cli/unix-cli.md
+      - Windows: setup/cli/windows-cli.md
     - Terminal:
-      - setup/terminal/index.md
-      - PowerShell: setup/terminal/powershell.md
-      - Zsh: setup/terminal/zsh.md
+      - Unix: setup/terminals/unix-terminal.md
+      - Windows: setup/terminals/windows-terminal.md
     - IDE: setup/ide.md
-    - Other Software: setup/software.md
+    - Other Software:
+      - Windows: setup/software/windows-software.md
   - Internship Preparation:
     - internship_prep/index.md  # disclaimer: not a learning resource, but for brush up / review / knowledge check
     - Applications: internship_prep/applications.md
@@ -111,7 +115,7 @@ nav:
     - Git:
       - Git Contribution Process: reference/git/git_contributing.md
       - Git Commands: reference/git/git_commands.md
-    - Linux Commands: reference/linux.md
+    - Unix Commands: reference/unix.md
     - Material for MkDocs: reference/mkdocs.md
     - Python: reference/python.md
     - SSH: reference/ssh.md

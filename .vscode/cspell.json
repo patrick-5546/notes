@@ -1,0 +1,39 @@
+// cSpell Settings
+{
+    // Version of the setting file.  Always 0.2
+    "version": "0.2",
+    // language - current active spelling language
+    "language": "en",
+    // words - list of words to be always considered correct
+    "words": [
+        "alacritty",
+        "amix",
+        "bpytop",
+        "chezmoi",
+        "choco",
+        "debloat",
+        "devcontainer",
+        "dotfiles",
+        "homelab",
+        "Neovim",
+        "nvim",
+        "ripgrep",
+        "roadmap",
+        "sailbot",
+        "subfolders",
+        "tylerlum",
+        "vimrc",
+        "winget"
+    ],
+    // flagWords - list of words to be always considered incorrect
+    // This is useful for offensive words and common spelling errors.
+    // For example "hte" should be "the"
+    "flagWords": [
+        "hte"
+    ],
+    "ignorePaths": [
+        "LICENSE.md",
+        "mkdocs.yml",
+        ".git"
+    ]
+}

@@ -13,6 +13,12 @@
             "internalConsoleOptions": "openOnSessionStart"
         },
         {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8000"
+        },
+        {
             "name": "Launch Edge",
             "request": "launch",
             "type": "msedge",
@@ -21,7 +27,12 @@
     ],
     "compounds": [
         {
-            "name": "Launch Application",
+            "name": "Launch Application in Chrome",
+            "configurations": ["Run Application", "Launch Chrome"],
+            "stopAll": true
+        },
+        {
+            "name": "Launch Application in Edge",
             "configurations": ["Run Application", "Launch Edge"],
             "stopAll": true
         }

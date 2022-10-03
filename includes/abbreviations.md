@@ -16,8 +16,10 @@
 *[LUT]: Lookup Table
 *[LUTs]: Lookup Tables
 *[MTBF]: Mean Time Between Failure
+*[OS]: Operating System
 *[OOP]: Object-Oriented Programming
 *[PLLs]: Phase-Locked Loops
+*[RAM]: Read Access Memory
 *[ROM]: Read-Only Memory
 *[SRAM]: Static Random Access Memory
 *[STA]: Static Timing Analysis
