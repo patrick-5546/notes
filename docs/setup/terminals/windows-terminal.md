@@ -7,11 +7,12 @@ It can be customized aesthetically and functionally to the moon:
 - Aesthetically, there are countless resources online to serve as a starting point.
 - Functionality, I went through each setting and customized them based on what I was familiar with (Ubuntu terminal, keybindings from my Vim configuration).
 
-## Demo
+## Showcase
 
-This is a showcase of my Windows terminal configuration when I was using the [setup repository](https://github.com/patrick-5546/setup).
+This is what my Windows Terminal configuration looked like when I was still using the [setup repository](https://github.com/patrick-5546/setup).
+Currently my configuration looks a lot more like my [Unix terminal configuration](./unix-terminal.md#showcase).
 
-![Terminal Demo](../../assets/terminal_demo.gif)
+![Windows Terminal Demo](../../assets/windows_terminal_demo.gif)
 
 ## Setup
 

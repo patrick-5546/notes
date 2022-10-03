@@ -1,5 +1,11 @@
 # Unix Terminal
 
+## Showcase
+
+This is what my Unix terminal configuration looks like on Ubuntu 18.04.
+
+![Unix Terminal Demo](../../assets/unix_terminal_demo.gif)
+
 ## Alacritty
 
 [Alacritty](https://github.com/alacritty/alacritty) is a fast, aesthetic, and customizable terminal emulator.

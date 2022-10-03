@@ -3,7 +3,10 @@
 As a computer engineer, a significant portion of my time is spent programming. After using a variety of IDEs
 I settled on VS Code and Neovim, extensively configuring them to maximize my productivity.
 
-## Demo
+## Showcase
+
+This is what my VS Code configuration looked like when I was still using the [setup repository](https://github.com/patrick-5546/setup).
+Currently my configuration looks mostly the same, but uses the Vim extension instead of the Neovim extension.
 
 ![IDE Demo](../assets/ide_demo.gif)
 
