@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://patrick-5546.github.io/notes/setup/ide/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
     
     
       
@@ -21,13 +21,14 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.20d9efc8.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
+
     
     
     
@@ -40,7 +41,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -50,10 +51,13 @@
   
 
 
-  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-R3EBPZNTPT"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-R3EBPZNTPT",{page_path:e.pathname})})})</script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3EBPZNTPT"></script>
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-R3EBPZNTPT"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-R3EBPZNTPT",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-R3EBPZNTPT",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
+    
     
     
   </head>
@@ -78,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ide-setup" class="md-skip">
+        <a href="#ide" class="md-skip">
           Skip to content
         </a>
       
@@ -156,7 +160,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -180,7 +184,7 @@
         <a href="https://github.com/patrick-5546/notes" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     patrick-5546/notes
@@ -310,7 +314,7 @@
       <a href="https://github.com/patrick-5546/notes" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     patrick-5546/notes
@@ -363,6 +367,8 @@
         
           
         
+          
+        
       
       
         
@@ -400,8 +406,6 @@
       
         
           
-            
-          
         
           
         
@@ -409,25 +413,17 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../terminal/">Terminal</a>
-          
-            <label for="__nav_2_2">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_2_2">
+          CLI
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
-      <nav class="md-nav" aria-label="Terminal" data-md-level="2">
+      <nav class="md-nav" aria-label="CLI" data-md-level="2">
         <label class="md-nav__title" for="__nav_2_2">
           <span class="md-nav__icon md-icon"></span>
-          Terminal
+          CLI
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
-          
-            
           
             
               
@@ -435,8 +431,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../terminal/powershell/" class="md-nav__link">
-        PowerShell
+      <a href="../cli/common-cli/" class="md-nav__link">
+        Common
       </a>
     </li>
   
@@ -449,8 +445,89 @@
   
   
     <li class="md-nav__item">
-      <a href="../terminal/zsh/" class="md-nav__link">
-        Zsh
+      <a href="../cli/unix-cli/" class="md-nav__link">
+        Unix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cli/windows-cli/" class="md-nav__link">
+        Windows
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          Terminal
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Terminal" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Terminal
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terminals/unix-terminal/" class="md-nav__link">
+        Unix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terminals/windows-terminal/" class="md-nav__link">
+        Windows
       </a>
     </li>
   
@@ -504,26 +581,40 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#demo" class="md-nav__link">
-    Demo
+  <a href="#showcase" class="md-nav__link">
+    Showcase
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#background" class="md-nav__link">
-    Background
+  <a href="#vim-keybindings" class="md-nav__link">
+    Vim Keybindings
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#learn-about-vim-and-my-ide-setup" class="md-nav__link">
-    Learn about Vim and My IDE Setup
+  <a href="#neovim" class="md-nav__link">
+    Neovim
   </a>
   
-    <nav class="md-nav" aria-label="Learn about Vim and My IDE Setup">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vs-code" class="md-nav__link">
+    VS Code
+  </a>
+  
+    <nav class="md-nav" aria-label="VS Code">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extensions" class="md-nav__link">
+    Extensions
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#quirks" class="md-nav__link">
@@ -532,22 +623,24 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    Setup
+          <li class="md-nav__item">
+  <a href="#software-infrastructure" class="md-nav__link">
+    Software Infrastructure
   </a>
   
-    <nav class="md-nav" aria-label="Setup">
+    <nav class="md-nav" aria-label="Software Infrastructure">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#why-symbolic-link" class="md-nav__link">
-    Why symbolic link?
+  <a href="#workspace-settings" class="md-nav__link">
+    Workspace Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dev-container" class="md-nav__link">
+    Dev Container
   </a>
   
 </li>
@@ -556,18 +649,9 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#relevant-files-in-my-setup-repository" class="md-nav__link">
-    Relevant Files in My Setup Repository
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -585,10 +669,47 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" checked>
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_5">
+          Other Software
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Other Software" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Other Software
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../software/" class="md-nav__link">
-        Other Software
+      <a href="../software/windows-software/" class="md-nav__link">
+        Windows
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -951,8 +1072,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/linux/" class="md-nav__link">
-        Linux Commands
+      <a href="../../reference/unix/" class="md-nav__link">
+        Unix Commands
       </a>
     </li>
   
@@ -1077,26 +1198,40 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#demo" class="md-nav__link">
-    Demo
+  <a href="#showcase" class="md-nav__link">
+    Showcase
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#background" class="md-nav__link">
-    Background
+  <a href="#vim-keybindings" class="md-nav__link">
+    Vim Keybindings
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#learn-about-vim-and-my-ide-setup" class="md-nav__link">
-    Learn about Vim and My IDE Setup
+  <a href="#neovim" class="md-nav__link">
+    Neovim
   </a>
   
-    <nav class="md-nav" aria-label="Learn about Vim and My IDE Setup">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vs-code" class="md-nav__link">
+    VS Code
+  </a>
+  
+    <nav class="md-nav" aria-label="VS Code">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extensions" class="md-nav__link">
+    Extensions
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#quirks" class="md-nav__link">
@@ -1105,22 +1240,24 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    Setup
+          <li class="md-nav__item">
+  <a href="#software-infrastructure" class="md-nav__link">
+    Software Infrastructure
   </a>
   
-    <nav class="md-nav" aria-label="Setup">
+    <nav class="md-nav" aria-label="Software Infrastructure">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#why-symbolic-link" class="md-nav__link">
-    Why symbolic link?
+  <a href="#workspace-settings" class="md-nav__link">
+    Workspace Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dev-container" class="md-nav__link">
+    Dev Container
   </a>
   
 </li>
@@ -1129,18 +1266,9 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#relevant-files-in-my-setup-repository" class="md-nav__link">
-    Relevant Files in My Setup Repository
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1152,76 +1280,62 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
-<h1 id="ide-setup">IDE Setup<a class="headerlink" href="#ide-setup" title="Permanent link">&para;</a></h1>
-<h2 id="demo">Demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h2>
+<h1 id="ide">IDE<a class="headerlink" href="#ide" title="Permanent link">&para;</a></h1>
+<p>As a computer engineer, a significant portion of my time is spent programming. After using a variety of IDEs
+I settled on VS Code and Neovim, extensively configuring them to maximize my productivity.</p>
+<h2 id="showcase">Showcase<a class="headerlink" href="#showcase" title="Permanent link">&para;</a></h2>
+<p>This is what my VS Code configuration looked like when I was still using the <a href="https://github.com/patrick-5546/setup">setup repository</a>.
+Currently my configuration looks mostly the same, but uses the Vim extension instead of the Neovim extension.</p>
 <p><img alt="IDE Demo" src="../../assets/ide_demo.gif" /></p>
-<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>Vim <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Neovim <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> VS Code</p>
-</blockquote>
-<p>Followed the setup guide in the <a href="#resources">Resources</a> section.</p>
-<p>My IDE of choice starts with Vim. Its main advantages are that it can be run in a terminal and used
-without every having to touch the mouse. Once the steep learning curve is overcome, coding becomes
-much faster. However Vim is primarily a text editor and does not natively support the features
-expected from a full IDE. On the other hand, VS Code supports debugging, remote development, Git,
-and much more through extensions.</p>
-<p>To get the best of both world's I connect a Vim backend to a VS Code frontend using VS Code's Neovim extension.
-Rather than emulating Vim functionality like other extensions do, this extension
-communicates with the Neovim executable. The disadvantage of emulation is performance and functionality that is dependent on its developers implementing them.</p>
-<p>That is not to say that I don't use Vim/Neovim by itself at all. It is convenient for making small changes to a
-file directly in the <abbr title="Command Line Interface">CLI</abbr>, and is noticeably faster for large files.</p>
-<h2 id="learn-about-vim-and-my-ide-setup">Learn about Vim and My IDE Setup<a class="headerlink" href="#learn-about-vim-and-my-ide-setup" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Recommended Vim video tutorials: <a href="https://www.youtube.com/watch?v=IiwGbcd8S7I&amp;t=1s">Vim Tutorial</a>, <a href="https://www.youtube.com/watch?v=wlR5gYd6um0">Mastering the Vim Language</a>,
-<a href="https://www.youtube.com/watch?v=XA2WjJbmmoM&amp;t=734s">How to Do 90% of What Plugins Do (With Just Vim)</a></li>
-<li>The setup guide in the <a href="#resources">Resources</a> section also demonstrates its capabilities</li>
-<li>Read the <a href="#relevant-files-in-my-setup-repository">relevant files in my setup repository</a></li>
-</ol>
-<h3 id="quirks">Quirks<a class="headerlink" href="#quirks" title="Permanent link">&para;</a></h3>
-<p>Several quirks that I have noticed with my VS Code configuration:</p>
+<h2 id="vim-keybindings">Vim Keybindings<a class="headerlink" href="#vim-keybindings" title="Permanent link">&para;</a></h2>
+<p>My IDEs of choice support Vim keybindings, which significantly reduces my mouse usage while programming.
+After overcoming the steep learning curve, I was able to write code much faster.</p>
+<p>Here are some Vim learning resources that I recommend:</p>
 <ul>
-<li><span class="keys"><kbd class="key-r">R</kbd></span> + <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-k">K</kbd></span> to replace a character with <code>K</code> will not work because <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-k">K</kbd></span> is used to open the description box<ul>
-<li>Workaround: remap <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-k">K</kbd></span>, or replace in insert mode</li>
+<li><a href="https://www.youtube.com/watch?v=IiwGbcd8S7I&amp;t=1s">Vim Tutorial</a></li>
+<li><a href="https://www.youtube.com/watch?v=H3o4l4GVLW0&amp;list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R">Vim As Your Editor</a></li>
+<li><a href="https://www.youtube.com/watch?v=wlR5gYd6um0">Mastering the Vim Language</a></li>
+<li><a href="https://www.youtube.com/watch?v=XA2WjJbmmoM&amp;t=734s">How to Do 90% of What Plugins Do (With Just Vim)</a></li>
 </ul>
-</li>
-<li>Undo and redo behavior is different in Vim and VS Code. Thus saving a file, making a change, then using <span class="keys"><kbd class="key-u">U</kbd></span> to undo will not bring the file back to its saved state<ul>
-<li>Workaround: save every time, or map <span class="keys"><kbd class="key-u">U</kbd></span> and <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span> to the VS Code implementation of undo and redo</li>
+<p>I have extensively customized <a href="https://github.com/patrick-5546/dotfiles/blob/main/dot_vimrc">my Vim configuration</a>
+based on the following configurations:</p>
+<ul>
+<li><a href="https://github.com/amix/vimrc">amix/vimrc</a></li>
+<li><a href="https://github.com/tylerlum/vim_configuration">tylerlum/vim_configuration</a></li>
 </ul>
-</li>
-<li>The <a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a>
-extension causes vscode-neovim bug out occassionally and other undesired behaviors</li>
+<h2 id="neovim">Neovim<a class="headerlink" href="#neovim" title="Permanent link">&para;</a></h2>
+<p><a href="https://github.com/neovim/neovim">Neovim</a> is a fork of Vim focused on extensibility and usability.
+I use it to quickly modify a file from the terminal. It supports powerful plugins and configuration files that are written in Lua.
+However I do not use these capabilities, opting to use VS Code when I need a fully-fledged IDE, and simply source
+my Vim configuration file in my Neovim configuration file. Neovim is noticeably faster than VS Code for large files.</p>
+<p>Configuration files:</p>
+<ul>
+<li>Unix: <a href="https://github.com/patrick-5546/dotfiles/blob/main/dot_config/nvim/init.vim"><code>.config/nvim/init.vim</code></a></li>
+<li>Windows: <a href="https://github.com/patrick-5546/dotfiles/blob/main/AppData/Local/nvim/init.vim"><code>AppData/Local/nvim/init.vim</code></a></li>
 </ul>
-<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p><a href="https://github.com/neovim/neovim/wiki/Installing-Neovim">Install Neovim</a></p>
-</li>
-<li>
-<p>Symbolic link <code>.vimrc</code> to the home directory in an Administrator PowerShell prompt</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">New-Item</span> <span class="n">-ItemType</span> <span class="n">Symboliclink</span> <span class="n">-Path</span> <span class="s2">&quot;$env:USERPROFILE\.vimrc&quot;</span> <span class="n">-Value</span> <span class="s2">&quot;$env:USERPROFILE\Programming\git_projects\.setup\.vimrc&quot;</span>
-</code></pre></div>
-</li>
-<li>
-<p>Make a directory named <code>nvim</code> in <code>$env:LOCALAPPDATA</code> and symbolic link <code>init.vim</code> to it in an Administrator PowerShell prompt</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">New-Item</span> <span class="n">-ItemType</span> <span class="n">Symboliclink</span> <span class="n">-Path</span> <span class="s2">&quot;$env:LOCALAPPDATA\nvim\init.vim&quot;</span> <span class="n">-Value</span> <span class="s2">&quot;$env:USERPROFILE\Programming\git_projects\.setup\windows\init.vim&quot;</span>
-</code></pre></div>
-</li>
-<li>
-<p>Install VS Code</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">Microsoft</span><span class="p">.</span><span class="n">VisualStudioCode</span>
-</code></pre></div>
-</li>
-<li>
-<p>Install the <a href="https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim">VSCode Neovim</a>, <a href="https://marketplace.visualstudio.com/items?itemName=VSpaceCode.whichkey">Which Key</a>,
-and <a href="https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-settings-cycler">Settings Cycler</a> extensions</p>
-<details class="tip">
-<summary>Other useful VS Code extensions</summary>
+<h2 id="vs-code">VS Code<a class="headerlink" href="#vs-code" title="Permanent link">&para;</a></h2>
+<p>VS Code has great support for debugging, remote development, Git, most programming languages, and much more through extensions.
+It is also extremely configurable, with its settings and keyboard shortcuts being able to be modified through a UI or JSON file.</p>
+<p>To get Vim keybindings in VS Code I use the <a href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">Vim extension</a>.
+You can enable various features in its settings, which include some Vim extensions and using a <code>.vimrc</code>.</p>
+<p>I use VS Code's built-in Settings Sync to sync my configuration, but have copied some of my configuration files to my dotfiles repository for your reference:</p>
+<ul>
+<li><a href="https://github.com/patrick-5546/dotfiles/blob/main/reference_dotfiles/vscode/keybindings.json"><code>reference_dotfiles/vscode/keybindings.json</code></a></li>
+<li><a href="https://github.com/patrick-5546/dotfiles/blob/main/reference_dotfiles/vscode/settings.json"><code>reference_dotfiles/vscode/settings.json</code></a></li>
+</ul>
+<p>Resources:</p>
+<ul>
+<li><a href="https://code.visualstudio.com/docs/getstarted/userinterface">VS Code user interface</a></li>
+</ul>
+<h3 id="extensions">Extensions<a class="headerlink" href="#extensions" title="Permanent link">&para;</a></h3>
+<p>In addition to the Vim extension and language and framework extension packs, I found the following extensions to be useful:</p>
 <table>
 <thead>
 <tr>
@@ -1240,11 +1354,15 @@ and <a href="https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode
 </tr>
 <tr>
 <td>GitLens</td>
-<td>See who commited each line of code and when they did it</td>
+<td>See who committed each line of code and when they did it</td>
 </tr>
 <tr>
 <td>Live Share Extension Pack</td>
-<td>Real-time collaborative development (like Google Docs for programming)</td>
+<td>Real-time collaborative development</td>
+</tr>
+<tr>
+<td>Path Intellisense</td>
+<td>Autocomplete filenames</td>
 </tr>
 <tr>
 <td>Peacock</td>
@@ -1266,52 +1384,56 @@ and <a href="https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode
 <td>vscode-pdf</td>
 <td>Display pdf file in VS Code</td>
 </tr>
-<tr>
-<td><code>&lt;language/framework&gt;</code> Extension Pack</td>
-<td>Popular extensions for the other languages and frameworks you use</td>
-</tr>
 </tbody>
 </table>
-</details>
+<h3 id="quirks">Quirks<a class="headerlink" href="#quirks" title="Permanent link">&para;</a></h3>
+<p>Several quirks that I have noticed with my VS Code configuration:</p>
+<ul>
+<li>Undo and redo behavior is different in Vim and VS Code. Thus saving a file, making a change, then using <span class="keys"><kbd class="key-u">U</kbd></span> to undo will not bring the file back to its saved state<ul>
+<li>Workarounds: enable auto-saving or map <span class="keys"><kbd class="key-u">U</kbd></span> and <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span> to the VS Code implementation of undo and redo</li>
+</ul>
 </li>
-</ol>
-<h3 id="why-symbolic-link">Why symbolic link?<a class="headerlink" href="#why-symbolic-link" title="Permanent link">&para;</a></h3>
-<p>A symbolic link is a file that points to another file.
-For example, I want my configuration files (i.e. <code>$env:USERPROFILE\.vimrc</code>)
-to point to files in my setup repository (i.e. <code>$env:USERPROFILE\Programming\git_projects\.setup\.vimrc</code>).
-This enables updates I pull for my setup repository to be instantly applied to my setup.
-If this functionality does not matter to you, there is no need to symbolic link files.</p>
-<h2 id="relevant-files-in-my-setup-repository">Relevant Files in My <a href="https://github.com/patrick-5546/setup">Setup Repository</a><a class="headerlink" href="#relevant-files-in-my-setup-repository" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>.vimrc</code></li>
-<li><code>windows/init.vim</code></li>
-<li><code>windows/vscode_sample_keybindings.json</code></li>
-<li><code>windows/vscode_sample_settings.json</code></li>
+<li>"Quick Fix" on Windows and Linux (<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-comma">,</kbd></span>) is overridden by my toggle semicolon extension</li>
 </ul>
-<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
-<ul>
-<li>VS Code / Neovim integration setup guide: <a href="https://www.youtube.com/watch?v=g4dXZ0RQWdw&amp;list=LL&amp;index=9&amp;t=381s">VSCode with embedded Neovim</a></li>
-<li><a href="https://github.com/LunarVim/LunarVim/blob/626343c2de0599d1129e1e6b70d62aacc56ab000/utils/lv-vscode/init.vim"><code>init.vim</code> without my changes</a></li>
-<li><a href="https://github.com/LunarVim/LunarVim/tree/626343c2de0599d1129e1e6b70d62aacc56ab000/utils/vscode_config"><code>settings.json</code> and <code>keybindings.json</code> without my changes</a></li>
-<li>Vim configuration: <a href="https://github.com/tylerlum/vim_configuration">tylerlum/vim_configuration</a>, <a href="https://github.com/amix/vimrc">amix/vimrc</a></li>
-<li><a href="https://github.com/asvetliakov/vscode-neovim/issues/175#issuecomment-929630274">Workaround <code>:number</code> and <code>:relativenu</code> not working in VS Code</a></li>
-</ul>
+<h3 id="software-infrastructure">Software Infrastructure<a class="headerlink" href="#software-infrastructure" title="Permanent link">&para;</a></h3>
+<p>VS Code has some amazing features that can be used to customize and automate your development environment for a project and share it with the project's developers.</p>
+<h4 id="workspace-settings">Workspace Settings<a class="headerlink" href="#workspace-settings" title="Permanent link">&para;</a></h4>
+<p><a href="https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings">Workspace settings</a>
+customize the VS Code configurations of everyone who opens the workspace in VS Code.
+Besides the settings.json file, you can add <a href="https://code.visualstudio.com/docs/editor/debugging#_launch-configurations">launch configurations</a>,
+<a href="https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions">recommended extensions</a>,
+<a href="https://code.visualstudio.com/docs/editor/tasks">tasks</a>, and much more.
+These files are stored in the <code>.vscode/</code> directory. Workspace settings override user settings.</p>
+<p>Example workspace settings: <a href="https://github.com/UBCSailbot/docs/tree/main/.vscode">UBCSailbot/docs/.vscode</a>,
+<a href="https://github.com/UBCSailbot/sailbot_workspace/tree/main/.vscode">UBCSailbot/sailbot_workspace/.vscode</a>.</p>
+<h4 id="dev-container">Dev Container<a class="headerlink" href="#dev-container" title="Permanent link">&para;</a></h4>
+<p><a href="https://code.visualstudio.com/docs/remote/containers">Dev container</a>
+wrap up your VS Code configuration with your dependencies in a <a href="https://docs.docker.com/get-started/overview/">Docker</a> container.
+These files are stored in the <code>.devcontainer/</code> directory.</p>
+<p>Example dev container: <a href="https://github.com/UBCSailbot/sailbot_workspace/tree/main/.devcontainer">UBCSailbot/sailbot_workspace/.devcontainer</a>.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 26, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 2, 2022</span>
       
     
   </small>
 </div>
 
-              
-            </article>
-            
-          </div>
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
           <a href="#" class="md-top md-icon" data-md-component="top" hidden>
@@ -1327,7 +1449,7 @@ If this functionality does not matter to you, there is no need to symbolic link 
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../terminal/zsh/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Zsh" rel="prev">
+        <a href="../terminals/windows-terminal/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Windows" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1336,20 +1458,20 @@ If this functionality does not matter to you, there is no need to symbolic link 
               <span class="md-footer__direction">
                 Previous
               </span>
-              Zsh
+              Windows
             </div>
           </div>
         </a>
       
       
         
-        <a href="../software/" class="md-footer__link md-footer__link--next" aria-label="Next: Other Software" rel="next">
+        <a href="../software/windows-software/" class="md-footer__link md-footer__link--next" aria-label="Next: Windows" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Other Software
+              Windows
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1407,10 +1529,11 @@ If this functionality does not matter to you, there is no need to symbolic link 
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.expand", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.expand", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.078830c0.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
