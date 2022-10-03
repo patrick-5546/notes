@@ -10,7 +10,9 @@
 
     - Use `git status` to check if the command had the desired outcome
 
-## Restore
+## Commands
+
+### Restore
 
 Undo uncommitted changes.
 
@@ -19,7 +21,7 @@ Undo uncommitted changes.
 | `git restore <file_specifier>` | Revert files to their state on the remote repository (delete local changes) |
 | `git restore --staged <file_specifier>` | Unstage/un-add files |
 
-## Reset
+### Reset
 
 Undo committed (but not pushed) changes.
 
@@ -29,7 +31,7 @@ Undo committed (but not pushed) changes.
 | `git reset HEAD~1` | Unstage the changes made in last commit, but do not modify the files |
 | `git reset --hard HEAD~5` | Undo the changes made in the last 5 commits |
 
-## Rm
+### Rm
 
 Remove files
 
@@ -38,7 +40,7 @@ Remove files
 | `git rm <file_specifier>` | Remove files from Git and delete them |
 | `git rm --cached <file_specifier>` | Remove files from Git but do not delete them |
 
-## Stash
+### Stash
 
 Stash uncommitted changes so that you can pull or switch branches.
 
@@ -47,7 +49,7 @@ Stash uncommitted changes so that you can pull or switch branches.
 | `git stash` | Stash changes |
 | `git stash pop` | Restore changes |
 
-## Tags
+### Tags
 
 Tag a commit (i.e., release version, milestone).
 
@@ -64,7 +66,9 @@ Resources:
 
 - [Tagging chapter in the Git book](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
 
-## Manage remote repositories
+## Tasks
+
+### Manage Remote Repositories
 
 There may be cases where you want to keep mirrors of your repository.
 
@@ -77,7 +81,7 @@ There may be cases where you want to keep mirrors of your repository.
 | `git remote -v` | List remote repositories |
 | `git remote remove <repo_name>` | Remove a remote repository |
 
-## Submodules
+### Manage Submodules
 
 Manage a Git repository from inside another Git repository.
 
@@ -94,36 +98,3 @@ Resources:
 - [Submodule chapter in the Git book](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 - [Create a submodule that tracks a specific branch](https://stackoverflow.com/questions/9189575/git-submodule-tracking-latest/9189815#9189815)
 - [Properly remove a submodule](https://stackoverflow.com/a/1260982)
-
-## Oh My Zsh Git plugin aliases
-
-The [Zsh Git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git) provides many aliases;
-I have listed the ones I regularly use below.
-
-``` sh
-ga='git add'
-gb='git branch'
-gbD='git branch -D'
-gco='git checkout'
-gcb='git checkout -b'
-gcm='git checkout $(git_main_branch)'
-gcl='git clone --recurse-submodules'
-gcmsg='git commit -m'
-gd='git diff'
-gdca='git diff --cached'
-gmom='git merge origin/$(git_main_branch)'
-gl='git pull'
-gp='git push'
-gpsup='git push --set-upstream origin $(git_current_branch)'
-gra='git remote add'
-grv='git remote -v'
-grrm='git remote remove'
-grh='git reset'
-grhh='git reset --hard'
-grs='git restore'
-grst='git restore --staged'
-grm='git rm'
-grmc='git rm --cached'
-gst='git status'
-gsu='git submodule update'
-```
