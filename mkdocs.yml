@@ -113,8 +113,9 @@ nav:
   - Reference:
     - Bookmarks: reference/bookmarks.md
     - Git:
-      - Git Contribution Process: reference/git/git_contributing.md
-      - Git Commands: reference/git/git_commands.md
+      - Contribution Process: reference/git/git_contributing.md
+      - Commands: reference/git/git_commands.md
+      - Advanced Features: reference/git/git_advanced.md
     - Unix Commands: reference/unix.md
     - Material for MkDocs: reference/mkdocs.md
     - Python: reference/python.md
