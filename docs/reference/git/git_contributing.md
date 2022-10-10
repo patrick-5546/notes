@@ -67,6 +67,7 @@ git remote prune origin
 
 - Labels: [GitHub labels best practices](https://medium.com/@dave_lunny/sane-github-labels-c5d2e6004b63)
 - Milestones and projects: [Milestones vs. projects](https://stackoverflow.com/a/39701381)
+- Releases: [Releasing Projects on GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
 - Discussions: gather feedback and ideas from non-code collaborators
     - [Best practices for community conversations](https://docs.github.com/en/discussions/guides/best-practices-for-community-conversations-on-github)
 - Actions: automate, customize, and execute software development workflows
