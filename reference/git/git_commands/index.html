@@ -17,7 +17,7 @@
     
     
       
-        <title>Git Commands - Patrick's Notes</title>
+        <title>Commands - Patrick's Notes</title>
       
     
     
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git Commands
+              Commands
             
           </span>
         </div>
@@ -910,6 +910,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_2">
@@ -931,7 +933,7 @@
   
     <li class="md-nav__item">
       <a href="../git_contributing/" class="md-nav__link">
-        Git Contribution Process
+        Contribution Process
       </a>
     </li>
   
@@ -954,12 +956,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Git Commands
+          Commands
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Git Commands
+        Commands
       </a>
       
         
@@ -978,57 +980,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#restore" class="md-nav__link">
-    Restore
+  <a href="#cherry-pick" class="md-nav__link">
+    cherry-pick
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log" class="md-nav__link">
+    log
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mv" class="md-nav__link">
+    mv
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#reset" class="md-nav__link">
-    Reset
+    reset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restore" class="md-nav__link">
+    restore
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#rm" class="md-nav__link">
-    Rm
+    rm
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#stash" class="md-nav__link">
-    Stash
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tags" class="md-nav__link">
-    Tags
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#manage-remote-repositories" class="md-nav__link">
-    Manage remote repositories
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#submodules" class="md-nav__link">
-    Submodules
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#oh-my-zsh-git-plugin-aliases" class="md-nav__link">
-    Oh My Zsh Git plugin aliases
+    stash
   </a>
   
 </li>
@@ -1037,6 +1032,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git_advanced/" class="md-nav__link">
+        Advanced Features
+      </a>
     </li>
   
 
@@ -1181,57 +1190,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#restore" class="md-nav__link">
-    Restore
+  <a href="#cherry-pick" class="md-nav__link">
+    cherry-pick
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log" class="md-nav__link">
+    log
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mv" class="md-nav__link">
+    mv
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#reset" class="md-nav__link">
-    Reset
+    reset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restore" class="md-nav__link">
+    restore
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#rm" class="md-nav__link">
-    Rm
+    rm
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#stash" class="md-nav__link">
-    Stash
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tags" class="md-nav__link">
-    Tags
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#manage-remote-repositories" class="md-nav__link">
-    Manage remote repositories
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#submodules" class="md-nav__link">
-    Submodules
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#oh-my-zsh-git-plugin-aliases" class="md-nav__link">
-    Oh My Zsh Git plugin aliases
+    stash
   </a>
   
 </li>
@@ -1252,8 +1254,10 @@
 
 
 <h1 id="git-commands"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.6 10.59 8.38 4.8l1.69 1.7c-.24.85.15 1.78.93 2.23v5.54c-.6.34-1 .99-1 1.73a2 2 0 0 0 2 2 2 2 0 0 0 2-2c0-.74-.4-1.39-1-1.73V9.41l2.07 2.09c-.07.15-.07.32-.07.5a2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2c-.18 0-.35 0-.5.07L13.93 7.5a1.98 1.98 0 0 0-1.15-2.34c-.43-.16-.88-.2-1.28-.09L9.8 3.38l.79-.78c.78-.79 2.04-.79 2.82 0l7.99 7.99c.79.78.79 2.04 0 2.82l-7.99 7.99c-.78.79-2.04.79-2.82 0L2.6 13.41c-.79-.78-.79-2.04 0-2.82Z"/></svg></span> Git Commands<a class="headerlink" href="#git-commands" title="Permanent link">&para;</a></h1>
+<p>Useful Git commands that build on top of the add, commit, and push workflow.</p>
 <div class="admonition info">
-<p class="admonition-title">File specifiers</p>
+<p class="admonition-title">File Specifiers</p>
+<p>File specifiers are used in commands like <code>add</code>, <a href="#restore"><code>restore</code></a>, and <a href="#rm"><code>rm</code></a> to specify which file(s) to apply to.</p>
 <table>
 <thead>
 <tr>
@@ -1263,25 +1267,30 @@
 </thead>
 <tbody>
 <tr>
-<td><code>.</code></td>
-<td>Everything new/modified in current directory</td>
-</tr>
-<tr>
 <td><code>-u</code></td>
-<td>Files in the remote repository that were modified in the current directory</td>
+<td>Files in the remote repository that were <strong>modified</strong> in the current directory</td>
 </tr>
 <tr>
-<td><code>&lt;path/to/file_name&gt;</code></td>
-<td>Specific file</td>
+<td><code>.</code></td>
+<td>Everything <strong>new or modified</strong> in current directory</td>
+</tr>
+<tr>
+<td><code>&lt;path/to/directory&gt;</code></td>
+<td>Everything <strong>new or modified</strong> in a directory</td>
+</tr>
+<tr>
+<td><code>&lt;path/to/file&gt;</code></td>
+<td><strong>New or modified</strong> file</td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li>Use <code>git status</code> to check if the command had the desired outcome</li>
-</ul>
+<p>Use <code>git status</code> to check if the command had the desired outcome.</p>
 </div>
-<h2 id="restore">Restore<a class="headerlink" href="#restore" title="Permanent link">&para;</a></h2>
-<p>Undo uncommitted changes.</p>
+<h2 id="cherry-pick">cherry-pick<a class="headerlink" href="#cherry-pick" title="Permanent link">&para;</a></h2>
+<p>Cherry picking is useful but not always best practice. It can create duplicate commits, and merging would be preferred
+in most scenarios. To avoid duplicate commits I do not merge the branch with the commit(s) I am cherry picking
+into the main branch. I use cherry picking to clean up a branch's commit history when changing which branch its PR
+is merging into.</p>
 <table>
 <thead>
 <tr>
@@ -1291,17 +1300,16 @@
 </thead>
 <tbody>
 <tr>
-<td><code>git restore &lt;file_specifier&gt;</code></td>
-<td>Revert files to their state on the remote repository (delete local changes)</td>
+<td><code>git cherry-pick &lt;commit hash&gt;</code></td>
+<td>Add commit to the current branch</td>
 </tr>
 <tr>
-<td><code>git restore --staged &lt;file_specifier&gt;</code></td>
-<td>Unstage/un-add files</td>
+<td><code>git cherry-pick &lt;commit A hash&gt;^..&lt;commit B hash&gt;</code></td>
+<td>Add commits from A to B inclusive, where A is older than B, to the current branch</td>
 </tr>
 </tbody>
 </table>
-<h2 id="reset">Reset<a class="headerlink" href="#reset" title="Permanent link">&para;</a></h2>
-<p>Undo committed (but not pushed) changes.</p>
+<h2 id="log">log<a class="headerlink" href="#log" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1314,6 +1322,37 @@
 <td><code>git log</code></td>
 <td>Check the commit history of the current branch</td>
 </tr>
+</tbody>
+</table>
+<h2 id="mv">mv<a class="headerlink" href="#mv" title="Permanent link">&para;</a></h2>
+<p>Sometimes after moving a file and making changes to it Git isn't able to detect that the file was moved.
+Instead, it thinks the file was deleted and a new one was created, which wipes its file history.
+To preserve file history, commit the move before making any changes to the file.
+This is most easily done with the <code>git mv</code> command.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git mv &lt;src&gt; &lt;dest or dest directory&gt;</code></td>
+<td>Like <code>mv</code> but stages the move</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reset">reset<a class="headerlink" href="#reset" title="Permanent link">&para;</a></h2>
+<p>Undo committed (but not pushed) changes.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td><code>git reset HEAD~1</code></td>
 <td>Unstage the changes made in last commit, but do not modify the files</td>
@@ -1324,7 +1363,27 @@
 </tr>
 </tbody>
 </table>
-<h2 id="rm">Rm<a class="headerlink" href="#rm" title="Permanent link">&para;</a></h2>
+<h2 id="restore">restore<a class="headerlink" href="#restore" title="Permanent link">&para;</a></h2>
+<p>Undo uncommitted changes.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git restore &lt;file specifier&gt;</code></td>
+<td>Revert files to their state on the remote repository (delete local changes)</td>
+</tr>
+<tr>
+<td><code>git restore --staged &lt;file specifier&gt;</code></td>
+<td>Unstage/un-add files</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rm">rm<a class="headerlink" href="#rm" title="Permanent link">&para;</a></h2>
 <p>Remove files</p>
 <table>
 <thead>
@@ -1335,16 +1394,16 @@
 </thead>
 <tbody>
 <tr>
-<td><code>git rm &lt;file_specifier&gt;</code></td>
+<td><code>git rm &lt;file specifier&gt;</code></td>
 <td>Remove files from Git and delete them</td>
 </tr>
 <tr>
-<td><code>git rm --cached &lt;file_specifier&gt;</code></td>
+<td><code>git rm --cached &lt;file specifier&gt;</code></td>
 <td>Remove files from Git but do not delete them</td>
 </tr>
 </tbody>
 </table>
-<h2 id="stash">Stash<a class="headerlink" href="#stash" title="Permanent link">&para;</a></h2>
+<h2 id="stash">stash<a class="headerlink" href="#stash" title="Permanent link">&para;</a></h2>
 <p>Stash uncommitted changes so that you can pull or switch branches.</p>
 <table>
 <thead>
@@ -1364,151 +1423,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h2>
-<p>Tag a commit (i.e., release version, milestone).</p>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>git tag -a &lt;tag_name&gt; -m "&lt;description&gt;"</code></td>
-<td>Create an annotated tag for the current commit</td>
-</tr>
-<tr>
-<td><code>git push --tags</code></td>
-<td>Push tags to the remote repository</td>
-</tr>
-<tr>
-<td><code>git show &lt;tag_name&gt;</code></td>
-<td>See tag information</td>
-</tr>
-<tr>
-<td><code>git checkout &lt;tag_name&gt;</code></td>
-<td>Checkout to the commit that a tag points to</td>
-</tr>
-<tr>
-<td><code>git tag -d &lt;tag_name&gt;</code></td>
-<td>Delete local tag</td>
-</tr>
-<tr>
-<td><code>git push origin --delete &lt;tag_name&gt;</code></td>
-<td>Delete tag from the remote repository</td>
-</tr>
-</tbody>
-</table>
-<p>Resources:</p>
-<ul>
-<li><a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">Tagging chapter in the Git book</a></li>
-</ul>
-<h2 id="manage-remote-repositories">Manage remote repositories<a class="headerlink" href="#manage-remote-repositories" title="Permanent link">&para;</a></h2>
-<p>There may be cases where you want to keep mirrors of your repository.</p>
-<ul>
-<li>The original remote repository is given the identifier <code>origin</code> by default</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>git remote add &lt;repo_name&gt; &lt;repository_base_url&gt;</code></td>
-<td>Add a remote repository and give it the identifier <code>&lt;repo_name&gt;</code></td>
-</tr>
-<tr>
-<td><code>git push &lt;repo_name&gt; --all</code></td>
-<td>Push all branches to a remote repository</td>
-</tr>
-<tr>
-<td><code>git remote -v</code></td>
-<td>List remote repositories</td>
-</tr>
-<tr>
-<td><code>git remote remove &lt;repo_name&gt;</code></td>
-<td>Remove a remote repository</td>
-</tr>
-</tbody>
-</table>
-<h2 id="submodules">Submodules<a class="headerlink" href="#submodules" title="Permanent link">&para;</a></h2>
-<p>Manage a Git repository from inside another Git repository.</p>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>git submodule add &lt;repository_base_url&gt;</code></td>
-<td>Add a repository as a submodule of the current repository</td>
-</tr>
-<tr>
-<td><code>git diff --submodule</code></td>
-<td>Better diff for submodules from the parent repository</td>
-</tr>
-<tr>
-<td><code>git submodule update --remote --merge</code></td>
-<td>Update submodules to their latest remote commmits</td>
-</tr>
-<tr>
-<td><code>git submodule update --init --recursive</code></td>
-<td>Recursively initialize and update submodules to the commits in the remote parent repository</td>
-</tr>
-<tr>
-<td><code>git clone --recurse-submodules &lt;repo_base_url&gt;</code></td>
-<td>Clone a repository and recursively initialize all its submodules</td>
-</tr>
-</tbody>
-</table>
-<p>Resources:</p>
-<ul>
-<li><a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">Submodule chapter in the Git book</a></li>
-<li><a href="https://stackoverflow.com/questions/9189575/git-submodule-tracking-latest/9189815#9189815">Create a submodule that tracks a specific branch</a></li>
-<li><a href="https://stackoverflow.com/a/1260982">Properly remove a submodule</a></li>
-</ul>
-<h2 id="oh-my-zsh-git-plugin-aliases">Oh My Zsh Git plugin aliases<a class="headerlink" href="#oh-my-zsh-git-plugin-aliases" title="Permanent link">&para;</a></h2>
-<p>The <a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git">Zsh Git plugin</a> provides many aliases;
-I have listed the ones I regularly use below.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nv">ga</span><span class="o">=</span><span class="s1">&#39;git add&#39;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nv">gb</span><span class="o">=</span><span class="s1">&#39;git branch&#39;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nv">gbD</span><span class="o">=</span><span class="s1">&#39;git branch -D&#39;</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nv">gco</span><span class="o">=</span><span class="s1">&#39;git checkout&#39;</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nv">gcb</span><span class="o">=</span><span class="s1">&#39;git checkout -b&#39;</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nv">gcm</span><span class="o">=</span><span class="s1">&#39;git checkout $(git_main_branch)&#39;</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nv">gcl</span><span class="o">=</span><span class="s1">&#39;git clone --recurse-submodules&#39;</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nv">gcmsg</span><span class="o">=</span><span class="s1">&#39;git commit -m&#39;</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="nv">gd</span><span class="o">=</span><span class="s1">&#39;git diff&#39;</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nv">gdca</span><span class="o">=</span><span class="s1">&#39;git diff --cached&#39;</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nv">gmom</span><span class="o">=</span><span class="s1">&#39;git merge origin/$(git_main_branch)&#39;</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="nv">gl</span><span class="o">=</span><span class="s1">&#39;git pull&#39;</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nv">gp</span><span class="o">=</span><span class="s1">&#39;git push&#39;</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nv">gpsup</span><span class="o">=</span><span class="s1">&#39;git push --set-upstream origin $(git_current_branch)&#39;</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="nv">gra</span><span class="o">=</span><span class="s1">&#39;git remote add&#39;</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="nv">grv</span><span class="o">=</span><span class="s1">&#39;git remote -v&#39;</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nv">grrm</span><span class="o">=</span><span class="s1">&#39;git remote remove&#39;</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="nv">grh</span><span class="o">=</span><span class="s1">&#39;git reset&#39;</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="nv">grhh</span><span class="o">=</span><span class="s1">&#39;git reset --hard&#39;</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="nv">grs</span><span class="o">=</span><span class="s1">&#39;git restore&#39;</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="nv">grst</span><span class="o">=</span><span class="s1">&#39;git restore --staged&#39;</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="nv">grm</span><span class="o">=</span><span class="s1">&#39;git rm&#39;</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="nv">grmc</span><span class="o">=</span><span class="s1">&#39;git rm --cached&#39;</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="nv">gst</span><span class="o">=</span><span class="s1">&#39;git status&#39;</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="nv">gsu</span><span class="o">=</span><span class="s1">&#39;git submodule update&#39;</span>
-</code></pre></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 26, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 9, 2022</span>
       
     
   </small>
@@ -1540,7 +1461,7 @@ I have listed the ones I regularly use below.</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../git_contributing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Git Contribution Process" rel="prev">
+        <a href="../git_contributing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Contribution Process" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1549,20 +1470,20 @@ I have listed the ones I regularly use below.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Git Contribution Process
+              Contribution Process
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../unix/" class="md-footer__link md-footer__link--next" aria-label="Next: Unix Commands" rel="next">
+        <a href="../git_advanced/" class="md-footer__link md-footer__link--next" aria-label="Next: Advanced Features" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Unix Commands
+              Advanced Features
             </div>
           </div>
           <div class="md-footer__button md-icon">
