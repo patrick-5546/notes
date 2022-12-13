@@ -34,12 +34,11 @@ All the available shortcuts are listed in the `Actions` tab of the settings page
 | ++ctrl+shift+p++ | Toggle command palette (same as VS Code) |
 | ++alt+shift+d++ | Pane: duplicate |
 | ++alt++ + ++h++ / ++j++ / ++k++ / ++l++ | **Pane: navigate (from my tmux configuration)** |
-| ++ctrl+q++ | **Pane: close** |
+| ++ctrl+w++ | **Pane: close (based on Microsoft Edge)** |
 | ++ctrl+shift+space++ | Tab: open tab selector dropdown |
 | ++ctrl+shift++ + *#* | Tab: open profile *#* from tab selector |
-| ++ctrl+t++ | **Tab: duplicate (from Microsoft Edge)** |
+| ++ctrl+shift+d++ | Tab: duplicate |
 | ++ctrl+tab++ | Tab: cycle forwards (same as Microsoft Edge) |
-| ++ctrl+w++ | **Tab: close (from Microsoft Edge)** |
 | ++ctrl+shift+w++ | **Windows: close (from Microsoft Edge)** |
 
 !!! info "What are panes?"
