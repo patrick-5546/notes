@@ -26,20 +26,21 @@ Currently my configuration looks a lot more like my [Unix terminal configuration
 
 ## Shortcuts
 
-I have highlighted a few of the shortcuts that I regularly use. The shortcuts with bolded descriptions are ones I customized.
+I have highlighted a few of the shortcuts that I regularly use. The shortcuts with the "Similarity" column italicized
+are ones that I modified from their default values.
 All the available shortcuts are listed in the `Actions` tab of the settings page.
 
-| Shortcut     | Description                          |
-| ----------- | ------------------------------------ |
-| ++ctrl+shift+p++ | Toggle command palette (same as VS Code) |
-| ++alt+shift+d++ | Pane: duplicate |
-| ++alt++ + ++h++ / ++j++ / ++k++ / ++l++ | **Pane: navigate (from my tmux configuration)** |
-| ++ctrl+w++ | **Pane: close (based on Microsoft Edge)** |
-| ++ctrl+shift+space++ | Tab: open tab selector dropdown |
-| ++ctrl+shift++ + *#* | Tab: open profile *#* from tab selector |
-| ++ctrl+shift+d++ | Tab: duplicate |
-| ++ctrl+tab++ | Tab: cycle forwards (same as Microsoft Edge) |
-| ++ctrl+shift+w++ | **Windows: close (from Microsoft Edge)** |
+| Shortcut                                | Description                   | Similarity                                   |
+| --------------------------------------- | ----------------------------- | -------------------------------------------- |
+| ++ctrl+w++                              | Close pane                    | *Microsoft Edge*                           |
+| ++ctrl+shift+w++                        | Close window                  | *Microsoft Edge*                           |
+| ++alt+shift+d++                         | Duplicate pane                |                                              |
+| ++ctrl+shift+d++                        | Duplicate tab                 |                                              |
+| ++alt++ + ++j++ / ++h++ / ++l++ / ++k++ | Move focus down/left/right/up | [*My tmux setup*](./unix-terminal.md#tmux) |
+| ++ctrl+tab++                            | Next tab                      | Microsoft Edge                               |
+| ++ctrl+shift+space++                    | Open new tab dropdown         |                                              |
+| ++ctrl+shift++ + *#*                    | Switch to tab, index:*#*      |                                              |
+| ++ctrl+shift+p++                        | Toggle command palette        | VS Code                                      |
 
 !!! info "What are panes?"
 
