@@ -25,7 +25,7 @@ changed the cursor shape for different modes, and mapped `jk` to exit insert mod
 [HomeBrew](https://github.com/Homebrew/brew) is an easy-to-use package manager with a large and up-to-date library.
 I use it in my installation script because it works on MacOS and any Linux distribution.
 
-Installation script: [`run_install.sh.tmpl`](https://github.com/patrick-5546/dotfiles/blob/main/run_install.sh.tmpl).
+Installation script: [`run_install-unix.sh.tmpl`](https://github.com/patrick-5546/dotfiles/blob/main/run_install-unix.sh.tmpl).
 
 Resources:
 

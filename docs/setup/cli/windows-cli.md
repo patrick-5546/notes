@@ -16,7 +16,7 @@ Resources:
 I didn't use Winget, the official Windows package manager, because being relatively young it does not contain all the packages that I want.
 I will likely migrate to Winget once it does. See my Winget documentation [here](../software/windows-software.md#winget).
 
-Installation script: [`install.ps1`](https://github.com/patrick-5546/dotfiles/blob/main/install.ps1).
+Installation script: [`run_install-windows.ps1`](https://github.com/patrick-5546/dotfiles/blob/main/run_install-windows.ps1).
 
 ### Modules
 

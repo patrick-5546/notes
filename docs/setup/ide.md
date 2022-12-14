@@ -1,7 +1,7 @@
 # IDE
 
 As a computer engineer, a significant portion of my time is spent programming. After using a variety of IDEs
-I settled on VS Code and Neovim, extensively configuring them to maximize my productivity.
+I settled on Vim and VS Code, extensively configuring them to maximize my productivity.
 
 ## Showcase
 
@@ -28,17 +28,12 @@ based on the following configurations:
 - [amix/vimrc](https://github.com/amix/vimrc)
 - [tylerlum/vim_configuration](https://github.com/tylerlum/vim_configuration)
 
-## Neovim
+## Vim
 
-[Neovim](https://github.com/neovim/neovim) is a fork of Vim focused on extensibility and usability.
-I use it to quickly modify a file from the terminal. It supports powerful plugins and configuration files that are written in Lua.
-However I do not use these capabilities, opting to use VS Code when I need a fully-fledged IDE, and simply source
-my Vim configuration file in my Neovim configuration file. Neovim is noticeably faster than VS Code for large files.
+I use Vim to quickly modify a file from the terminal. I do not use any plugins, opting to use VS Code when I need a fully-fledged IDE.
+Vim is noticeably faster than VS Code for large files.
 
-Configuration files:
-
-- Unix: [`.config/nvim/init.vim`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/nvim/init.vim)
-- Windows: [`AppData/Local/nvim/init.vim`](https://github.com/patrick-5546/dotfiles/blob/main/AppData/Local/nvim/init.vim)
+Configuration file: [`.vimrc`](https://github.com/patrick-5546/dotfiles/blob/main/dot_vimrc)
 
 ## VS Code
 
