@@ -30,17 +30,24 @@ I have highlighted a few of the shortcuts that I regularly use. The shortcuts wi
 are ones that I modified from their default values.
 All the available shortcuts are listed in the `Actions` tab of the settings page.
 
-| Shortcut                                | Description                   | Similarity                                   |
-| --------------------------------------- | ----------------------------- | -------------------------------------------- |
+| Shortcut                                | Description                   | Similarity                                 |
+| --------------------------------------- | ----------------------------- | ------------------------------------------ |
 | ++ctrl+w++                              | Close pane                    | *Microsoft Edge*                           |
 | ++ctrl+shift+w++                        | Close window                  | *Microsoft Edge*                           |
-| ++alt+shift+d++                         | Duplicate pane                |                                              |
-| ++ctrl+shift+d++                        | Duplicate tab                 |                                              |
+| ++alt+shift+d++                         | Duplicate pane                |                                            |
+| ++ctrl+shift+d++                        | Duplicate tab                 |                                            |
 | ++alt++ + ++j++ / ++h++ / ++l++ / ++k++ | Move focus down/left/right/up | [*My tmux setup*](./unix-terminal.md#tmux) |
-| ++ctrl+tab++                            | Next tab                      | Microsoft Edge                               |
-| ++ctrl+shift+space++                    | Open new tab dropdown         |                                              |
-| ++ctrl+shift++ + *#*                    | Switch to tab, index:*#*      |                                              |
-| ++ctrl+shift+p++                        | Toggle command palette        | VS Code                                      |
+| ++ctrl+tab++                            | Next tab                      | Microsoft Edge                             |
+| ++ctrl+shift+space++                    | Open new tab dropdown         |                                            |
+| ++ctrl+shift++ + *#*                    | Switch to tab, index:*#*      |                                            |
+| ++ctrl+shift+p++                        | Toggle command palette        | VS Code                                    |
+
+I also removed some default shortcuts:
+
+| Shortcut   | Description | Conflict              |
+| ---------- | ----------- | --------------------- |
+| ++ctrl+v++ | Copy text   | Vim visual block mode |
+| ++ctrl+c++ | Paste       | Unix interrupt signal |
 
 !!! info "What are panes?"
 
