@@ -108,9 +108,14 @@ and maybe in the terms used in the introduction paragraph general statement.
 
 ### Analyze results
 
-I kept track of my applications using [Notion](https://www.notion.so/help/guides/what-is-notion):
-[Applications List Example](https://patrick5546.notion.site/7045ba417e5c43b3ad340f7f995779b4?v=50cd8dcbe9e2466b8c73f1bd9fa9772c).
-I use it to analyze the results of previous applications in order to determine which positions I should apply to next.
+I kept track of my applications using a table similar to the one below.
+I use it to analyze the results of previous applications to determine which positions I should apply to next.
 For example, if I see that I did not have much success applying to positions with greater than *#* applicants,
 or that require *xxxx* skills, I would avoid applying to similar types of jobs in the future,
 or revise my resume and cover letter to strengthen those areas.
+
+| Position                  | Company | Application Deadline | Resume/CL Template | Technical Requisites          | # Applicants | % Confidence | Status   | Notes                         |
+| ------------------------- | ------- | -------------------- | ------------------ | ----------------------------- | ------------ | ------------ | -------- | ----------------------------- |
+| Embedded Systems Engineer | Intel   | 01/11/21             | Hardware           | Verilog, Linux, C/C++, Python | 37           | 20%          | Rejected | Need more relevant experience |
+
+I recommend creating this tracker using a software like Notion or Excel so that you can sort by column.
