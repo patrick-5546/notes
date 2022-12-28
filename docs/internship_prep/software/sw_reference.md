@@ -17,6 +17,11 @@ Be able to explain concepts in your own words and give examples of you applying 
 
 ![Agile vs Waterfall Development](../../assets/agile_vs_waterfall.png)
 
+### DevOps
+
+- CI/CD
+- Docker, Kubernetes
+
 ### Testing
 
 - Test-driven development
@@ -27,10 +32,5 @@ Be able to explain concepts in your own words and give examples of you applying 
 - Corner cases
 - Root-cause analysis
 - Parts of a good bug report
-
-### DevOps
-
-- CI/CD
-- Docker, Kubernetes
 
 --8<-- "includes/abbreviations.md"
