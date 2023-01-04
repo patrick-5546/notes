@@ -2,6 +2,55 @@
 
 ## Data Structures & Algorithms
 
+### Study Method
+
+Which resources I use to study DSA and how I use them.
+
+#### General
+
+Learn/review:
+
+- The [Tech Interview Handbook](https://www.techinterviewhandbook.org/) is one of the best resources for preparing for SWE interviews
+    - Learn/review topics following the [Algorithms Cheatsheet](https://www.techinterviewhandbook.org/algorithms/study-cheatsheet/)
+        - Lists topics in priority order
+        - For each topic, provides a short summary, explains related implementation techniques, gives related LeetCode problems, and much more
+    - Customize a LeetCode study plan according to your needs using [Grind 75](https://www.techinterviewhandbook.org/grind75)
+- [Programiz DSA tutorials](https://www.programiz.com/dsa) is a more comprehensive resource on DSA topics
+    - Provides detailed explanations
+    - Gives example implementations in multiple popular programming languages
+- [NeetCode.io](https://neetcode.io/) is an excellent resource that classifies LeetCode problems by topic
+    - Lists both Blind 75 and NeetCode 150 LeetCode problems
+    - Provides an algorithms roadmap
+    - Can be used to track your progress
+    - Has a number of courses, most of which require a paid membership
+
+Implement:
+
+- I implement key algorithms myself and commit them to a private repository
+- I use the [LeetCode VS Code extension](https://marketplace.visualstudio.com/items?itemName=LeetCode.vscode-leetcode)
+  to solve LeetCode problems in VS Code
+    - First I try to solve problems myself
+    - Then I compare it to the most upvoted solutions on LeetCode
+    - Next I comment what I could have done better
+    - Sometimes I reimplement my solution using what I learned
+    - I commit these solutions to a private repository
+
+#### Before an online assessment or interview
+
+1. I create a new folder in my LeetCode solutions repo (see the section above for more details)
+    - The file path can be customized using the `leetcode.filePath` VS Code setting
+2. I solve Leetcode problems that the company has asked in the past
+    - Search for relevant Reddit posts
+    - Can filter LeetCode problems by company using [LeetCode Patterns](https://seanprashad.com/leetcode-patterns/)
+    - There may be an up-to-date repository that sorts Leetcode problems asked by companies by frequency
+        - [Here](https://github.com/hxu296/leetcode-company-wise-problems-2022) is the repository for 2022 (last updated May 2022)
+
+#### After an online assessment or interview
+
+1. Record technical questions and solutions
+2. Finish, clean up, and add comments or research and implement better solution
+3. Commit to private repository
+
 ### Reference
 
 The notes I wrote while reviewing the main topics listed in the Google Technical Internships Interview Preparation guide.
