@@ -6,8 +6,9 @@
 *[CLB]: Configurable Logic Block
 *[CLBs]: Configurable Logic Blocks
 *[CLI]: Command Line Interface
-*[DRAM]: Dynamic Random Access Memory
 *[DFFs]: Delay Flip Flops
+*[DRAM]: Dynamic Random Access Memory
+*[DSA]: Data Structures and Algorithms
 *[FPGA]: Field Programmable Gate Array
 *[FSM]: Finite State Machine
 *[FSMs]: Finite State Machines
@@ -23,4 +24,5 @@
 *[ROM]: Read-Only Memory
 *[SRAM]: Static Random Access Memory
 *[STA]: Static Timing Analysis
+*[SWE]: Software Engineering
 *[WSL]: Windows Subsystem for Linux

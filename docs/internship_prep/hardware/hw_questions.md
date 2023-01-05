@@ -1,9 +1,8 @@
 # Hardware Questions
 
-I have listed some hardware technical questions that were asked in my interviews below.
+I have listed some hardware technical questions that were asked in my interviews at Intel, Microchip, Qualcomm, and Microsoft below.
 With the academic and extracurricular experience to be a candidate for more technical positions when seeking my second internship,
 the average question difficulty rose accordingly.
-
 The answers to some of these questions can be found in the [Hardware Reference](./hw_reference.md) page.
 
 ## Seeking my first internship

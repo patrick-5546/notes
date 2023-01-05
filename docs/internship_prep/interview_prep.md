@@ -14,7 +14,7 @@ This is helpful when explaining technical details during an interview
 Next, prepare for common interview questions related to your experiences:
 
 - **Describe a time when you had a conflict when working on a team, and how you resolved it**
-    - I have been asked this many times
+    - I have been asked this many, many times
 - Tell me about yourself
     - Come up with a couple responses for different types of jobs
 - Describe a problem that you solved
@@ -34,7 +34,7 @@ Good topics to practice talking about include:
 !!! quote ""
     It is more important to be able to clearly explain your ongoing thought process than to solve the problem
 
-[Video on technical interview preparation](https://www.youtube.com/watch?v=8Myx-vy0csM)
+[Video on technical interview preparation by Microsoft](https://www.youtube.com/watch?v=8Myx-vy0csM)
 
 Use the STAR method:
 
@@ -57,7 +57,7 @@ Action
     - Subdivide into different parts
 - Devise initial solution
 - Walkthrough with a simple example to verify correctness
-- Think about potental optimizations
+- Think about potential optimizations
 
 Results
 
@@ -99,3 +99,19 @@ Places where you can find past/common interview questions include:
 - Cracking the Coding Interview
 - My hardware and software Reference and Questions pages briefly go over the content covered and questions asked in my past interviews
     - They are intended as a way to review and gauge your knowledge rather than to learn new topics
+
+## After the interview
+
+### Analyze results
+
+Immediately after the interview, I like to summarize what happened:
+
+- What were the different sections of the interview, and how much time was spent on each section?
+- What technical questions were asked?
+- What non-technical questions were asked?
+
+Then I can use this experience to better prepare for future interviews:
+
+- Notes on how the interview went overall
+- Research any technical questions that I was unsure of
+- Prepare for any non-technical questions that I could answer better

@@ -32,7 +32,7 @@
 
 ## Memory
 
-- Types: DRAM (volatile, capacitor), SRAM (nonvolatile, cross-coupled inverter), ROM (nonvolatile)
+- Types: DRAM (volatile, capacitor), SRAM (volatile, cross-coupled inverter), ROM (nonvolatile)
 
 ## Caches
 
@@ -253,7 +253,7 @@ There are several types of carry propagate adders:
 ### Miscellaneous Arithmetic Circuits
 
 - *Subtractor:* take two's complement of second input
-- *Equality comparator:* AND all the bitwise XORs
+- *Equality comparator:* bitwise XNOR
 - *Less than comparator:* subtractor; last (sign) bit is 1 when A < B
 - *Shift less than:* all 0's, except LSB is result of less than comparator (A < B)
 - *Shifters:* arithmetic shifters (`<<<` `>>>`) are the same as logical shifters (`<<` `>>`) except the right arithmetic shift is sign extended

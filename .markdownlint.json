@@ -1,7 +1,8 @@
 {
   "default": true,
   "MD013": {
-    "line_length": 180
+    "line_length": 180,
+    "tables": false
   },
   "MD004": {
     "style": "dash"
