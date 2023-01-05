@@ -1,2 +1,5 @@
 # Python virtual environment
 .venv/
+
+# Social plugin files
+.cache/

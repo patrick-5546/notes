@@ -20,7 +20,16 @@ jobs:
         with:
           python-version: 3.x
 
-      - name: Install dependencies
+      - name: Cache social plugin files
+        uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+
+      - name: Install OS dependencies
+        run: apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
+
+      - name: Install Python dependencies
         run: pip install -r docs/requirements.txt
 
       - name: Deploy MkDocs application
