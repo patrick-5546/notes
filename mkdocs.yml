@@ -18,6 +18,7 @@ theme:
     - navigation.instant
     - navigation.tabs
     - navigation.top
+    - toc.follow
   palette:
     - media: "(prefers-color-scheme: dark)" 
       scheme: slate
