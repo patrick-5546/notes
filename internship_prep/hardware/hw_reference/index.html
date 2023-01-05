@@ -1749,7 +1749,7 @@
 </ol>
 <h2 id="memory">Memory<a class="headerlink" href="#memory" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Types: <abbr title="Dynamic Random Access Memory">DRAM</abbr> (volatile, capacitor), <abbr title="Static Random Access Memory">SRAM</abbr> (nonvolatile, cross-coupled inverter), <abbr title="Read-Only Memory">ROM</abbr> (nonvolatile)</li>
+<li>Types: <abbr title="Dynamic Random Access Memory">DRAM</abbr> (volatile, capacitor), <abbr title="Static Random Access Memory">SRAM</abbr> (volatile, cross-coupled inverter), <abbr title="Read-Only Memory">ROM</abbr> (nonvolatile)</li>
 </ul>
 <h2 id="caches">Caches<a class="headerlink" href="#caches" title="Permanent link">&para;</a></h2>
 <ul>
@@ -2024,7 +2024,7 @@ then system-wide failure occurs.</p>
 <h3 id="miscellaneous-arithmetic-circuits">Miscellaneous Arithmetic Circuits<a class="headerlink" href="#miscellaneous-arithmetic-circuits" title="Permanent link">&para;</a></h3>
 <ul>
 <li><em>Subtractor:</em> take two's complement of second input</li>
-<li><em>Equality comparator:</em> AND all the bitwise XORs</li>
+<li><em>Equality comparator:</em> bitwise XNOR</li>
 <li><em>Less than comparator:</em> subtractor; last (sign) bit is 1 when A &lt; B</li>
 <li><em>Shift less than:</em> all 0's, except <abbr title="Least Significant Bit">LSB</abbr> is result of less than comparator (A &lt; B)</li>
 <li><em>Shifters:</em> arithmetic shifters (<code>&lt;&lt;&lt;</code> <code>&gt;&gt;&gt;</code>) are the same as logical shifters (<code>&lt;&lt;</code> <code>&gt;&gt;</code>) except the right arithmetic shift is sign extended</li>
@@ -2184,7 +2184,7 @@ A \times B = A_HB_H2^{2N} + (A_HB_L+A_LB_H)2^N + A_LB_L
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 5, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 4, 2023</span>
       
     
   </small>

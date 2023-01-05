@@ -1227,8 +1227,8 @@
 <li>
 <p>This new <abbr title="Windows Subsystem for Linux">WSL</abbr> distribution will start as the root user. To start as another user, add the following to <code>/etc/wsl.conf</code> from inside the distribution</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">wsl.conf</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p p-Indicator">[</span><span class="nv">user</span><span class="p p-Indicator">]</span><span class="w"></span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="l l-Scalar l-Scalar-Plain">default=&lt;username&gt;</span><span class="w"></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p p-Indicator">[</span><span class="nv">user</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="l l-Scalar l-Scalar-Plain">default=&lt;username&gt;</span>
 </code></pre></div></td></tr></table></div>
 </li>
 <li>
@@ -1265,7 +1265,7 @@
 <ul>
 <li>
 <p>Sign in to Git using the Git Credential Manager in Windows</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git config --global credential.helper <span class="s2">&quot;/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>credential.helper<span class="w"> </span><span class="s2">&quot;/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe&quot;</span>
 </code></pre></div>
 </li>
 <li>
@@ -1273,7 +1273,7 @@
 <ul>
 <li>For example: File Explorer for directories, Excel for CSV files</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>wslview &lt;file_or_directory&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>wslview<span class="w"> </span>&lt;file_or_directory&gt;
 </code></pre></div>
 </li>
 </ul>

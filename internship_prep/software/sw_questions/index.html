@@ -847,15 +847,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#software-questions-from-hardwareembedded-interviews" class="md-nav__link">
-    Software questions from hardware/embedded interviews
+  <a href="#questions-from-swe-interviews" class="md-nav__link">
+    Questions from SWE interviews
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
+  <a href="#questions-from-hardware-embedded-interviews" class="md-nav__link">
+    Questions from hardware &amp; embedded interviews
   </a>
   
 </li>
@@ -1157,15 +1157,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#software-questions-from-hardwareembedded-interviews" class="md-nav__link">
-    Software questions from hardware/embedded interviews
+  <a href="#questions-from-swe-interviews" class="md-nav__link">
+    Questions from SWE interviews
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
+  <a href="#questions-from-hardware-embedded-interviews" class="md-nav__link">
+    Questions from hardware &amp; embedded interviews
   </a>
   
 </li>
@@ -1186,19 +1186,48 @@
 
 
 <h1 id="software-questions">Software Questions<a class="headerlink" href="#software-questions" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Disclaimer</p>
-<p>My software-related interview experiences have largely come from interviews for hardware/embedded positions.
-If you have experience interviewing for software positions and want to contribute, feel free to contact me.</p>
-</div>
-<p>I have listed some software technical questions that were asked in my interviews below.</p>
-<h2 id="software-questions-from-hardwareembedded-interviews">Software questions from hardware/embedded interviews<a class="headerlink" href="#software-questions-from-hardwareembedded-interviews" title="Permanent link">&para;</a></h2>
+<p>I have listed some software technical questions that were asked in my interviews at Tesla, Amazon, and Google below.</p>
+<h2 id="questions-from-swe-interviews">Questions from <abbr title="Software Engineering">SWE</abbr> interviews<a class="headerlink" href="#questions-from-swe-interviews" title="Permanent link">&para;</a></h2>
+<p>Similar or even identical questions can be found on LeetCode.</p>
+<ul>
+<li>Parse string into dictionary</li>
+<li>Move all elements of a certain value in a list to the end</li>
+<li>Ping pong (simple multithreading)</li>
+<li><abbr title="Object-Oriented Programming">OOP</abbr> (inheritance)</li>
+<li>Find the maximum MaximaCount out of all the categories in <code>categories</code><ul>
+<li><code>categories</code> is a string</li>
+<li>The MaximaCount of character <code>c</code> representing a category in <code>categories</code> is the number indices <code>i</code> such that the
+  frequency of <code>c</code> is maximum in the prefix of the string up to the index <code>i</code></li>
+</ul>
+</li>
+<li>Check similar passwords<ul>
+<li><code>newPasswords</code> and <code>oldPasswords</code> are lists of strings</li>
+<li>Return a list where the <code>i</code>th element is <code>"YES"</code> if <code>newPasswords[i]</code> and <code>oldPasswords[i]</code> are similar, else <code>"NO"</code><ul>
+<li>Passwords are similar if there exists a set of characters in the new password that can be incremented by 1
+  (e.g., <code>"z"</code> -&gt; <code>"a</code>", <code>"a"</code> -&gt; <code>"b"</code>) to make the old password a subsequence<ul>
+<li>Subsequence: a sequence that can be derived from the given sequence by deleting 0 or more elements without
+  changing the order of the remaining elements</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Remove ancestors of a tree starting from the leaf nodes, removing newly created leaf nodes first</li>
+<li>Remove ancestors of a tree starting from the leaf nodes, removing newly created leaf nodes last</li>
+<li><a href="https://leetcode.com/problems/stock-price-fluctuation/">Stock price fluctuation</a></li>
+<li>Given an equation as a string, calculate the final result<ul>
+<li>E.g., <code>"add(5,mul(2,pow(5,2)))"</code> -&gt; <code>55.0</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="questions-from-hardware-embedded-interviews">Questions from hardware &amp; embedded interviews<a class="headerlink" href="#questions-from-hardware-embedded-interviews" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Multiply numbers up to 100 digits long</li>
 <li>Alphabetically sort a string</li>
 <li>Check, set, clear, and toggle a bit</li>
 <li>Polymorphism<ul>
-<li>See the <a href="#resources">Resources</a> section</li>
+<li>See <a href="https://www.interviewbit.com/oops-interview-questions/">40+ OOPs Interview Questions and Answers</a></li>
 </ul>
 </li>
 <li>Python questions<ul>
@@ -1208,14 +1237,9 @@ If you have experience interviewing for software positions and want to contribut
 </ul>
 </li>
 <li>C/C++ questions<ul>
-<li>See the <a href="#resources">Resources</a> section</li>
+<li>See <a href="https://www.interviewbit.com/embedded-c-interview-questions/">Top Embedded C Interview Questions</a></li>
 </ul>
 </li>
-</ul>
-<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://www.interviewbit.com/oops-interview-questions/">40+ OOPs Interview Questions and Answers</a></li>
-<li><a href="https://www.interviewbit.com/embedded-c-interview-questions/">Top Embedded C Interview Questions</a></li>
 </ul>
 
   <hr>
@@ -1223,7 +1247,7 @@ If you have experience interviewing for software positions and want to contribut
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 5, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 4, 2023</span>
       
     
   </small>

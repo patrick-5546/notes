@@ -1206,9 +1206,9 @@
 <summary>Notes on the Synology guide</summary>
 <p>The command to restart the sshd service will likely not work.
 In this case, telnet in to restart the service</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo synoservicectl --restart sshd  <span class="c1"># restarting the sshd service may fail</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>telnet -l &lt;username&gt; &lt;host_name&gt;  <span class="c1"># telnet into the NAS</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo synoservicectl --start sshd  <span class="c1"># start the sshd service</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>synoservicectl<span class="w"> </span>--restart<span class="w"> </span>sshd<span class="w">  </span><span class="c1"># restarting the sshd service may fail</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>telnet<span class="w"> </span>-l<span class="w"> </span>&lt;username&gt;<span class="w"> </span>&lt;host_name&gt;<span class="w">  </span><span class="c1"># telnet into the NAS</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>synoservicectl<span class="w"> </span>--start<span class="w"> </span>sshd<span class="w">  </span><span class="c1"># start the sshd service</span>
 </code></pre></div>
 </details>
 </li>

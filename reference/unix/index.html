@@ -1288,19 +1288,19 @@ If their site does not have cover the desired content, <code>man &lt;command&gt;
 <summary>My aliases</summary>
 <p>Run the commands to see what they do</p>
 <p>Oh My Zsh creates a lot of useful aliases, here are some that I regularly use:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">alias</span> <span class="nv">l</span><span class="o">=</span><span class="s1">&#39;ls -lah&#39;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -lh&#39;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">alias</span> <span class="nv">md</span><span class="o">=</span><span class="s1">&#39;mkdir -p&#39;</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">alias</span> <span class="nv">rd</span><span class="o">=</span><span class="s1">&#39;rmdir&#39;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">l</span><span class="o">=</span><span class="s1">&#39;ls -lah&#39;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -lh&#39;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">md</span><span class="o">=</span><span class="s1">&#39;mkdir -p&#39;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">rd</span><span class="o">=</span><span class="s1">&#39;rmdir&#39;</span>
 </code></pre></div>
 <ul>
 <li>Aliases that I use from the Git plugin are detailed in the <a href="../git/git_commands/#oh-my-zsh-git-plugin-aliases">Commands page</a></li>
 </ul>
 <p>Aliases that I defined myself</p>
-<div class="highlight"><span class="filename">Section of my .zshrc file</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">alias</span> <span class="nv">cls</span><span class="o">=</span><span class="s1">&#39;clear&#39;</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">alias</span> <span class="nv">h</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">alias</span> <span class="nv">lt</span><span class="o">=</span><span class="s1">&#39;ls -lahrt&#39;</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">alias</span> <span class="nv">llt</span><span class="o">=</span><span class="s1">&#39;ls -lhrt&#39;</span>
+<div class="highlight"><span class="filename">Section of my .zshrc file</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">cls</span><span class="o">=</span><span class="s1">&#39;clear&#39;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">h</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">lt</span><span class="o">=</span><span class="s1">&#39;ls -lahrt&#39;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">llt</span><span class="o">=</span><span class="s1">&#39;ls -lhrt&#39;</span>
 </code></pre></div>
 </details>
 <p>Resources:</p>
@@ -1493,7 +1493,7 @@ If their site does not have cover the desired content, <code>man &lt;command&gt;
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>mkdir ~/.screen &amp;&amp; chmod 700 ~/.screen
 </code></pre></div></li>
 <li>Point the <code>SCREENDIR</code> environment variable to that directory
-<div class="highlight"><span class="filename">.bashrc file or equivalent</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">export</span> <span class="nv">SCREENDIR</span><span class="o">=</span><span class="nv">$HOME</span>/.screen
+<div class="highlight"><span class="filename">.bashrc file or equivalent</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">SCREENDIR</span><span class="o">=</span><span class="nv">$HOME</span>/.screen
 </code></pre></div></li>
 </ol>
 </details>
