@@ -32,3 +32,12 @@ Website for my notes on various programming-related topics.
 ### Command Line
 
 1. `mkdocs serve`
+
+## Versioning
+
+1. Pull requests to main are deployed to `rolling`: `mike deploy --push rolling`
+2. Releases are deployed to `<x.x>`, which is aliased to `latest`: `mike deploy --push --update-aliases <x.x> latest`
+    - Set this as default version: `mike set-default --push latest`
+        - Only have to do this once as setting alias as default then updating alias
+3. Consider deploying pull requests to `<branch-name>`: `mike deploy --push devel-<branch-name>`
+    - Would have to delete on pull request to main: `mike delete --push devel-<branch-name>`

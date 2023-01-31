@@ -3,3 +3,6 @@
 
 # Social plugin files
 .cache/
+
+# mike files
+site/

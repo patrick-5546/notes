@@ -1,7 +1,5 @@
+cairosvg
+mike
 mkdocs-git-revision-date-localized-plugin==1.*
 mkdocs-material==9.*
-
-# social plugin dependencies
-
-cairosvg
 pillow

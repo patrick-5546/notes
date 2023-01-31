@@ -11,6 +11,7 @@ edit_uri: ""
 # Configuration
 theme:
   name: material
+  custom_dir: overrides
   features:
     - content.code.annotate
     - navigation.expand
