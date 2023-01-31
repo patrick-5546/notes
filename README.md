@@ -40,3 +40,4 @@ Website for my notes on various programming-related topics.
     - Set this as default version: `mike set-default --push latest`
         - Only have to do this once as setting alias as default then updating alias
 3. Consider deploying pull requests to `<branch-name>`: `mike deploy --push devel-<branch-name>`
+    - Would have to delete on pull request to main: `mike delete --push devel-<branch-name>`
