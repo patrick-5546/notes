@@ -31,7 +31,7 @@ packages that are not yet available on winget, but this has become increasingly 
     | TreeSize Free | Disk space manager, shows sizes of folders including all subfolders |
     | VLC | Media player supporting most of media codecs and video formats; basic video editor |
 
-### Winget quick reference
+### Winget
 
 - Works with applications installed via other means
 - By default, opens the installer window just like double clicking on an installation file
@@ -52,7 +52,7 @@ Resources:
 - [winget command reference and examples](https://docs.microsoft.com/en-us/windows/package-manager/winget/#commands)
 - [Search winget packages, generate command that installs the desired packages](https://winstall.app/)
 
-### Chocolatey quick reference
+### Chocolatey
 
 Run the following commands in an Administrator PowerShell prompt:
 
