@@ -18,7 +18,7 @@ Website for my notes on various programming-related topics.
 
     - Can do this in a [Python virtual environment](https://patrick-5546.github.io/notes/reference/python/#virtual-environments)
 
-3. Manually install [social plugin OS dependencies](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/#dependencies)
+3. Manually install [social plugin OS dependencies](https://squidfunk.github.io/mkdocs-material/plugins/requirements/image-processing/#cairo-graphics)
 
 ## Run
 
