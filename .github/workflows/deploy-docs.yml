@@ -20,11 +20,16 @@ jobs:
         with:
           python-version: 3.x
 
+      - name: Generate cache ID
+        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+
       - name: Cache social plugin files
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
-          key: ${{ github.ref }}
+          key: mkdocs-material-${{ env.cache_id }}
           path: .cache
+          restore-keys: |
+            mkdocs-material-
 
       - name: Install Python dependencies
         run: pip install -r docs/requirements.txt
