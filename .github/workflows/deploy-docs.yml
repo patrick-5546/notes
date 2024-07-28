@@ -26,9 +26,6 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
 
-      - name: Install OS dependencies
-        run: sudo apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
-
       - name: Install Python dependencies
         run: pip install -r docs/requirements.txt
 
