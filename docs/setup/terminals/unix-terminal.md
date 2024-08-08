@@ -10,7 +10,7 @@ This is what my Unix terminal configuration looks like on Ubuntu 18.04.
 
 [Alacritty](https://github.com/alacritty/alacritty) is a fast, aesthetic, and customizable terminal emulator.
 
-Configuration file: [`.dot_alacritty.yml`](https://github.com/patrick-5546/dotfiles/blob/main/dot_alacritty.yml).
+Configuration file: [`.dot_alacritty.toml`](https://github.com/patrick-5546/dotfiles/blob/main/dot_alacritty.toml).
 
 ## Tmux
 
