@@ -17,28 +17,7 @@ Aliases are custom commands that map to a longer command.
 | `which <alias/command>` | Locate an alias/command |
 | `alias` | View the mappings of all aliases |
 
-??? quote "My aliases"
-    Run the commands to see what they do
-
-    Oh My Zsh creates a lot of useful aliases, here are some that I regularly use:
-
-    ``` shell
-    alias l='ls -lah'
-    alias ll='ls -lh'
-    alias md='mkdir -p'
-    alias rd='rmdir'
-    ```
-
-    - Aliases that I use from the Git plugin are detailed in the [Commands page](./git/git_commands.md#oh-my-zsh-git-plugin-aliases)
-
-    Aliases that I defined myself
-
-    ``` shell title="Section of my .zshrc file"
-    alias cls='clear'
-    alias h='history'
-    alias lt='ls -lahrt'
-    alias llt='ls -lhrt'
-    ```
+My shell aliases can be found in [`aliases.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/zsh/aliases.zsh).
 
 Resources:
 
@@ -78,6 +57,7 @@ Read contents of a file or command output quickly and without filling up termina
 | Command | Description |
 | ------- | ----------- |
 | `less <filename>` | Read the contents of a file |
+<!-- markdownlint-disable-next-line MD033 -->
 | `<command> | less` | Read the standard output (what would be printed to the terminal) of `<command>` |
 
 ??? info "Commands inside less"

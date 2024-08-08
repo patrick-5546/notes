@@ -62,13 +62,12 @@ markdown_extensions:
   - attr_list
   - footnotes
   - md_in_html
-  - meta
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji 
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -100,8 +99,8 @@ nav:
       - Unix: setup/terminals/unix-terminal.md
       - Windows: setup/terminals/windows-terminal.md
     - IDE: setup/ide.md
-    - Other Software:
-      - Windows: setup/software/windows-software.md
+    - GUI:
+      - Windows: setup/gui/windows-gui.md
   - Internship Preparation:
     - internship_prep/index.md  # disclaimer: not a learning resource, but for brush up / review / knowledge check
     - Applications: internship_prep/applications.md

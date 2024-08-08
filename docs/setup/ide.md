@@ -30,10 +30,19 @@ based on the following configurations:
 
 ## Vim
 
-I use Vim to quickly modify a file from the terminal. I do not use any plugins, opting to use VS Code when I need a fully-fledged IDE.
-Vim is noticeably faster than VS Code for large files.
+I use Vim to quickly modify a file from the terminal. I do not use any plugins, opting to use Neovim or VS Code when working on projects.
+Vim is noticeably faster than Neovim with plugins or VS Code for large files.
 
 Configuration file: [`.vimrc`](https://github.com/patrick-5546/dotfiles/blob/main/dot_vimrc)
+
+## Neovim
+
+Neovim is a fork of Vim which has powerful plugins that adds IDE features. I use it to edit projects in the CLI.
+Since configuring these plugins is complicated and breaks all the time (because Neovim is still in rapid development),
+I use the [LazyVim](https://github.com/LazyVim/LazyVim) distribution to manage all of this for me.
+And for anything else that I want, LazyVim makes it easy to add my own configuration and plugins.
+
+Configuration files: [`.config/nvim`](https://github.com/patrick-5546/dotfiles/tree/main/dot_config/nvim)
 
 ## VS Code
 
@@ -91,7 +100,7 @@ Besides the settings.json file, you can add [launch configurations](https://code
 These files are stored in the `.vscode/` directory. Workspace settings override user settings.
 
 Example workspace settings: [UBCSailbot/docs/.vscode](https://github.com/UBCSailbot/docs/tree/main/.vscode),
-[UBCSailbot/sailbot_workspace/.vscode](https://github.com/UBCSailbot/sailbot_workspace/tree/main/.vscode).
+[UBCSailbot/sailbot_workspace/sailbot.code-workspace](https://github.com/UBCSailbot/sailbot_workspace/blob/main/sailbot.code-workspace).
 
 #### Dev Container
 

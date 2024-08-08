@@ -3,7 +3,7 @@
     "configurations": [
         {
             "name": "Run Application",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "module": "mkdocs",
             "args": [
@@ -14,12 +14,18 @@
         },
         {
             "name": "Launch Chrome",
+            "presentation": {
+                "hidden": true,
+            },
             "request": "launch",
             "type": "chrome",
             "url": "http://localhost:8000"
         },
         {
             "name": "Launch Edge",
+            "presentation": {
+                "hidden": true,
+            },
             "request": "launch",
             "type": "msedge",
             "url": "http://localhost:8000"
