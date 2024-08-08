@@ -100,7 +100,7 @@ Besides the settings.json file, you can add [launch configurations](https://code
 These files are stored in the `.vscode/` directory. Workspace settings override user settings.
 
 Example workspace settings: [UBCSailbot/docs/.vscode](https://github.com/UBCSailbot/docs/tree/main/.vscode),
-[UBCSailbot/sailbot_workspace/.vscode](https://github.com/UBCSailbot/sailbot_workspace/tree/main/.vscode).
+[UBCSailbot/sailbot_workspace/sailbot.code-workspace](https://github.com/UBCSailbot/sailbot_workspace/blob/main/sailbot.code-workspace).
 
 #### Dev Container
 
