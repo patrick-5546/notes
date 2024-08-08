@@ -99,8 +99,8 @@ nav:
       - Unix: setup/terminals/unix-terminal.md
       - Windows: setup/terminals/windows-terminal.md
     - IDE: setup/ide.md
-    - Other Software:
-      - Windows: setup/software/windows-software.md
+    - GUI:
+      - Windows: setup/gui/windows-gui.md
   - Internship Preparation:
     - internship_prep/index.md  # disclaimer: not a learning resource, but for brush up / review / knowledge check
     - Applications: internship_prep/applications.md
