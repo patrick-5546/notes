@@ -9,13 +9,11 @@ Its installation instructions can be found in [my dotfiles repository](https://g
 
 I created aliases for my most frequently used commands, and tried to keep them consistent across operating systems.
 
-My Git aliases are from [Oh My Zsh's git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git).
-On Windows, they are provided by the [powershell-git-aliases](https://github.com/gluons/powershell-git-aliases) plugin.
-
 Configuration files:
 
 - Unix: [`.config/zsh/aliases.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/zsh/aliases.zsh)
 - Windows: [`Documents/PowerShell/aliases.ps1`](https://github.com/patrick-5546/dotfiles/blob/main/Documents/PowerShell/aliases.ps1)
+- Git (aliases are at the bottom): [`.gitconfig`](https://github.com/patrick-5546/dotfiles/blob/main/dot_gitconfig.tmpl)
 
 ### Functions
 
@@ -28,15 +26,9 @@ Configuration files:
 
 ## Software
 
-### Fzf
+### Fd
 
-[Fzf](https://github.com/junegunn/fzf) is an interactive filer for command line that can be used for any list.
-I mainly use it to search through my command history, replacing ++ctrl+r++.
-
-Configuration files:
-
-- [`.config/fzf/completion.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/fzf/completion.zsh)
-- [`.config/fzf/key-bindings.zsh`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/fzf/key-bindings.zsh)
+[Fd](https://github.com/sharkdp/fd) is an alternative to `find` that is faster and more intuitive.
 
 ### Git
 
@@ -48,12 +40,25 @@ Configuration file: [`.gitconfig`](https://github.com/patrick-5546/dotfiles/blob
 #### Git CLI
 
 [GitHub CLI](https://github.com/cli/cli) brings GitHub functionality such as pull requests and issues to your terminal,
-but I only use it to login to GitHub.
+but I mainly use it to login to GitHub.
 
 #### Delta
 
 [Delta](https://github.com/dandavison/delta) is a syntax-highting pager for git, diff, and grep output.
 It makes `git diff` so much easier to understand.
+
+#### Lazygit
+
+[Lazygit](https://github.com/jesseduffield/lazygit) is a TUI for git that makes viewing diffs and
+staging lines (in addition to files) easy.
+
+### Ripgrep
+
+[Ripgrep](https://github.com/BurntSushi/ripgrep) is an alternative to `grep` that is faster and respects your gitignore.
+
+### Lsd
+
+[Lsd](https://github.com/lsd-rs/lsd) is an alternative to `ls` that adds colors, icons, and much more.
 
 ### Starship
 
@@ -62,3 +67,15 @@ Since it is compatible with all major operating systems, I can use the same conf
 to achieve a consistent aesthetic.
 
 Configuration file: [`.config/starship.toml`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/starship.toml).
+
+### Yazi
+
+[Yazi](https://github.com/sxyazi/yazi) is a terminal file manager
+that can be used to view files and interactively navigate to directories.
+
+### Zoxide
+
+[Zoxide](https://github.com/ajeetdsouza/zoxide) is an alternative to `cd` that can jump to frequently directories
+with just a few letters instead of their entire path.
+
+--8<-- "includes/abbreviations.md"

@@ -22,14 +22,21 @@ changed the cursor shape for different modes, and mapped `jk` to exit insert mod
 
 ## Software
 
-[HomeBrew](https://github.com/Homebrew/brew) is an easy-to-use package manager with a large and up-to-date library.
-I use it in my installation script because it works on MacOS and any Linux distribution.
+[grm](https://github.com/jsnjack/grm) is a basic package manager for GitHub releases.
+I use a fork of it in my installation script because it is lightweight, fast, doesn't require sudo permissions,
+and works on both MacOS and Linux.
 
 Installation script: [`run_install-unix.sh.tmpl`](https://github.com/patrick-5546/dotfiles/blob/main/run_install-unix.sh.tmpl).
 
-Resources:
+### Atuin
 
-- [modern-unix](https://github.com/ibraheemdev/modern-unix)
+[Atuin](https://github.com/atuinsh/atuin) enhances shell history, saving additional information such as execution time and exit code.
+It can even synchronize history between machines!
+I mainly use it to interactively search through my command history, replacing ++ctrl+r++.
+
+Configuration files:
+
+- [`.config/atuin/config.toml`](https://github.com/patrick-5546/dotfiles/blob/main/dot_config/atuin/config.toml)
 
 ### Bat
 
@@ -44,11 +51,3 @@ Configuration file: [`.config/bpytop/bpytop.conf`](https://github.com/patrick-55
 ### Dust
 
 [Dust](https://github.com/bootandy/dust) is an alternative to `du` that is more intuitive, visualizing disk usage.
-
-### Fd
-
-[Fd](https://github.com/sharkdp/fd) is an alternative to `find` that is faster and more intuitive.
-
-### Ripgrep
-
-[Ripgrep](https://github.com/BurntSushi/ripgrep) is an alternative to `grep` that is faster and respects your gitignore.

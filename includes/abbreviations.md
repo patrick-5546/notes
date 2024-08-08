@@ -25,4 +25,5 @@
 *[SRAM]: Static Random Access Memory
 *[STA]: Static Timing Analysis
 *[SWE]: Software Engineering
+*[TUI]: Terminal User Interface
 *[WSL]: Windows Subsystem for Linux
